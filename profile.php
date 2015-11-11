@@ -1,0 +1,78 @@
+<!doctype html>
+<!--[if IE 7 ]>    <html lang="en-gb" class="isie ie7 oldie no-js"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en-gb" class="isie ie8 oldie no-js"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en-gb" class="isie ie9 no-js"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="en-gb" class="no-js">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!--[if lt IE 9]> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <![endif]-->
+    <title>Start&Boost</title>
+    <meta name="description" content="">
+    <meta name="author" content="WebThemez">
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lte IE 8]>
+		<script type="text/javascript" src="http://explorercanvas.googlecode.com/svn/trunk/excanvas.js"></script>
+	<![endif]-->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/isotope.css" media="screen" />
+    <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="css/da-slider.css" />
+    <!-- Owl Carousel Assets -->
+
+    <link href="js/owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" />
+     <link rel="stylesheet" href="css/AdminLTE.min.css" />
+    <!-- Font Awesome -->
+    <link href="font/css/font-awesome.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="dist/css/skins/skin-blue.min.css">
+</head>
+
+<body>
+    
+   
+    <footer>
+        <div class="container">
+            <div class="social text-center">
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-dribbble"></i></a>
+                <a href="#"><i class="fa fa-flickr"></i></a>
+                <a href="#"><i class="fa fa-github"></i></a>
+            </div>
+
+            <div class="clear"></div>
+            <!--CLEAR FLOATS-->
+        </div>
+    </footer>
+    <!--/.page-section-->
+    <section class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    Start&Boost by $index[5] Copyright 2015 | All Rights Reserved
+                </div>
+            </div>
+            <!-- / .row -->
+        </div>
+    </section>
+    <a href="#top" class="topHome"><i class="fa fa-chevron-up fa-2x"></i></a>
+
+    <!--[if lte IE 8]><script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script><![endif]-->
+    <script src="js/modernizr-latest.js"></script>
+    <script src="js/jquery-1.8.2.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/jquery.isotope.min.js" type="text/javascript"></script>
+    <script src="js/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+    <script src="js/jquery.nav.js" type="text/javascript"></script>
+    <script src="js/jquery.cslider.js" type="text/javascript"></script>
+    <script src="js/custom.js" type="text/javascript"></script>
+    <script src="js/owl-carousel/owl.carousel.js"></script>
+</body>
+</html>

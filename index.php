@@ -49,9 +49,9 @@
                     <ul class="nav navbar-nav" id="mainNav">
                         <li class="active"><a href="#home" class="scroll-link">Home</a></li>
                         <li><a href="#aboutUs" class="scroll-link">About Us</a></li>
-                        <!--<li><a href="#skills" class="scroll-link">Login</a></li>
+                        <li><a href="#skills" class="scroll-link">Login</a></li>
                         <li><a href="#experience" class="scroll-link">Register</a></li>
-                        <li><a href="#portfolio" class="scroll-link">Top 5 ideas</a></li>-->
+                        <li><a href="#portfolio" class="scroll-link">Top 5 ideas</a></li>
                         <li><a href="#contactUs" class="scroll-link">Contact Us</a></li>
                     <!--   <li>
                         <form class="navbar-form navbar-right" role="search">
