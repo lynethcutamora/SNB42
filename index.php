@@ -1,498 +1,292 @@
-<!doctype html>
-<!--[if IE 7 ]>    <html lang="en-gb" class="isie ie7 oldie no-js"> <![endif]-->
-<!--[if IE 8 ]>    <html lang="en-gb" class="isie ie8 oldie no-js"> <![endif]-->
-<!--[if IE 9 ]>    <html lang="en-gb" class="isie ie9 no-js"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!-->
-<html lang="en-gb" class="no-js">
-<!--<![endif]-->
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <!--[if lt IE 9]> 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <![endif]-->
-    <title>Start&Boost</title>
-    <meta name="description" content="">
-    <meta name="author" content="WebThemez">
-    <!--[if lt IE 9]>
-        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <!--[if lte IE 8]>
-		<script type="text/javascript" src="http://explorercanvas.googlecode.com/svn/trunk/excanvas.js"></script>
-	<![endif]-->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/isotope.css" media="screen" />
-    <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="css/da-slider.css" />
-    <!-- Owl Carousel Assets -->
-    <link href="js/owl-carousel/owl.carousel.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css" />
-    <!-- Font Awesome -->
-    <link href="font/css/font-awesome.min.css" rel="stylesheet">
-</head>
+<?php
+/**
+ * CodeIgniter
+ *
+ * An open source application development framework for PHP
+ *
+ * This content is released under the MIT License (MIT)
+ *
+ * Copyright (c) 2014 - 2015, British Columbia Institute of Technology
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ * THE SOFTWARE.
+ *
+ * @package	CodeIgniter
+ * @author	EllisLab Dev Team
+ * @copyright	Copyright (c) 2008 - 2014, EllisLab, Inc. (http://ellislab.com/)
+ * @copyright	Copyright (c) 2014 - 2015, British Columbia Institute of Technology (http://bcit.ca/)
+ * @license	http://opensource.org/licenses/MIT	MIT License
+ * @link	http://codeigniter.com
+ * @since	Version 1.0.0
+ * @filesource
+ */
 
-<body>
-    <header class="header">
-        <div class="container">
-            <nav class="navbar-inverse" role="navigation">
-                <div class="navbar-header">
-                    <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a href="#" class="navbar-brand scroll-top logo"><img src='images/SNBlogo.png' style="width:35%;"></a>
-                </div>
-                <!--/.navbar-header-->
-                <div id="main-nav" class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav" id="mainNav">
-                        <li class="active"><a href="#home" class="scroll-link">Home</a></li>
-                        <li><a href="#aboutUs" class="scroll-link">About Us</a></li>
-                        <li><a href="#skills" class="scroll-link">Login</a></li>
-                        <li><a href="#experience" class="scroll-link">Register</a></li>
-                        <li><a href="#portfolio" class="scroll-link">Top 5 ideas</a></li>
-                        <li><a href="#contactUs" class="scroll-link">Contact Us</a></li>
-                    <!--   <li>
-                        <form class="navbar-form navbar-right" role="search">
-                            <div class="form-group">
-                              <input type="text" class="form-control" placeholder="Search">
-                            </div>
-                        </form>
-                        </li>
-                        <li>
-                        <form class="navbar-form navbar-right" role="search">
-                            <div class="form-group">
-                                <button type="submit" class="btn btn-primary form-control glyphicon glyphicon-search"></button>  &nbsp;&nbsp;                         
-                            </div>
-                        </form>
-                        </li>-->
-                    </ul>
-                </div>
-                <!--/.navbar-collapse-->
-            </nav>
-            <!--/.navbar-->
-        </div>
-        <!--/.container-->
-    </header>
-    <!--/.header-->
-    <div id="#top"></div>
-    <section id="home">
-        <div class="banner-container">
-            <img src="images/banner-bg2.jpg" alt="banner" />
-            <div class="container banner-content">
-                <div>
-                    <br/><br/><br/><br/><br/><br/>
-                    <div class="form-group col-md-3" style="float:right;border: 2px solid #D0D0D0;box-shadow: 0 0 8px #D0D0D0;">
-                        <br/><center><img src="images/userlogin.png" style="width:30%;" /></center><br/>
-                        <!--<label for="name">Username</label>-->
-                        <input type="text" class="form-control" name="name" id="name" placeholder="username" title="Please enter your Username">
-                        <br/>
-                        <input type="password" class="form-control" name="email" id="email" placeholder="password" title="Please enter your password">  
-                        <br/>
-                        <button name="login" type="submit" class="btn btn-primary form-control" id="submit">Log-in</button>
-                        <br/><br/>
-                        <button name="create" type="submit" class="btn btn-primary form-control" id="create">Create Account</button>
-                        <br/><br/>
-                    </div>
-                    <!--<div class="form-group" style="float:right;">
-                        <label for="email">Password</label>
-                    </div>-->
-                </div>
-                <!--<div id="da-slider" class="da-slider">
-                    <div class="da-slide">
-                        <h2>Start in idea & boost it now!</h2>
-                        <p> -$index[5] </p>
-                        <div class="da-img"></div>
-                    </div>
-                    <div class="da-slide">
-                        <h2>We make imaginations into reality!!!</h2>
-                        <p>-$index[5]</p>
-                        <div class="da-img"></div>
-                    </div>
-                    <div class="da-slide">
-                        <h2>HTML5/CSS3</h2>
-                        <p>HTML5 is a markup language used for structuring and presenting Web.</p>
-                        <div class="da-img"></div>
-                    </div>
-                    <div class="da-slide">
-                        <h2>JavaScript/jQuery</h2>
-                        <p>jQuery: Write Less, Do More...</p>
-                        <div class="da-img"></div>
-                    </div>
-				  <nav class="da-arrows">
-                        <span class="da-arrows-prev"></span>
-                        <span class="da-arrows-next"></span>
-                    </nav> 
-                </div>-->
-            </div>
-        </div>
-    </section>
-    <section id="introText">
-        <div class="container">
-            <div class="text-center">
-            <h1>A Web and mobile-based startup ideas repository and exploration</h1>
-              <p><b>Start&Boost</b> is a Capstone project made by $index[5], a group of student from University of Cebu - Lapulapu and Mandaue. Anyone who has a brilliant idea is given an opportunity to share and discuss it with reliable members from different parts of the world, who's profile has reputation and badges. This system has three classifications of users: The ideators, investors, and company. Members can chat, create group, video conference, post ideas, upload product snapshots and links, and share to social medias.</p>
-            </div>
-        </div>
+/*
+ *---------------------------------------------------------------
+ * APPLICATION ENVIRONMENT
+ *---------------------------------------------------------------
+ *
+ * You can load different configurations depending on your
+ * current environment. Setting the environment also influences
+ * things like logging and error reporting.
+ *
+ * This can be set to anything, but default usage is:
+ *
+ *     development
+ *     testing
+ *     production
+ *
+ * NOTE: If you change these, also change the error_reporting() code below
+ */
+	define('ENVIRONMENT', isset($_SERVER['CI_ENV']) ? $_SERVER['CI_ENV'] : 'development');
 
-    </section>
-    <!--About-->
-    <section id="aboutUs" class="secPad">
-        <div class="container">
-            <div class="heading text-center">
-                <!-- Heading -->
-                <h2>$index[5]</h2>
-                <p>MEET THE TEAM</p>
-            </div>
-            <div class="row">
-             
-              <!-- item -->
-                <div class="col-md-3 text-center tileBox">
-                   <div class="txtHead"><img src="images/team/index0.png" style="width:40%;" /></i>
-                    <h3>Lyneth <span class="id-color">Cutamora</span></h3>
-                    <h6>$index[0]</h6></div>
-                    <p>Project Manager</p>
-                </div>
-                <!-- end: -->
-                  <!-- item -->
-                <div class="col-md-3 text-center tileBox">
-                   <div class="txtHead"><img src="images/team/index1.jpg" style="width:40%;" />
-                    <h3>Jason <span class="id-color">Pitogo</span></h3>
-                    <h6>$index[1]</h6></div>
-                    <p>Software Engineer</p>
-                </div>
-                <!-- end: -->
-                <!-- item -->
-                <div class="col-md-3 text-center tileBox">
-                   <div class="txtHead"> <img src="images/team/index2.jpg" style="width:40%;" />
-                    <h3>Alfie<span class="id-color">Dimpas</span></h3>
-                    <h6>$index[2]</h6></div>
-                    <p>Technical Writer</p>
-                </div>
-                <!-- end: -->
-             
-                <!-- item -->
-               
-                <div class="col-md-3 text-center tileBox">
-                    <div class="txtHead"><img src="images/team/index3.jpg" style="width:40%;" />
-                    <h3>Edelito <span class="id-color">Albaracin</span></h3>
-                    <h6>$index[3]</h6></div>
-                    <p>System Analyst</p>
-                </div>
-                <!-- end: -->
+/*
+ *---------------------------------------------------------------
+ * ERROR REPORTING
+ *---------------------------------------------------------------
+ *
+ * Different environments will require different levels of error reporting.
+ * By default development will show errors but testing and live will hide them.
+ */
+switch (ENVIRONMENT)
+{
+	case 'development':
+		error_reporting(-1);
+		ini_set('display_errors', 1);
+	break;
 
-                <!-- item -->
-                <div class="col-md-3 text-center tileBox">
-                <br/>
-                    <div class="txtHead"><img src="images/team/index4.jpg" style="width:40%;" />
-                    <h3>Isidro <span class="id-color">Estose Jr.</span></h3>
-                    <h6>$index[4]</h6></div>
-                    <p>QA Tester</p>
-                </div>
+	case 'testing':
+	case 'production':
+		ini_set('display_errors', 0);
+		if (version_compare(PHP_VERSION, '5.3', '>='))
+		{
+			error_reporting(E_ALL & ~E_NOTICE & ~E_DEPRECATED & ~E_STRICT & ~E_USER_NOTICE & ~E_USER_DEPRECATED);
+		}
+		else
+		{
+			error_reporting(E_ALL & ~E_NOTICE & ~E_STRICT & ~E_USER_NOTICE);
+		}
+	break;
 
-                <!-- item -->
-                <div class="col-md-9 text-center tileBox">
-                <br/>
-                    <div class="txtHead"><img src="images/team/index5.jpg" style="width:40%;" />
-                    <h3><span class="id-color">$index[5]</span></h3></div>
-                    <p>Team</p>
-                </div>
-                <!-- end: -->
-            </div>
-        </div>
-    </section>
-    <!--Quote-->
-    <section id="quote" class="bg-parlex">
-        <div class="parlex-back">
-            <div class="container secPad text-center">
-				<h2>If I asked people what they wanted, they would have said ‘Faster Horses’.</h2><h3>-Henry Ford</h3>
-            </div>
-            <!--/.container-->
-        </div>
-    </section>
-    
-    <!--Skills
-    <section id="skills" class="secPad white">
-    	<div class="container">
-        <div class="heading text-center">
-                 Heading 
-                <h2>Login</h2>
-                  <div class="col-sm-4">
-                      
-                  </div>
-                  <div class="col-sm-4">
-                        <div class="form-group">
-                            <label for="name">Username</label>
-                            <input type="text" class="form-control" name="name" id="name" placeholder="Enter name" title="Please enter your Username">
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Password</label>
-                            <input type="password" class="form-control" name="email" id="email" placeholder="Enter password" title="Please enter your password">
-                        </div>
-                    </div>
-            </div>
-        	<div class="row">
-                <div class="col-sm-12">
-                     
-                </div>
-                <div class="col-sm-6">
-               
-                </div>
-            </div>
-        </div>        
-    </section>-->
-    
-    <!--Experience-->
-    <!--<section id="experience" class="secPad">
-    	<div class="container">     
-           <div class="heading text-center">
-                 Heading 
-                <h2>Register</h2>
-              
-            </div>
-        </div>
-    </section>-->
-   <!--Portfolio-->
-    <section id="portfolio" class="page-section section appear clearfix secPad">
-        <div class="container">
+	default:
+		header('HTTP/1.1 503 Service Unavailable.', TRUE, 503);
+		echo 'The application environment is not set correctly.';
+		exit(1); // EXIT_ERROR
+}
 
-            <div class="heading text-center">
-                <!-- Heading -->
-                <h2>TOP 5 IDEAS</h2>
-              
-            </div>
+/*
+ *---------------------------------------------------------------
+ * SYSTEM FOLDER NAME
+ *---------------------------------------------------------------
+ *
+ * This variable must contain the name of your "system" folder.
+ * Include the path if the folder is not in the same directory
+ * as this file.
+ */
+	$system_path = 'system';
 
-            <div class="row">
-                <nav id="filter" class="col-md-12 text-center">
-                    <ul>
-                        <li><a href="#" class="current btn-theme btn-small" data-filter="*">All</a></li>
-                        <li><a href="#" class="btn-theme btn-small" data-filter=".webdesign">Web Design</a></li>
-                        <li><a href="#" class="btn-theme btn-small" data-filter=".photography">Photography</a></li>
-                        <li><a href="#" class="btn-theme btn-small" data-filter=".print">Print</a></li>
-                    </ul>
-                </nav>
-                <div class="col-md-12">
-                    <div class="row">
-                        <div class="portfolio-items isotopeWrapper clearfix" id="3">
+/*
+ *---------------------------------------------------------------
+ * APPLICATION FOLDER NAME
+ *---------------------------------------------------------------
+ *
+ * If you want this front controller to use a different "application"
+ * folder than the default one you can set its name here. The folder
+ * can also be renamed or relocated anywhere on your server. If
+ * you do, use a full server path. For more info please see the user guide:
+ * http://codeigniter.com/user_guide/general/managing_apps.html
+ *
+ * NO TRAILING SLASH!
+ */
+	$application_folder = 'application';
 
-                            <article class="col-sm-4 isotopeItem webdesign">
-                                <div class="portfolio-item">
-                                    <img src="images/portfolio/img1.jpg" alt="" />
-                                    <div class="portfolio-desc align-center">
-                                        <div class="folio-info">
-                                            <a href="images/portfolio/img1.jpg" class="fancybox">
-                                                <h5>Project Name</h5>
-                                                <i class="fa fa-arrows-alt fa-2x"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-
-                            <article class="col-sm-4 isotopeItem photography">
-                                <div class="portfolio-item">
-                                    <img src="images/portfolio/img2.jpg" alt="" />
-                                    <div class="portfolio-desc align-center">
-                                        <div class="folio-info">
-                                            <a href="images/portfolio/img2.jpg" class="fancybox">
-                                                <h5>Project Name</h5>
-                                                <i class="fa fa-arrows-alt fa-2x"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
+/*
+ *---------------------------------------------------------------
+ * VIEW FOLDER NAME
+ *---------------------------------------------------------------
+ *
+ * If you want to move the view folder out of the application
+ * folder set the path to the folder here. The folder can be renamed
+ * and relocated anywhere on your server. If blank, it will default
+ * to the standard location inside your application folder. If you
+ * do move this, use the full server path to this folder.
+ *
+ * NO TRAILING SLASH!
+ */
+	$view_folder = '';
 
 
-                            <article class="col-sm-4 isotopeItem photography">
-                                <div class="portfolio-item">
-                                    <img src="images/portfolio/img3.jpg" alt="" />
-                                    <div class="portfolio-desc align-center">
-                                        <div class="folio-info">
-                                            <a href="images/portfolio/img3.jpg" class="fancybox">
-                                                <h5>Project Name</h5>
-                                                <i class="fa fa-arrows-alt fa-2x"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
+/*
+ * --------------------------------------------------------------------
+ * DEFAULT CONTROLLER
+ * --------------------------------------------------------------------
+ *
+ * Normally you will set your default controller in the routes.php file.
+ * You can, however, force a custom routing by hard-coding a
+ * specific controller class/function here. For most applications, you
+ * WILL NOT set your routing here, but it's an option for those
+ * special instances where you might want to override the standard
+ * routing in a specific front controller that shares a common CI installation.
+ *
+ * IMPORTANT: If you set the routing here, NO OTHER controller will be
+ * callable. In essence, this preference limits your application to ONE
+ * specific controller. Leave the function name blank if you need
+ * to call functions dynamically via the URI.
+ *
+ * Un-comment the $routing array below to use this feature
+ */
+	// The directory name, relative to the "controllers" folder.  Leave blank
+	// if your controller is not in a sub-folder within the "controllers" folder
+	// $routing['directory'] = '';
 
-                            <article class="col-sm-4 isotopeItem print">
-                                <div class="portfolio-item">
-                                    <img src="images/portfolio/img4.jpg" alt="" />
-                                    <div class="portfolio-desc align-center">
-                                        <div class="folio-info">
-                                            <a href="images/portfolio/img4.jpg" class="fancybox">
-                                                <h5>Project Name</h5>
-                                                <i class="fa fa-arrows-alt fa-2x"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
+	// The controller class file name.  Example:  mycontroller
+	// $routing['controller'] = '';
 
-                            <article class="col-sm-4 isotopeItem photography">
-                                <div class="portfolio-item">
-                                    <img src="images/portfolio/img5.jpg" alt="" />
-                                    <div class="portfolio-desc align-center">
-                                        <div class="folio-info">
-                                            <a href="images/portfolio/img5.jpg" class="fancybox">
-                                                <h5>Project Name</h5>
-                                                <i class="fa fa-arrows-alt fa-2x"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-
-                            <article class="col-sm-4 isotopeItem webdesign">
-                                <div class="portfolio-item">
-                                    <img src="images/portfolio/img6.jpg" alt="" />
-                                    <div class="portfolio-desc align-center">
-                                        <div class="folio-info">
-                                            <a href="images/portfolio/img6.jpg" class="fancybox">
-                                                <h5>Project Name</h5>
-                                                <i class="fa fa-arrows-alt fa-2x"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-
-                            <article class="col-sm-4 isotopeItem print">
-                                <div class="portfolio-item">
-                                    <img src="images/portfolio/img7.jpg" alt="" />
-                                    <div class="portfolio-desc align-center">
-                                        <div class="folio-info">
-                                            <a href="images/portfolio/img7.jpg" class="fancybox">
-                                                <h5>Project Name</h5>
-                                                <i class="fa fa-arrows-alt fa-2x"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-
-                            <article class="col-sm-4 isotopeItem photography">
-                                <div class="portfolio-item">
-                                    <img src="images/portfolio/img8.jpg" alt="" />
-                                    <div class="portfolio-desc align-center">
-                                        <div class="folio-info">
-                                            <a href="images/portfolio/img8.jpg" class="fancybox">
-                                                <h5>Project Name</h5>
-                                                <i class="fa fa-arrows-alt fa-2x"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-
-                            <article class="col-sm-4 isotopeItem print">
-                                <div class="portfolio-item">
-                                    <img src="images/portfolio/img9.jpg" alt="" />
-                                    <div class="portfolio-desc align-center">
-                                        <div class="folio-info">
-                                            <a href="images/portfolio/img9.jpg" class="fancybox">
-                                                <h5>Project Name</h5>
-                                                <i class="fa fa-arrows-alt fa-2x"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-
-                    </div>
+	// The controller function you wish to be called.
+	// $routing['function']	= '';
 
 
-                </div>
-            </div>
+/*
+ * -------------------------------------------------------------------
+ *  CUSTOM CONFIG VALUES
+ * -------------------------------------------------------------------
+ *
+ * The $assign_to_config array below will be passed dynamically to the
+ * config class when initialized. This allows you to set custom config
+ * items or override any default config values found in the config.php file.
+ * This can be handy as it permits you to share one application between
+ * multiple front controller files, with each file containing different
+ * config values.
+ *
+ * Un-comment the $assign_to_config array below to use this feature
+ */
+	// $assign_to_config['name_of_config_item'] = 'value of config item';
 
-        </div>
-    </section>
 
-	<!--Contact -->
-    <section id="contactUs" class="page-section secPad">
-        <div class="container">
 
-            <div class="row">
-                <div class="heading text-center">
-                    <!-- Heading -->
-                    <h2>Let's Keep In Touch!</h2>
-            
-                </div>
-            </div>
+// --------------------------------------------------------------------
+// END OF USER CONFIGURABLE SETTINGS.  DO NOT EDIT BELOW THIS LINE
+// --------------------------------------------------------------------
 
-            <div class="row mrgn30">
+/*
+ * ---------------------------------------------------------------
+ *  Resolve the system path for increased reliability
+ * ---------------------------------------------------------------
+ */
 
-                <form method="post" action="" id="contactfrm" role="form">
+	// Set the current directory correctly for CLI requests
+	if (defined('STDIN'))
+	{
+		chdir(dirname(__FILE__));
+	}
 
-                    <div class="col-sm-4">
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" class="form-control" name="name" id="name" placeholder="Enter name" title="Please enter your name (at least 2 characters)">
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" class="form-control" name="email" id="email" placeholder="Enter email" title="Please enter a valid email address">
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="form-group">
-                            <label for="comments">Comments</label>
-                            <textarea name="comment" class="form-control" id="comments" cols="3" rows="5" placeholder="Enter your message…" title="Please enter your message (at least 10 characters)"></textarea>
-                        </div>
-                        <button name="submit" type="submit" class="btn btn-lg btn-primary" id="submit">Submit</button>
-                        <div class="result"></div>
-                    </div>
-                </form>
-                <div class="col-sm-4">
-                    <h4>Address:</h4>
-                    <address>
-                        Index[5] Company<br>
-                       Sangi New Road<br>
-                        Lapu-lapu city
-               
-                        <br>
-                    </address>
-                    <h4>Phone:</h4>
-                    <address>
-                        12345-49589-2<br>
-                    </address>
-                </div>
-            </div>
-        </div>
-        <!--/.container-->
-    </section>
-    <footer>
-        <div class="container">
-            <div class="social text-center">
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-dribbble"></i></a>
-                <a href="#"><i class="fa fa-flickr"></i></a>
-                <a href="#"><i class="fa fa-github"></i></a>
-            </div>
+	if (($_temp = realpath($system_path)) !== FALSE)
+	{
+		$system_path = $_temp.'/';
+	}
+	else
+	{
+		// Ensure there's a trailing slash
+		$system_path = rtrim($system_path, '/').'/';
+	}
 
-            <div class="clear"></div>
-            <!--CLEAR FLOATS-->
-        </div>
-    </footer>
-    <!--/.page-section-->
-    <section class="copyright">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 text-center">
-                    Start&Boost by $index[5] Copyright 2015 | All Rights Reserved
-                </div>
-            </div>
-            <!-- / .row -->
-        </div>
-    </section>
-    <a href="#top" class="topHome"><i class="fa fa-chevron-up fa-2x"></i></a>
+	// Is the system path correct?
+	if ( ! is_dir($system_path))
+	{
+		header('HTTP/1.1 503 Service Unavailable.', TRUE, 503);
+		echo 'Your system folder path does not appear to be set correctly. Please open the following file and correct this: '.pathinfo(__FILE__, PATHINFO_BASENAME);
+		exit(3); // EXIT_CONFIG
+	}
 
-    <!--[if lte IE 8]><script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script><![endif]-->
-    <script src="js/modernizr-latest.js"></script>
-    <script src="js/jquery-1.8.2.min.js" type="text/javascript"></script>
-    <script src="js/bootstrap.min.js" type="text/javascript"></script>
-    <script src="js/jquery.isotope.min.js" type="text/javascript"></script>
-    <script src="js/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
-    <script src="js/jquery.nav.js" type="text/javascript"></script>
-    <script src="js/jquery.cslider.js" type="text/javascript"></script>
-    <script src="js/custom.js" type="text/javascript"></script>
-    <script src="js/owl-carousel/owl.carousel.js"></script>
-</body>
-</html>
+/*
+ * -------------------------------------------------------------------
+ *  Now that we know the path, set the main path constants
+ * -------------------------------------------------------------------
+ */
+	// The name of THIS file
+	define('SELF', pathinfo(__FILE__, PATHINFO_BASENAME));
+
+	// Path to the system folder
+	define('BASEPATH', str_replace('\\', '/', $system_path));
+
+	// Path to the front controller (this file)
+	define('FCPATH', dirname(__FILE__).'/');
+
+	// Name of the "system folder"
+	define('SYSDIR', trim(strrchr(trim(BASEPATH, '/'), '/'), '/'));
+
+	// The path to the "application" folder
+	if (is_dir($application_folder))
+	{
+		if (($_temp = realpath($application_folder)) !== FALSE)
+		{
+			$application_folder = $_temp;
+		}
+
+		define('APPPATH', $application_folder.DIRECTORY_SEPARATOR);
+	}
+	else
+	{
+		if ( ! is_dir(BASEPATH.$application_folder.DIRECTORY_SEPARATOR))
+		{
+			header('HTTP/1.1 503 Service Unavailable.', TRUE, 503);
+			echo 'Your application folder path does not appear to be set correctly. Please open the following file and correct this: '.SELF;
+			exit(3); // EXIT_CONFIG
+		}
+
+		define('APPPATH', BASEPATH.$application_folder.DIRECTORY_SEPARATOR);
+	}
+
+	// The path to the "views" folder
+	if ( ! is_dir($view_folder))
+	{
+		if ( ! empty($view_folder) && is_dir(APPPATH.$view_folder.DIRECTORY_SEPARATOR))
+		{
+			$view_folder = APPPATH.$view_folder;
+		}
+		elseif ( ! is_dir(APPPATH.'views'.DIRECTORY_SEPARATOR))
+		{
+			header('HTTP/1.1 503 Service Unavailable.', TRUE, 503);
+			echo 'Your view folder path does not appear to be set correctly. Please open the following file and correct this: '.SELF;
+			exit(3); // EXIT_CONFIG
+		}
+		else
+		{
+			$view_folder = APPPATH.'views';
+		}
+	}
+
+	if (($_temp = realpath($view_folder)) !== FALSE)
+	{
+		$view_folder = $_temp.DIRECTORY_SEPARATOR;
+	}
+	else
+	{
+		$view_folder = rtrim($view_folder, '/\\').DIRECTORY_SEPARATOR;
+	}
+
+	define('VIEWPATH', $view_folder);
+
+/*
+ * --------------------------------------------------------------------
+ * LOAD THE BOOTSTRAP FILE
+ * --------------------------------------------------------------------
+ *
+ * And away we go...
+ */
+require_once BASEPATH.'core/CodeIgniter.php';
