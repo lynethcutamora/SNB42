@@ -11,7 +11,7 @@
     <!--[if lt IE 9]> 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <![endif]-->
-    <title>Start&Boost</title>
+    <title><?php echo (isset($title)) ? $title : "Start&boost" ?></title>
     <meta name="description" content="">
     <meta name="author" content="WebThemez">
     <!--[if lt IE 9]>
@@ -25,17 +25,17 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <!-- Ionicons -->
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/isotope.css" media="screen" />
-    <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="css/da-slider.css" />
+    <link rel="stylesheet" href="<?php echo base_url();?>bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>css/isotope.css" media="screen" />
+    <link rel="stylesheet" href="<?php echo base_url();?>js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>css/da-slider.css" />
     <!-- Owl Carousel Assets -->
-    <link href="js/owl-carousel/owl.carousel.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css" />
-     <link rel="stylesheet" href="css/AdminLTE.min.css" />
+    <link href="<?php echo base_url();?>js/owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link rel="stylesheet" href="<?php echo base_url();?>css/styles.css" />
+     <link rel="stylesheet" href="<?php echo base_url();?>css/AdminLTE.min.css" />
     <!-- Font Awesome -->
-    <link href="font/css/font-awesome.min.css" rel="stylesheet">
-     <link rel="stylesheet" href="dist/css/skins/skin-blue.min.css">
+    <link href="<?php echo base_url();?>font/css/font-awesome.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="<?php echo base_url();?>dist/css/skins/skin-blue.min.css">
      </head>
  <header class="header">
         <div class="container">
@@ -47,7 +47,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a href="#" class="navbar-brand scroll-top logo"><img src='images/SNBlogo.png' style="width:35%;"></a>
+                    <a href="#" class="navbar-brand scroll-top logo"><img src='<?php echo base_url();?>images/SNBlogo.png' style="width:35%;"></a>
                 </div>
                 <!--/.navbar-header-->
                 <div id="main-nav" class="collapse navbar-collapse">
@@ -60,13 +60,13 @@
                       
                          <li class="dropdown user user-menu">
                           <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            <img src="dist/img/avatar5.png" class="user-image" alt="User Image">
+                            <img src="<?php echo base_url();?>dist/img/avatar5.png" class="user-image" alt="User Image">
                             <span class="hidden-xs">Jason Pitogo</span>
                           </a>
                           <ul class="dropdown-menu">
                             <!-- User image -->
                             <li class="user-header">
-                              <img src="dist/img/avatar5.png" class="img-circle" alt="User Image">
+                              <img src="<?php echo base_url();?>dist/img/avatar5.png" class="img-circle" alt="User Image">
                               <p>
                                 Jason Pitogo - Programmer
                                 <small>Member since Nov. 2012</small>
@@ -86,10 +86,12 @@
                             </li>
                              <li class="user-footer">
                               <div class="pull-left">
-                                <a href="#" class="btn btn-default btn-flat">Profile</a>
+                               <button name="profile" type="button" class="btn btn-primary form-control" id="profile">Profile</button>
                               </div>
                               <div class="pull-right">
-                                <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                                   <?php echo form_open("welcome/logout"); ?>
+                                    <button name="signout" type="Submit" class="btn btn-primary form-control" id="signout">Sign out</button>
+                                   <?php echo form_close(); ?>
                               </div>
                             </li>
                           </li>

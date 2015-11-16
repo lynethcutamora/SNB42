@@ -1,18 +1,22 @@
+<html>
+<head>
+    <title><?php echo (isset($title)) ? $title : "Start&boost" ?></title>
+</head>
 <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <!-- Ionicons -->
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/isotope.css" media="screen" />
-    <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="css/da-slider.css" />
+    <link rel="stylesheet" href="<?php echo base_url();?>bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="<?php echo base_url();?>text/css" href="css/isotope.css" media="screen" />
+    <link rel="stylesheet" href="<?php echo base_url();?>js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>css/da-slider.css" />
     <!-- Owl Carousel Assets -->
-    <link href="js/owl-carousel/owl.carousel.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css" />
-     <link rel="stylesheet" href="css/AdminLTE.min.css" />
+    <link href="<?php echo base_url();?>js/owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link rel="stylesheet" href="<?php echo base_url();?>css/styles.css" />
+     <link rel="stylesheet" href="<?php echo base_url();?>css/AdminLTE.min.css" />
     <!-- Font Awesome -->
     <link href="font/css/font-awesome.min.css" rel="stylesheet">
-     <link rel="stylesheet" href="dist/css/skins/skin-blue.min.css">    
+     <link rel="stylesheet" href="<?php echo base_url();?>dist/css/skins/skin-blue.min.css">    
 <body>
     <header class="header">
         <div class="container">
@@ -24,7 +28,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a href="#" class="navbar-brand scroll-top logo"><img src='images/SNBlogo.png' style="width:35%;"></a>
+                    <a href="#" class="navbar-brand scroll-top logo"><img src='<?php echo base_url();?>images/SNBlogo.png' style="width:35%;"></a>
                 </div>
                 <!--/.navbar-header-->
                 <div id="main-nav" class="collapse navbar-collapse">
@@ -60,22 +64,33 @@
     <!--/.header-->
     <div id="#top"></div>
     <section id="home">
+        
         <div class="banner-container">
-            <img src="images/banner-bg2.jpg" alt="banner" />
+            <img src="<?php echo base_url();?>images/banner-bg2.jpg" alt="banner" />
             <div class="container banner-content">
                 <div>
                     <br/><br/><br/><br/><br/><br/>
                     <div class="form-group col-md-3" style="float:right;border: 2px solid #D0D0D0;box-shadow: 0 0 8px #D0D0D0;">
-                        <br/><center><img src="images/userlogin.png" style="width:30%;" /></center><br/>
+                        <br/><center><img src="<?php echo base_url();?>images/userlogin.png" style="width:30%;" /></center><br/>
                         <!--<label for="name">Username</label>-->
-                        <input type="text" class="form-control" name="name" id="name" placeholder="username" title="Please enter your Username">
+                        <?php echo form_open("welcome/login"); ?>
+                        <input type="text" class="form-control" name="emailAdd" id="emailAdd" placeholder="username" title="Please enter your Username">
+                         
                         <br/>
-                        <input type="password" class="form-control" name="email" id="email" placeholder="password" title="Please enter your password">  
+                        <input type="password" class="form-control" name="pssWord" id="pssWord" placeholder="password" title="Please enter your password">  
+                         
                         <br/>
                         <button name="login" type="submit" class="btn btn-primary form-control" id="submit">Log-in</button>
                         <br/><br/>
                         <button name="create" type="button" class="btn btn-primary form-control" id="create" data-toggle="modal" data-target="#CreateAccount">Create Account</button>
-                        <br/><br/>
+                        <br/>
+
+                        <div class="box-body">
+                         <p class="text-red"><?php echo form_error('emailAdd');?></p>
+                         <p class="text-red"><?php echo form_error('pssWord'); ?></p>
+                        </div>
+                        <br/>
+                        <?php echo form_close(); ?>
                     </div>
                     <!--<div class="form-group" style="float:right;">
                         <label for="email">Password</label>
@@ -132,7 +147,7 @@
              
               <!-- item -->
                 <div class="col-md-3 text-center tileBox">
-                   <div class="txtHead"><img src="images/team/index0.png" style="width:40%;" /></i>
+                   <div class="txtHead"><img src="<?php echo base_url();?>images/team/index0.png" style="width:40%;" /></i>
                     <h3>Lyneth <span class="id-color">Cutamora</span></h3>
                     <h6>$index[0]</h6></div>
                     <p>Project Manager</p>
@@ -140,7 +155,7 @@
                 <!-- end: -->
                   <!-- item -->
                 <div class="col-md-3 text-center tileBox">
-                   <div class="txtHead"><img src="images/team/index1.jpg" style="width:40%;" />
+                   <div class="txtHead"><img src="<?php echo base_url();?>images/team/index1.jpg" style="width:40%;" />
                     <h3>Jason <span class="id-color">Pitogo</span></h3>
                     <h6>$index[1]</h6></div>
                     <p>Software Engineer</p>
@@ -148,7 +163,7 @@
                 <!-- end: -->
                 <!-- item -->
                 <div class="col-md-3 text-center tileBox">
-                   <div class="txtHead"> <img src="images/team/index2.jpg" style="width:40%;" />
+                   <div class="txtHead"> <img src="<?php echo base_url();?>images/team/index2.jpg" style="width:40%;" />
                     <h3>Alfie<span class="id-color">Dimpas</span></h3>
                     <h6>$index[2]</h6></div>
                     <p>Technical Writer</p>
@@ -158,7 +173,7 @@
                 <!-- item -->
                
                 <div class="col-md-3 text-center tileBox">
-                    <div class="txtHead"><img src="images/team/index3.jpg" style="width:40%;" />
+                    <div class="txtHead"><img src="<?php echo base_url();?>images/team/index3.jpg" style="width:40%;" />
                     <h3>Edelito <span class="id-color">Albaracin</span></h3>
                     <h6>$index[3]</h6></div>
                     <p>System Analyst</p>
@@ -168,7 +183,7 @@
                 <!-- item -->
                 <div class="col-md-3 text-center tileBox">
                 <br/>
-                    <div class="txtHead"><img src="images/team/index4.jpg" style="width:40%;" />
+                    <div class="txtHead"><img src="<?php echo base_url();?>images/team/index4.jpg" style="width:40%;" />
                     <h3>Isidro <span class="id-color">Estose Jr.</span></h3>
                     <h6>$index[4]</h6></div>
                     <p>QA Tester</p>
@@ -177,7 +192,7 @@
                 <!-- item -->
                 <div class="col-md-9 text-center tileBox">
                 <br/>
-                    <div class="txtHead"><img src="images/team/index5.jpg" style="width:40%;" />
+                    <div class="txtHead"><img src="<?php echo base_url();?>images/team/index5.jpg" style="width:40%;" />
                     <h3><span class="id-color">$index[5]</span></h3></div>
                     <p>Team</p>
                 </div>

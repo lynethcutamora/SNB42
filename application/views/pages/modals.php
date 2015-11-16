@@ -26,16 +26,19 @@
                          <input type="text" class="form-control" placeholder="Last name">
                       </div>
                       <div class="form-group has-feedback">
+                         <input type="text" class="form-control" placeholder="Middle Initial">
+                      </div>
+                      <div class="form-group has-feedback">
                         <input type="text" class="form-control" placeholder="Age">
                       </div>
                        <div class="form-group has-feedback">
-                        <input type="password" class="form-control" placeholder="Gender">
+                        <input type="text" class="form-control" placeholder="Gender">
                       </div>
                        <div class="form-group has-feedback">
-                        <input type="password" class="form-control" placeholder="Country">
+                        <input type="text" class="form-control" placeholder="Address">
                       </div>
                        <div class="form-group has-feedback">
-                        <input type="password" class="form-control" placeholder="E-mail">
+                        <input type="text" class="form-control" placeholder="E-mail">
                       </div>
                        <div class="form-group has-feedback">
                         <input type="password" class="form-control" placeholder="Password">
@@ -67,7 +70,7 @@
                     <div class="box box-widget">
                       <div class='box-header with-border'>
                         <div class='user-block'>
-                          <img class='img-circle' src='dist/img/avatar5.png' alt='user image'>
+                          <img class='img-circle' src='<?php echo base_url();?>dist/img/avatar5.png' alt='user image'>
                           <span class='username'><a href="#">Jason Pitogo</a></span>
                           <span class='description'>November 13, 2015 - 7:30 PM Today</span>
                         </div><!-- /.user-block -->
@@ -77,7 +80,7 @@
                         </div><!-- /.box-tools -->
                       </div><!-- /.box-header -->
                       <div class='box-body'>
-                        <img class="img-responsive pad" src="dist/img/photo2.png" alt="Photo">
+                        <img class="img-responsive pad" src="<?php echo base_url();?>dist/img/photo2.png" alt="Photo">
                         <p>I took this photo this morning. What do you guys think?</p>
                         <button class='btn btn-default btn-xs'><i class='fa fa-share'></i> Share</button>
                         <span class='pull-right text-muted'>127 likes - 3 comments</span>
@@ -88,5 +91,4 @@
               </div>
          
           </div>
-     
-    
+         
