@@ -52,9 +52,9 @@
                 <!--/.navbar-header-->
                 <div id="main-nav" class="collapse navbar-collapse">
                     <ul class="nav navbar-nav" id="mainNav">
-                        <li class="active"><a href="#home" class="scroll-link">Home</a></li>
-                        <li><a href="#" class="scroll-link">On Fire</a></li>
-                        <li><a href="#" class="scroll-link">Timeline</a></li>
+                        <li ><a href="home.php" class="scroll-link">Home</a></li>
+                        <li><a href="onfire.php" class="scroll-link">On Fire</a></li>
+                        <li><a href="timeline.php" class="scroll-link">Timeline</a></li>
                         <li><a href="#" class="scroll-link">New Ideas</a></li>
                         <li><a href="#" class="scroll-link">Startup Product</a></li>
                       

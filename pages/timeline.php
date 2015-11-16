@@ -7,46 +7,7 @@
     <section id="contactUs" class="page-section secPad">
         <div class="container-fluid">
        		<div class="col-md-10">
-       			  <div class="box box-info">
-                <div class="box-header with-border">
-                  <h3 class="box-title">Post Idea</h3>
-                </div><!-- /.box-header -->
-                <!-- form start -->
-                <form class="form-horizontal">
-                  <div class="box-body">
-                    <div class="form-group">
-                      <label for="inputEmail3" class="col-sm-2 control-label">Title</label>
-                      <div class="col-sm-10">
-                        <input type="email" class="form-control" id="inputEmail3" placeholder="">
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <label for="inputPassword3" class="col-sm-2 control-label">Description</label>
-                      <div class="col-sm-10">
-                       <textarea class="form-control" rows="3" placeholder=""></textarea>
-                      </div>
-                    </div>
-                     <div class="form-group">
-                      <label for="inputPassword3" class="col-sm-2 control-label">Image</label>
-                     
-                     
-							  <div class="col-sm-2">
-							   <a class="btn btn-block btn-social btn-dropbox">
-			                    <i class="fa fa-plus"></i>Add Image
-			                  </a>
-			                  </div>
-                     
-                    </div>
-                    <div class="form-group">
-                     
-                    </div>
-                  </div><!-- /.box-body -->
-                  <div class="box-footer">
-                
-                    <button type="submit" class="btn btn-info pull-right">POST IDEA</button>
-                  </div><!-- /.box-footer -->
-                </form>
-              </div><!-- /.box -->
+       			 
             
 
               <!-- Box Comment -->
@@ -108,49 +69,38 @@
              
        		</div>
         	<div class="col-md-2">
-              <div class="box box-info">
+        	<div class="box box-info">
                 <div class="box-header with-border">
-                  <h3 class="box-title">Top 5 Ideators</h3>
+                  <h3 class="box-title">Search</h3>
                 </div><!-- /.box-header -->
                 <div class="box-body">
-                  <a class="btn btn-block btn-social btn-dropbox">
-                    <i class="fa fa-lightbulb-o"></i>1st Start&Boost
-                  </a>
-                  <a class="btn btn-block btn-social btn-dropbox">
-                    <i class="fa fa-lightbulb-o"></i>2nd Start&Boost
-                  </a>
-                  <a class="btn btn-block btn-social btn-dropbox">
-                    <i class="fa fa-lightbulb-o"></i>3rd Start&Boost
-                  </a>
-                  <a class="btn btn-block btn-social btn-dropbox">
-                    <i class="fa fa-lightbulb-o"></i>4th Start&Boost
-                  </a>
-                  <a class="btn btn-block btn-social btn-dropbox">
-                    <i class="fa fa-lightbulb-o"></i>5th Start&Boost
-                  </a>
+                   <!-- search form -->
+			          <form action="#" method="get" class="sidebar-form">
+			            <div class="input-group">
+			              <input type="text" name="q" class="form-control" placeholder="Search...">
+			              <span class="input-group-btn">
+			                <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i></button>
+			              </span>
+			            </div>
+			          </form>
+			          <!-- /.search form -->
                 </div><!-- /.box-body -->
-                  <div class="box-header with-border">
-                  <h3 class="box-title">Top 5 Ideas</h3>
-                </div><!-- /.box-header -->
+             
+            </div>
+            <div class="box box-info">
+               
                 <div class="box-body">
-                 <a class="btn btn-block btn-social btn-dropbox">
-                    <i class="fa  fa-user"></i>1st Jason D. Pitogo
-                  </a>
-                  <a class="btn btn-block btn-social btn-dropbox">
-                    <i class="fa  fa-user"></i>2nd Lyneth Cutamora
-                  </a>
-                  <a class="btn btn-block btn-social btn-dropbox">
-                    <i class="fa  fa-user"></i>3rd Isidro Estose
-                  </a>
-                  <a class="btn btn-block btn-social btn-dropbox">
-                    <i class="fa  fa-user"></i>4th Alfie Dimpas
-                  </a>
-                  <a class="btn btn-block btn-social btn-dropbox">
-                    <i class="fa  fa-user"></i>5th Edelito Albaracin
-                  </a>
+                 <div class="form-group">
+                    <label>Timeline:</label>
+                   
+                     <button class="btn btn-block btn-primary btn-lg">Year</button>
+                     <button class="btn btn-block btn-primary btn-lg">Month</button>
+                    
+                  </div><!-- /.form group -->
+
                 </div><!-- /.box-body -->
-              </div><!-- /.box -->
-            </div><!-- /.col (right) -->
+             
+            </div>
 
         </div>
         <!--/.container-->
