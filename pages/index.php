@@ -405,5 +405,7 @@
     </section>
     
 <?php
+
   include("footer.php");
+    include("modals.php");
  ?>
