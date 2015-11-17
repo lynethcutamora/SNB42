@@ -55,8 +55,8 @@
                         <li ><a href="home.php" class="scroll-link">Home</a></li>
                         <li><a href="onfire.php" class="scroll-link">On Fire</a></li>
                         <li><a href="timeline.php" class="scroll-link">Timeline</a></li>
-                        <li><a href="#" class="scroll-link">New Ideas</a></li>
-                        <li><a href="#" class="scroll-link">Startup Product</a></li>
+                        <li><a href="newideas.php" class="scroll-link">New Ideas</a></li>
+                        <li><a href="startupProduct.php" class="scroll-link">Startup Product</a></li>
                       
                          <li class="dropdown user user-menu">
                           <a href="#" class="dropdown-toggle" data-toggle="dropdown">
