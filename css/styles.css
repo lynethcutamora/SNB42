@@ -316,7 +316,7 @@ background: none;
     width: 100%;
     position: relative;
     padding: 0px;
-    box-shadow: 0px 0px 1px rgba(0,0,0,0.4);
+    box-shadow: 0px 0px 1px rgba(0,0,0,0);
     /*background: url("../images/banner-bg.jpg") no-repeat;*/
     background-size: 100% 100%;
     background-size: cover;
@@ -435,7 +435,7 @@ margin: 0px;
 /*parlex*/
 .bg-parlex {
 padding-top: 0px;
-background-image: url('../images/banner-bg.jpg');
+background-image: url('../images/bg.png');
 background-size: cover;
 background-repeat: no-repeat;
 background-attachment: fixed;
@@ -684,6 +684,12 @@ display: inherit;
 
 #portfolio {
     background:rgb(24, 24, 24);
+
+
+    background-image: url('../images/bg4.png');
+    background-position: top-left;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
     #portfolio img {

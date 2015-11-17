@@ -22,13 +22,13 @@
         <div class="container">
             <nav class="navbar-inverse" role="navigation">
                 <div class="navbar-header">
-                    <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+                    <button type="button" id="nav-toggle" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a href="#" class="navbar-brand scroll-top logo"><img src='../images/SNBlogo.png' style="width:35%;"></a>
+                    
                 </div>
                 <!--/.navbar-header-->
                 <div id="main-nav" class="collapse navbar-collapse">
@@ -66,192 +66,92 @@
     <section id="home">
         
         <div class="banner-container">
-            <img src="../images/banner-bg2.jpg" alt="banner" />
+            <img src="../images/bg3.png" alt="banner" />
             <div class="container banner-content">
-                <div>
-                    <br/><br/><br/><br/><br/><br/>
-                    <div class="form-group col-md-3" style="float:right;border: 2px solid #D0D0D0;box-shadow: 0 0 8px #D0D0D0;">
-                        <br/><center><img src="../images/userlogin.png" style="width:30%;" /></center><br/>
-                        <!--<label for="name">Username</label>-->
-                      
-                        <input type="text" class="form-control" name="emailAdd" id="emailAdd" placeholder="username" title="Please enter your Username">
-                         
-                        <br/>
-                        <input type="password" class="form-control" name="pssWord" id="pssWord" placeholder="password" title="Please enter your password">  
-                         
-                        <br/>
-                        <button name="login" type="submit" class="btn btn-primary form-control" id="submit">Log-in</button>
-                        <br/><br/>
-                        <button name="create" type="button" class="btn btn-primary form-control" id="create" data-toggle="modal" data-target="#CreateAccount">Create Account</button>
-                        <br/>
+                <div class="container col-md-12">
+                    <div id="da-slider" class="da-slider" style="float:left;">
+                        <div class="da-slide">
+                            <h2><img src="../images/check.png" style="width:15%;"/> GOOD IDEA</h2>
+                            <p style="color:#e4e4e4;">Post startup ideas and discuss</p>
+                            <div class="da-img"></div>
+                        </div>
+                        <div class="da-slide">
+                            <h2><img src="../images/check.png" style="width:15%;"/> MARKET OPPORTUNITY</h2>
+                            <p style="color:#e4e4e4;">Share to social medias</p>
+                            <div class="da-img"></div>
+                        </div>
+                        <div class="da-slide">
+                            <h2><img src="../images/check.png" style="width:15%;"/> GREAT EXECUTION</h2>
+                            <p style="color:#e4e4e4;">Quality assurance from experts</p>
+                            <div class="da-img"></div>
+                        </div>
+                        <div class="da-slide">
+                            <h2 style="color:#65b5ff;">= <span style="color:#fff;">SUCCESSFUL STARTUP</span></h2>
+                            <p style="color:#e4e4e4;">Start&Boost: "Start with an idea <br/>and Boost it here."</p>
+                            <div class="da-img"></div>
+                        </div>
+                    <!--  <nav class="da-arrows">
+                            <span class="da-arrows-prev"></span>
+                            <span class="da-arrows-next"></span>
+                        </nav> 
+                    </div>
+                </div>-->
+
+                    <!--<div class="container col-md-3" style=";center;border-radius:10px;border: 1px solid #000000;box-shadow: 0 0 8px #000000;">-->
+                    <!--<div class="col-md-3" style=";center;border-radius:10px;;box-shadow: 0 0 8px #000000;">
+                        
 
                         <div class="box-body">
-                   
-                        </div>
-                        <br/>
-                        
-                    </div>
+                            <br/><center><img src="../images/userlogin.png" style="width:40%;" /></center><br/>
+                            <label for="name">Username</label>
+                          
+                            <input type="text" class="form-control" name="emailAdd" id="emailAdd" placeholder="username" title="Please enter your Username">
+                             
+                            <br/>
+                            <input type="password" class="form-control" name="pssWord" id="pssWord" placeholder="password" title="Please enter your password">  
+                             
+                            <br/>
+                            <button name="login" type="submit" class="btn btn-primary form-control" id="submit">Log-in</button>
+                            <br/><br/>
+                            <button name="create" type="button" class="btn btn-primary form-control" id="create" data-toggle="modal" data-target="#CreateAccount">Create Account</button>
+                            <br/><br/>
+                        </div>-->
                     <!--<div class="form-group" style="float:right;">
                         <label for="email">Password</label>
                     </div>-->
                 </div>
-
-                <!--<div id="da-slider" class="da-slider">
-                    <div class="da-slide">
-                        <h2>Start in idea & boost it now!</h2>
-                        <p> -$index[5] </p>
-                        <div class="da-img"></div>
-                    </div>
-                    <div class="da-slide">
-                        <h2>We make imaginations into reality!!!</h2>
-                        <p>-$index[5]</p>
-                        <div class="da-img"></div>
-                    </div>
-                    <div class="da-slide">
-                        <h2>HTML5/CSS3</h2>
-                        <p>HTML5 is a markup language used for structuring and presenting Web.</p>
-                        <div class="da-img"></div>
-                    </div>
-                    <div class="da-slide">
-                        <h2>JavaScript/jQuery</h2>
-                        <p>jQuery: Write Less, Do More...</p>
-                        <div class="da-img"></div>
-                    </div>
-				  <nav class="da-arrows">
-                        <span class="da-arrows-prev"></span>
-                        <span class="da-arrows-next"></span>
-                    </nav> 
-                </div>-->
             </div>
         </div>
     </section>
     <section id="introText">
         <div class="container">
-            <div class="text-center">
-            <h1>A Web and mobile-based startup ideas repository and exploration</h1>
-              <p><b>Start&Boost</b> is a Capstone project made by $index[5], a group of student from University of Cebu - Lapulapu and Mandaue. Anyone who has a brilliant idea is given an opportunity to share and discuss it with reliable members from different parts of the world, who's profile has reputation and badges. This system has three classifications of users: The ideators, investors, and company. Members can chat, create group, video conference, post ideas, upload product snapshots and links, and share to social medias.</p>
-            </div>
-        </div>
-
-    </section>
-    <!--About-->
-    <section id="aboutUs" class="secPad">
-        <div class="container">
             <div class="heading text-center">
-                <!-- Heading -->
-                <h2>$index[5]</h2>
-                <p>MEET THE TEAM</p>
-            </div>
-            <div class="row">
-             
-              <!-- item -->
-                <div class="col-md-3 text-center tileBox">
-                   <div class="txtHead"><img src="../images/team/index0.png" style="width:40%;" /></i>
-                    <h3>Lyneth <span class="id-color">Cutamora</span></h3>
-                    <h6>$index[0]</h6></div>
-                    <p>Project Manager</p>
-                </div>
-                <!-- end: -->
-                  <!-- item -->
-                <div class="col-md-3 text-center tileBox">
-                   <div class="txtHead"><img src="../images/team/index1.jpg" style="width:40%;" />
-                    <h3>Jason <span class="id-color">Pitogo</span></h3>
-                    <h6>$index[1]</h6></div>
-                    <p>Software Engineer</p>
-                </div>
-                <!-- end: -->
-                <!-- item -->
-                <div class="col-md-3 text-center tileBox">
-                   <div class="txtHead"> <img src="../images/team/index2.jpg" style="width:40%;" />
-                    <h3>Alfie<span class="id-color">Dimpas</span></h3>
-                    <h6>$index[2]</h6></div>
-                    <p>Technical Writer</p>
-                </div>
-                <!-- end: -->
-             
-                <!-- item -->
-               
-                <div class="col-md-3 text-center tileBox">
-                    <div class="txtHead"><img src="../images/team/index3.jpg" style="width:40%;" />
-                    <h3>Edelito <span class="id-color">Albaracin</span></h3>
-                    <h6>$index[3]</h6></div>
-                    <p>System Analyst</p>
-                </div>
-                <!-- end: -->
-
-                <!-- item -->
-                <div class="col-md-3 text-center tileBox">
-                <br/>
-                    <div class="txtHead"><img src="../images/team/index4.jpg" style="width:40%;" />
-                    <h3>Isidro <span class="id-color">Estose Jr.</span></h3>
-                    <h6>$index[4]</h6></div>
-                    <p>QA Tester</p>
-                </div>
-
-                <!-- item -->
-                <div class="col-md-9 text-center tileBox">
-                <br/>
-                    <div class="txtHead"><img src="../images/team/index5.jpg" style="width:40%;" />
-                    <h3><span class="id-color">$index[5]</span></h3></div>
-                    <p>Team</p>
-                </div>
-                <!-- end: -->
-            </div>
-        </div>
-    </section>
-    <!--Quote-->
-    <section id="quote" class="bg-parlex">
-        <div class="parlex-back">
-            <div class="container secPad text-center">
-				<h2>If I asked people what they wanted, they would have said ‘Faster Horses’.</h2><h3>-Henry Ford</h3>
-            </div>
-            <!--/.container-->
-        </div>
-    </section>
-    
-    <!--Skills
-    <section id="skills" class="secPad white">
-    	<div class="container">
-        <div class="heading text-center">
-                 Heading 
-                <h2>Login</h2>
-                  <div class="col-sm-4">
-                      
-                  </div>
-                  <div class="col-sm-4">
-                        <div class="form-group">
-                            <label for="name">Username</label>
-                            <input type="text" class="form-control" name="name" id="name" placeholder="Enter name" title="Please enter your Username">
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Password</label>
-                            <input type="password" class="form-control" name="email" id="email" placeholder="Enter password" title="Please enter your password">
-                        </div>
+                    <!-- Heading -->
+                    <div class="col-sm-7" style="background-color:#;">
+                            <div class="text-center">
+                             <h1>A Web and mobile-based startup ideas repository and exploration</h1>
+                                  <p><b>Start&Boost</b> is a Capstone project made by $index[5], a group of student from University of Cebu - Lapulapu and Mandaue. Anyone who has a brilliant idea is given an opportunity to share and discuss it with reliable members from different parts of the world, who's profile has reputation and badges. This system has three classifications of users: The ideators, investors, and company. Members can chat, create group, video conference, post ideas, upload product snapshots and links, and share to social medias.</p>
+                            </div>  
+                    </div>
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-4">
+                            <h2>Login</h2>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="name" id="name" placeholder="User Name" title="Please enter your Username">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" name="email" id="email" placeholder="Password" title="Please enter your password">
+                            </div>
+                            <button name="login" type="submit" class="btn btn-primary form-control" id="submit">Log-in</button>
+                            <br/><br/>
+                            <button name="create" type="button" class="btn btn-primary form-control" id="create" data-toggle="modal" data-target="#CreateAccount">Create Account</button>
+                            <br/><br/>
                     </div>
             </div>
-        	<div class="row">
-                <div class="col-sm-12">
-                     
-                </div>
-                <div class="col-sm-6">
-               
-                </div>
-            </div>
-        </div>        
-    </section>-->
-    
-    <!--Experience-->
-    <!--<section id="experience" class="secPad">
-    	<div class="container">     
-           <div class="heading text-center">
-                 Heading 
-                <h2>Register</h2>
-              
-            </div>
         </div>
-    </section>-->
-   <!--Portfolio-->
-    <section id="portfolio" class="page-section section appear clearfix secPad">
+
+    </section>
+    <!--Quote--><section id="portfolio" class="page-section section appear clearfix secPad">
         <div class="container">
 
             <div class="heading text-center">
@@ -348,7 +248,119 @@
            
          </div>
     </section>
+    <section id="aboutUs" class="secPad">
+            <img src="../images/banner-bg.png" style="width:100%;" />
+    </section>
+    <!--About-->
+    <section id="aboutUs" class="secPad">
+        <div class="container">
+            <div class="heading text-center">
+                <!-- Heading -->
+                <h2>$index[5]</h2>
+                <p>MEET THE TEAM</p>
+            </div>
+            <div class="row">
+             
+              <!-- item -->
+                <div class="col-md-3 text-center tileBox">
+                   <div class="txtHead"><img src="../images/team/index0.png" style="width:40%;" /></i>
+                    <h3>Lyneth <span class="id-color">Cutamora</span></h3>
+                    <h6>$index[0]</h6></div>
+                    <p>Project Manager</p>
+                </div>
+                <!-- end: -->
+                  <!-- item -->
+                <div class="col-md-3 text-center tileBox">
+                   <div class="txtHead"><img src="../images/team/index1.jpg" style="width:40%;" />
+                    <h3>Jason <span class="id-color">Pitogo</span></h3>
+                    <h6>$index[1]</h6></div>
+                    <p>Software Engineer</p>
+                </div>
+                <!-- end: -->
+                <!-- item -->
+                <div class="col-md-3 text-center tileBox">
+                   <div class="txtHead"> <img src="../images/team/index2.jpg" style="width:40%;" />
+                    <h3>Alfie<span class="id-color">Dimpas</span></h3>
+                    <h6>$index[2]</h6></div>
+                    <p>Technical Writer</p>
+                </div>
+                <!-- end: -->
+             
+                <!-- item -->
+               
+                <div class="col-md-3 text-center tileBox">
+                    <div class="txtHead"><img src="../images/team/index3.jpg" style="width:40%;" />
+                    <h3>Edelito <span class="id-color">Albaracin</span></h3>
+                    <h6>$index[3]</h6></div>
+                    <p>System Analyst</p>
+                </div>
+                <!-- end: -->
 
+                <!-- item -->
+                <div class="col-md-3 text-center tileBox">
+                <br/>
+                    <div class="txtHead"><img src="../images/team/index4.jpg" style="width:40%;" />
+                    <h3>Isidro <span class="id-color">Estose Jr.</span></h3>
+                    <h6>$index[4]</h6></div>
+                    <p>QA Tester</p>
+                </div>
+                <!-- end: -->
+            </div>
+        </div>
+    </section>
+    
+    <section id="quote" class="bg-parlex">
+        <div class="parlex-back">
+            <div class="container secPad text-center">
+                <div class="col-md-9"></div>
+                <div class="col-md-3"> <button name="like" type="submit" class="btn btn-primary form-control" id="like">LIKE US IN FACEBOOK!</button></div>
+            </div>
+            <!--/.container-->
+        </div>
+    </section>
+    <!--Skills
+    <section id="skills" class="secPad white">
+    	<div class="container">
+        <div class="heading text-center">
+                 Heading 
+                <h2>Login</h2>
+                  <div class="col-sm-4">
+                      
+                  </div>
+                  <div class="col-sm-4">
+                        <div class="form-group">
+                            <label for="name">Username</label>
+                            <input type="text" class="form-control" name="name" id="name" placeholder="Enter name" title="Please enter your Username">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Password</label>
+                            <input type="password" class="form-control" name="email" id="email" placeholder="Enter password" title="Please enter your password">
+                        </div>
+                    </div>
+            </div>
+        	<div class="row">
+                <div class="col-sm-12">
+                     
+                </div>
+                <div class="col-sm-6">
+               
+                </div>
+            </div>
+        </div>        
+    </section>-->
+    
+    <!--Experience-->
+    <!--<section id="experience" class="secPad">
+    	<div class="container">     
+           <div class="heading text-center">
+                 Heading 
+                <h2>Register</h2>
+              
+            </div>
+        </div>
+    </section>-->
+   <!--Portfolio-->
+    
 	<!--Contact -->
     <section id="contactUs" class="page-section secPad">
         <div class="container">
