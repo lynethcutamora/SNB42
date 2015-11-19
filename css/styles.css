@@ -411,14 +411,27 @@ background: none;
 .secPad{
 	padding:60px 0;
 }
+#abou {
+padding:50px 0;
+background:#eeeeee;
+    background-image: url('../images/bg6.png');
+    background-position: top-left;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 /*Intro Content*/
 #introText {
 padding:50px 0;
 background:#fff;
+background-image: url('../images/bg4.png');
+    background-position: top-left;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 #aboutUs .txtHead{
 background:#fff;
+
 padding:20px 10px;
 }
 #aboutUs .txtHead .fa {
@@ -686,7 +699,7 @@ display: inherit;
     background:rgb(24, 24, 24);
 
 
-    background-image: url('../images/bg4.png');
+    background-image: url('../images/bg5.png');
     background-position: top-left;
     background-size: contain;
     background-repeat: no-repeat;

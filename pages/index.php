@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="../text/css" href="css/isotope.css" media="screen" />
     <link rel="stylesheet" href="../js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
     <link rel="stylesheet" type="text/css" href="../css/da-slider.css" />
+    <link rel="stylesheet" type="text/css" href="../css/slider.css" />
     <!-- Owl Carousel Assets -->
     <link href="../js/owl-carousel/owl.carousel.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css" />
@@ -28,6 +29,8 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
+                    <li class="navbar-brand" style="float:left;"><img src="../images/SNBlogo.png" style="width:35%;" /></li>
+                        
                     
                 </div>
                 <!--/.navbar-header-->
@@ -64,10 +67,11 @@
     <!--/.header-->
     <div id="#top"></div>
     <section id="home">
-        
         <div class="banner-container">
             <img src="../images/bg3.png" alt="banner" />
             <div class="container banner-content">
+            <!--
+            <div class="slider"><br/><div class="slide1"></div></div>
                 <div class="container col-md-12">
                     <div id="da-slider" class="da-slider" style="float:left;">
                         <div class="da-slide">
@@ -89,7 +93,7 @@
                             <h2 style="color:#65b5ff;">= <span style="color:#fff;">SUCCESSFUL STARTUP</span></h2>
                             <p style="color:#e4e4e4;">Start&Boost: "Start with an idea <br/>and Boost it here."</p>
                             <div class="da-img"></div>
-                        </div>
+                        </div>-->
                     <!--  <nav class="da-arrows">
                             <span class="da-arrows-prev"></span>
                             <span class="da-arrows-next"></span>
@@ -127,6 +131,7 @@
         <div class="container">
             <div class="heading text-center">
                     <!-- Heading -->
+                    <br/><br/>
                     <div class="col-sm-7" style="background-color:#;">
                             <div class="text-center">
                              <h1>A Web and mobile-based startup ideas repository and exploration</h1>
@@ -153,7 +158,7 @@
     </section>
     <!--Quote--><section id="portfolio" class="page-section section appear clearfix secPad">
         <div class="container">
-
+            <br/>
             <div class="heading text-center">
                 <!-- Heading -->
                 <h2>TOP 5 IDEAS</h2>            
@@ -248,8 +253,8 @@
            
          </div>
     </section>
-    <section id="aboutUs" class="secPad">
-            <img src="../images/banner-bg.png" style="width:100%;" />
+    <section id="abou" class="page-section section appear clearfix secPad">
+            <!--<img src="../images/banner-bg.png" style="width:100%;" />-->adfadf
     </section>
     <!--About-->
     <section id="aboutUs" class="secPad">
