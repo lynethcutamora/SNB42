@@ -65,6 +65,7 @@
                 <ul class="nav nav-tabs">
                   <li class="active"><a href="#activity" data-toggle="tab">Activity</a></li>
                   <li><a href="#settings" data-toggle="tab">Settings</a></li>
+                  <li><a href="#group" data-toggle="tab">Group</a></li>
                 </ul>
                 <div class="tab-content">
                   <div class="active tab-pane" id="activity">
@@ -175,6 +176,9 @@
                       </div>
                     </form>
                   </div><!-- /.tab-pane -->
+                  <div class="tab-pane" id="group">
+                  
+                  </div><!-- /.tab-pane -->
                 </div><!-- /.tab-content -->
               </div><!-- /.nav-tabs-custom -->
             </div><!-- /.col -->
@@ -196,7 +200,7 @@
                     <!-- Message. Default to the left -->
                     <div class="direct-chat-msg">
                       <div class="direct-chat-info clearfix">
-                        <span class="direct-chat-name pull-left">Jason D. Pitogo</span>
+                        <span class="direct-chat-name pull-left">Alfie Dimpas</span>
                         <span class="direct-chat-timestamp pull-right">23 Jan 2:00 pm</span>
                       </div><!-- /.direct-chat-info -->
                       <img class="direct-chat-img" src="../dist/img/avatar5.png" alt="message user image"><!-- /.direct-chat-img -->
@@ -208,7 +212,7 @@
                     <!-- Message to the right -->
                     <div class="direct-chat-msg right">
                       <div class="direct-chat-info clearfix">
-                        <span class="direct-chat-name pull-right">Alfie Dimpas</span>
+                        <span class="direct-chat-name pull-right">Jason D. Pitogo</span>
                         <span class="direct-chat-timestamp pull-left">23 Jan 2:05 pm</span>
                       </div><!-- /.direct-chat-info -->
                       <img class="direct-chat-img" src="../dist/img/index2.jpg" alt="message user image"><!-- /.direct-chat-img -->

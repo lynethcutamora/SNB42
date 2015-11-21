@@ -141,16 +141,18 @@
                     <div class="col-sm-1"></div>
                     <div class="col-sm-4">
                             <h2>Login</h2>
+                            <form method="POST" action="loginprocess.php">
                             <div class="form-group">
-                                <input type="text" class="form-control" name="name" id="name" placeholder="User Name" title="Please enter your Username">
+                                <input type="text" class="form-control" name="username" id="username" placeholder="User Name" title="Please enter your Username">
                             </div>
                             <div class="form-group">
-                                <input type="password" class="form-control" name="email" id="email" placeholder="Password" title="Please enter your password">
+                                <input type="password" class="form-control" name="password" id="password" placeholder="Password" title="Please enter your password">
                             </div>
                             <button name="login" type="submit" class="btn btn-primary form-control" id="submit">Log-in</button>
                             <br/><br/>
                             <button name="create" type="button" class="btn btn-primary form-control" id="create" data-toggle="modal" data-target="#CreateAccount">Create Account</button>
                             <br/><br/>
+                            </form>
                     </div>
             </div>
         </div>
@@ -254,7 +256,7 @@
          </div>
     </section>
     <section id="abou" class="page-section section appear clearfix secPad">
-            <!--<img src="../images/banner-bg.png" style="width:100%;" />-->adfadf
+            <!--<img src="../images/banner-bg.png" style="width:100%;" />-->
     </section>
     <!--About-->
     <section id="aboutUs" class="secPad">

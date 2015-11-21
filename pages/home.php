@@ -74,6 +74,7 @@
                   <p>Start&Boost is a Capstone project made by $index[5], a group of student from University of Cebu - Lapulapu and Mandaue. Anyone who has a brilliant idea is given an opportunity to share and discuss it with reliable members from different parts of the world, who's profile has reputation and badges. This system has three classifications of users: The ideators, investors, and company. Members can chat, create group, video conference, post ideas, upload product snapshots and links, and share to social medias.</p>
                   <button class='btn btn-default btn-xs'><i class='fa fa-share'></i> Share</button>
                   <button class='btn btn-default btn-xs'><i class='fa fa-arrow-circle-up'></i> Upvote</button>
+                  <button class='btn btn-default btn-xs'><i class='glyphicon glyphicon-exclamation-sign'></i> Report</button>
                   <span class='pull-right text-muted'>127 Upvotes - 3 comments</span>
                 </div><!-- /.box-body -->
                 <div class='box-footer box-comments'>

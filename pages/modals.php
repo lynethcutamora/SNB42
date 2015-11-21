@@ -62,33 +62,15 @@
           </div>
         </div>
     
-      <div class="modal fade" id="topidea" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-
-                    <div class="col-md-2"></div>
-                    <div class="col-md-8">
-                    <!-- Box Comment -->
-                    <div class="box box-widget">
-                      <div class='box-header with-border'>
-                        <div class='user-block'>
-                          <img class='img-circle' src='<?php echo base_url();?>dist/img/avatar5.png' alt='user image'>
-                          <span class='username'><a href="#">Jason Pitogo</a></span>
-                          <span class='description'>November 13, 2015 - 7:30 PM Today</span>
-                        </div><!-- /.user-block -->
-                        <div class='box-tools'>
-                          <button class='btn btn-box-tool' data-widget='collapse'><i class='fa fa-minus'></i></button>
-                          <button class="close" data-dismiss="modal"><i class='fa fa-times'></i></button>
-                        </div><!-- /.box-tools -->
-                      </div><!-- /.box-header -->
-                      <div class='box-body'>
-                        <img class="img-responsive pad" src="<?php echo base_url();?>dist/img/photo2.png" alt="Photo">
-                        <p>I took this photo this morning. What do you guys think?</p>
-                        <button class='btn btn-default btn-xs'><i class='fa fa-share'></i> Share</button>
-                        <span class='pull-right text-muted'>127 likes - 3 comments</span>
-                      </div><!-- /.box-body -->
-                     
-                    </div><!-- /.box -->
+        <div class="modal fade" id="topidea" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <?php include("ideas.php")?> 
               
+                    </form>
+                  </div><!-- /.form-box -->
+                </div><!-- /.register-box -->
               </div>
-         
+            </div>
           </div>
-         
+        </div>

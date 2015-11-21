@@ -57,13 +57,15 @@
                         <li><a href="timeline.php" class="scroll-link">Timeline</a></li>
                         <li><a href="newideas.php" class="scroll-link">New Ideas</a></li>
                         <li><a href="startupProduct.php" class="scroll-link">Startup Product</a></li>
-                      
+                        
                          <li class="dropdown user user-menu">
+                       
                           <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                             <img src="../dist/img/avatar5.png" class="user-image" alt="User Image">
                             <span class="hidden-xs">Jason Pitogo</span>
                           </a>
                           <ul class="dropdown-menu">
+
                             <!-- User image -->
                             <li class="user-header">
                               <img src="../dist/img/avatar5.png" class="img-circle" alt="User Image">
@@ -85,15 +87,18 @@
                               </div>
                             </li>
                              <li class="user-footer">
+                               <form method="POST" action="userprocess.php">
                               <div class="pull-left">
-                               <button name="profile" type="button" class="btn btn-primary form-control" id="profile">Profile</button>
+                                  <button name="profile" type="submit" class="btn btn-primary form-control" id="profile">Profile</button>
                               </div>
                               <div class="pull-right">
                                   
                                     <button name="signout" type="Submit" class="btn btn-primary form-control" id="signout">Sign out</button>
                          
                               </div>
+                               </form>
                             </li>
+                           
                           </li>
                     <!--   <li>
                         <form class="navbar-form navbar-right" role="search">
