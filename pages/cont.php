@@ -7,18 +7,14 @@
             WELCOME TO START&BOOST!
             <small>"Start with an idea, and boost it here."</small>
           </h1>
-          <ol class="breadcrumb">
-            <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-            <li><a href="#">Layout</a></li>
-            <li class="active">Fixed</li>
-          </ol>
+        
         </section>
 
         <!-- Main content -->
         <section class="content">
           <div class="callout callout-info">
             <h4>Hello! You caught us before we're ready.</h4>
-            <p>Development team $index[5] are working hard to put finishing touches onto Start&Boost.<br/>Things are going well and it should be heady to help you with lean startup soon.<br/>Thanks! :-)</p>
+            <p>Development team $index[5] are working hard to put finishing touches onto Start&Boost.<br/>Things are going well and it should be ready to help you with lean startup soon.<br/>Thanks! :-)</p>
           </div>
           <!-- Default box 
           <div class="box">
@@ -63,39 +59,38 @@
                           <td><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-star" style="color:#ffd700;"></i></a></td>
                           <td>Start&Boost</td>
                           <td><span class="label label-success">$index[5]</span></td>
-                          <td><div class="sparkbar" data-color="#00a65a" data-height="20">1.5M</div></td>
+                          <td><div class="sparkbar" data-color="#00a65a" data-height="20"><i class='fa fa-arrow-circle-up'></i>1.5M</div></td>
                         </tr>
                         <tr>
                           <td><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-star" style="color:#ffd700;"></i></a></td>
                           <td>Start&Boost</td>
                           <td><span class="label label-success">$index[5]</span></td>
-                          <td><div class="sparkbar" data-color="#00a65a" data-height="20">1.5M</div></td>
+                          <td><div class="sparkbar" data-color="#00a65a" data-height="20"><i class='fa fa-arrow-circle-up'></i>1.5M</div></td>
                         </tr>
                         <tr>
                           <td><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-star" style="color:#ffd700;"></i></a></td>
                           <td>Start&Boost</td>
                           <td><span class="label label-success">$index[5]</span></td>
-                          <td><div class="sparkbar" data-color="#00a65a" data-height="20">1.5M</div></td>
+                          <td><div class="sparkbar" data-color="#00a65a" data-height="20"><i class='fa fa-arrow-circle-up'></i>1.5M</div></td>
                         </tr>
                         <tr>
                           <td><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-star" style="color:#ffd700;"></i></a></td>
                           <td>Start&Boost</td>
                           <td><span class="label label-success">$index[5]</span></td>
-                          <td><div class="sparkbar" data-color="#00a65a" data-height="20">1.5M</div></td>
+                          <td><div class="sparkbar" data-color="#00a65a" data-height="20"><i class='fa fa-arrow-circle-up'></i>1.5M</div></td>
                         </tr>
                         <tr>
                           <td><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-star" style="color:#ffd700;"></i></a></td>
                           <td>Start&Boost</td>
                           <td><span class="label label-success">$index[5]</span></td>
-                          <td><div class="sparkbar" data-color="#00a65a" data-height="20">1.5M</div></td>
+                          <td><div class="sparkbar" data-color="#00a65a" data-height="20"><i class='fa fa-arrow-circle-up'></i>1.5M</div></td>
                         </tr>
                       </tbody>
                     </table>
                   </div><!-- /.table-responsive -->
                 </div><!-- /.box-body -->
                 <div class="box-footer clearfix">
-                  <a href="javascript::;" class="btn btn-sm btn-info btn-flat pull-left">Place New Order</a>
-                  <a href="javascript::;" class="btn btn-sm btn-default btn-flat pull-right">View All Orders</a>
+                 <a href="javascript::;" class="btn btn-sm btn-primary btn-flat pull-right">See More</a>
                 </div><!-- /.box-footer -->
               </div><!-- /.box -->
             </div><!-- /.col -->
@@ -170,7 +165,7 @@
                   </ul>
                 </div><!-- /.box-body -->
                 <div class="box-footer text-center">
-                  <a href="javascript::;" class="uppercase">View All Products</a>
+                 <a href="javascript::;" class="btn btn-sm btn-primary btn-flat pull-center ">See More</a>
                 </div><!-- /.box-footer -->
               </div><!-- /.box -->
             </div><!-- /.col -->

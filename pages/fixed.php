@@ -1,3 +1,26 @@
+<?php 
+include 'dbcon.php';
+if(isset($_SESSION['Start&Boost'])){
+    $userId= $_SESSION['Start&Boost'];
+    $query = "SELECT * FROM User_dtl WHERE userId='$userId'";
+    $query = mysql_query($query);
+    while($row = mysql_fetch_array($query))
+     {
+        $_SESSION['lname'] = $row['lName'];
+        $_SESSION['fname'] = $row['fName'];
+        $_SESSION['midInit'] = $row['midInit'];
+        $pictureId = $row['profilePic'];
+     }
+    $query = "SELECT * FROM picture_dtl WHERE pictureId='$pictureId'";
+    $query = mysql_query($query);
+    while($row = mysql_fetch_array($query))
+     {
+       
+        $_SESSION['profilePic'] = $row['picturename'];
+     }
+
+}
+?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -14,6 +37,7 @@
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <!-- Theme style -->
     <link rel="stylesheet" href="../dist/css/AdminLTE.min.css">
+        <link rel="stylesheet" href="../css/styles.css" />
     <!-- AdminLTE Skins. Choose a skin from the css/skins
          folder instead of downloading all of them to reduce the load. -->
     <link rel="stylesheet" href="../dist/css/skins/_all-skins.min.css">
@@ -40,6 +64,21 @@
           <span class="logo-lg"><img src="../images/SNBlogo.png" style="width:80%;"></span>
         </a>
         <!-- Header Navbar: style can be found in header.less -->
+        <?php if(!isset($_SESSION['Start&Boost'])){
+                echo ' <nav class="navbar navbar-static-top" role="navigation">
+          <!-- Sidebar toggle button-->
+          <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <div class="navbar-custom-menu">
+           
+          </div>
+        </nav>';
+              }else{
+        ?>
         <nav class="navbar navbar-static-top" role="navigation">
           <!-- Sidebar toggle button-->
           <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
@@ -133,15 +172,15 @@
               <!-- User Account: style can be found in dropdown.less -->
               <li class="dropdown user user-menu">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                  <img src="../dist/img/index0.png" class="user-image" alt="User Image">
-                  <span class="hidden-xs">Lyneth C. Cutamora</span>
+                  <img src="../<?php echo "user/".$_SESSION['profilePic'];?>" class="user-image" alt="User Image">
+                  <span class="hidden-xs"><?php echo $_SESSION['fname']." ".$_SESSION['midInit'].". ".$_SESSION['lname']?></span>
                 </a>
                 <ul class="dropdown-menu">
                   <!-- User image -->
                   <li class="user-header">
-                    <img src="../dist/img/index0.png" class="img-circle" alt="User Image">
+                    <img src="../<?php echo "user/".$_SESSION['profilePic'];?>" class="img-circle" alt="User Image">
                     <p>
-                      Lyneth C. Cutamora - Web Developer
+                      <?php echo $_SESSION['fname']." ".$_SESSION['midInit'].". ".$_SESSION['lname']?> - Web Developer
                       <small>Member since Nov. 2012</small>
                     </p>
                   </li>
@@ -163,7 +202,7 @@
                       <a href="#" class="btn btn-default btn-flat">Profile</a>
                     </div>
                     <div class="pull-right">
-                      <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                      <a href="logout.php" class="btn btn-default btn-flat">Sign out</a>
                     </div>
                   </li>
                 </ul>
@@ -175,10 +214,43 @@
             </ul>
           </div>
         </nav>
+        <?php }?>
       </header>
 
       <!-- =============================================== -->
-
+      <?php if(!isset($_SESSION['Start&Boost'])){
+                ?><!-- Left side column. contains the sidebar -->
+                  <aside class="main-sidebar">
+                    <!-- sidebar: style can be found in sidebar.less -->
+                    <section class="sidebar">
+                      <!-- sidebar menu: : style can be found in sidebar.less -->
+                      <ul class="sidebar-menu">
+                        <li class="header">MAIN NAVIGATION</li>
+                        <li class="treeview ">
+                          <a href="#home">
+                            <i class="fa fa-fw fa-home"></i> <span>Home</span> <!--<i class="fa fa-angle-right pull-right">--></i>
+                          </a>
+                       
+                        </li>
+                        
+                        <li>
+                          <a href="#abou">
+                            <i class="fa fa-info-circle"></i> <span>About Us</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#contactUs">
+                            <i class="fa fa-phone-square"></i> <span>Contact us</span>
+                          </a>
+                        </li>
+                        
+                      </ul>
+                    </section>
+                    <!-- /.sidebar -->
+                  </aside>;
+        <?php 
+            }else{
+      ?>
       <!-- Left side column. contains the sidebar -->
       <aside class="main-sidebar">
         <!-- sidebar: style can be found in sidebar.less -->
@@ -186,10 +258,10 @@
           <!-- Sidebar user panel -->
           <div class="user-panel">
             <div class="pull-left image">
-              <img src="../dist/img/index0.png" class="img-circle" alt="User Image">
+              <img src="../<?php echo "user/".$_SESSION['profilePic'];?>" class="img-circle" alt="User Image">
             </div>
             <div class="pull-left info">
-              <p>Lyneth C. Cutamora</p>
+              <p><?php echo $_SESSION['fname']." ".$_SESSION['midInit'].". ".$_SESSION['lname']?></p>
               <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
             </div>
           </div>
@@ -206,9 +278,9 @@
           <!-- sidebar menu: : style can be found in sidebar.less -->
           <ul class="sidebar-menu">
             <li class="header">MAIN NAVIGATION</li>
-            <li class="treeview active">
-              <a href="#">
-                <i class="fa fa-dashboard"></i> <span>Dashboard</span> <!--<i class="fa fa-angle-right pull-right">--></i>
+            <li class="treeview <?php echo ($pages == 'home' ? 'active' : '')?>">
+              <a href="index.php">
+                <i class="fa fa-home"></i> <span>Home</span> <!--<i class="fa fa-angle-right pull-right">--></i>
               </a>
               <!--<ul class="treeview-menu">
                 <li><a href="#"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
@@ -216,30 +288,33 @@
               </ul>-->
             </li>
             
-            <li>
-              <a href="#">
-                <i class="fa fa-th"></i> <span>New Ideas</span> <small class="label pull-right bg-green">new</small>
+             <li class="treeview <?php echo ($pages == 'newideas' ? 'active' : '')?>">
+            
+              <a href="newideas.php">
+                <i class="fa fa-lightbulb-o"></i> <span>New Ideas</span> <small class="label pull-right bg-green">new</small>
+              </a>
+            </li>
+             <li class="treeview <?php echo ($pages == 'onfire' ? 'active' : '')?>">
+            
+              <a href="onfire.php">
+                <i class="fa fa-fire"></i> <span>On Fire</span> <small class="label pull-right bg-green">new</small>
+              </a>
+            </li>
+               <li class="treeview <?php echo ($pages == 'startup' ? 'active' : '')?>">
+              <a href="startupproduct.php">
+                <i class="fa fa-dropbox"></i> <span>Startup Products</span> <small class="label pull-right bg-green">new</small>
               </a>
             </li>
             <li>
               <a href="#">
-                <i class="fa fa-th"></i> <span>On Fire</span> <small class="label pull-right bg-green">new</small>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fa fa-th"></i> <span>Startup Products</span> <small class="label pull-right bg-green">new</small>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fa fa-th"></i> <span>Timeline</span> <small class="label pull-right bg-green">new</small>
+                <i class="fa  fa-clock-o"></i> <span>Timeline</span> <small class="label pull-right bg-green">new</small>
               </a>
             </li>
           </ul>
         </section>
         <!-- /.sidebar -->
       </aside>
+      <?php }?>
 
       <!-- =============================================== -->
 
@@ -410,6 +485,7 @@
       <div class="control-sidebar-bg"></div>
 
     </div><!-- ./wrapper -->
+    
 
     <!-- jQuery 2.1.4 -->
     <script src="../plugins/jQuery/jQuery-2.1.4.min.js"></script>

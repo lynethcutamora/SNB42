@@ -4,7 +4,7 @@
 		include("fixed.php");	
 		include("landingcont.php");	
 	}else{
-		$pages="home";
+		$pages="startup";
 		include("fixed.php");
 		include("cont.php");
 	}

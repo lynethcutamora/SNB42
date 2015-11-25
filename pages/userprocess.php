@@ -1,9 +1,0 @@
-<?php 
-	if(isset($_POST['profile']))
-	{
-		header("location:profile.php");
-	}
-	else{
-		header("location:index.php");
-	}
-?>
