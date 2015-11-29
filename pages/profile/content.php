@@ -128,7 +128,7 @@
                       <div class="form-group">
                         <label for="inputLinks" class="col-sm-2 control-label">Links</label>
                         <div class="col-sm-10">
-                          <input type="text" class="form-control" id="relatedlinks" placeholder="Related Links"/>
+                          <input type="text" class="form-control" id="relatedlinks" placeholder="Related Links (Separated by comma)"/>
                         </div>
                       </div>
                     </div><!-- /.box-body -->
