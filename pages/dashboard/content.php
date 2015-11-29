@@ -130,9 +130,9 @@
                   <div class="box box-widget">
                     <div class='box-header with-border'>
                       <div class='user-block'>
-                        <img class='img-circle' src='../../dist/img/user1-128x128.jpg' alt='user image'>
-                        <span class='username'><a href="#">Jonathan Burke Jr.</a></span>
-                        <span class='description'>Shared publicly - 7:30 PM Today</span>
+                        <img class='img-circle' src='../../images/team/index0.png' alt='user image'>
+                        <span class='username'><a href="#">Lyneth C. Cutamora</a>&nbsp;&nbsp;<i class='fa fa-star' style="color:#ffd700;"></i><b>&nbsp;&nbsp;1024</b></span>
+                        <span class='description'>7:30 PM Nov. 29, 2015</span>
                       </div><!-- /.user-block -->
                       <div class='box-tools'>
                         <button class='btn btn-box-tool' data-toggle='tooltip' title='Mark as read'><i class='fa fa-circle-o'></i></button>
@@ -154,17 +154,16 @@
                       <div class="attachment-block clearfix">
                         <img class="attachment-img" src="../../dist/img/photo1.png" alt="attachment image">
                         <div class="attachment-pushed">
-                          <h4 class="attachment-heading"><a href="http://www.lipsum.com/">Lorem ipsum text generator</a></h4>
+                          <h4 class="attachment-heading"><a href="#">Start&Boost</a></h4>
                           <div class="attachment-text">
-                            Description about the attachment can be placed here.
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry... <a href="#">more</a>
+                            Related Links: <br/><a href="#">startandboost/video</a>, &nbsp;&nbsp;<a href="#">startandboost/article</a>
                           </div><!-- /.attachment-text -->
                         </div><!-- /.attachment-pushed -->
                       </div><!-- /.attachment-block -->
 
                       <!-- Social sharing buttons -->
+                      <button class='btn btn-default btn-xs'><i class='fa fa-thumbs-o-up'></i> Upvote</button>
                       <button class='btn btn-default btn-xs'><i class='fa fa-share'></i> Share</button>
-                      <button class='btn btn-default btn-xs'><i class='fa fa-thumbs-o-up'></i> Like</button>
                       <span class='pull-right text-muted'>45 likes - 2 comments</span>
                     </div><!-- /.box-body -->
                     <div class='box-footer box-comments'>
@@ -177,7 +176,16 @@
                             <span class='text-muted pull-right'>8:03 PM Today</span>
                           </span><!-- /.username -->
                           It is a long established fact that a reader will be distracted
-                          by the readable content of a page when looking at its layout.
+                          by the readable content of a page when looking at its layout.<br/>
+                          <button class='btn btn-default btn-xs'><i class='fa fa-thumbs-o-up'></i> Upvote</button>
+                          <button class='btn btn-default btn-xs'><i class='fa fa-reply'></i> Reply</button><br/>
+                          <form action="#" method="post">
+                            <img class="img-responsive img-circle img-sm" src="../../images/team/index0.png" alt="alt text">
+                            <!-- .img-push is used to add margin to elements next to floating images -->
+                            <div class="img-push">
+                              <input type="text" class="form-control input-sm" placeholder="Press enter to post comment">
+                            </div>
+                          </form>
                         </div><!-- /.comment-text -->
                       </div><!-- /.box-comment -->
                       <div class='box-comment'>
@@ -190,7 +198,16 @@
                           </span><!-- /.username -->
                           The point of using Lorem Ipsum is that it has a more-or-less
                           normal distribution of letters, as opposed to using
-                          'Content here, content here', making it look like readable English.
+                          'Content here, content here', making it look like readable English.<br/>
+                          <button class='btn btn-default btn-xs'><i class='fa fa-thumbs-o-up'></i> Upvote</button>
+                          <button class='btn btn-default btn-xs'><i class='fa fa-reply'></i> Reply</button><br/>
+                          <form action="#" method="post">
+                            <img class="img-responsive img-circle img-sm" src="../../images/team/index0.png" alt="alt text">
+                            <!-- .img-push is used to add margin to elements next to floating images -->
+                            <div class="img-push">
+                              <input type="text" class="form-control input-sm" placeholder="Press enter to post comment">
+                            </div>
+                          </form>
                         </div><!-- /.comment-text -->
                       </div><!-- /.box-comment -->
                     </div><!-- /.box-footer -->
