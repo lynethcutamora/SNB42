@@ -34,7 +34,7 @@
               </div>
               <div class="modal-body">
                  <div class="register-box-body">
-                    <form action="process/registerprocess.php" method="post">
+                    <form action="process/registerprocess.php" method="POST">
                         <h3>Ideator</h3>
                       <div class="form-group has-feedback">
                         <input type="text" class="form-control" required="required" name="fname" placeholder="First name">
@@ -91,7 +91,7 @@
               </div>
               <div class="modal-body">
                  <div class="register-box-body">
-                    <form action="process/registerprocess.php" method="post">
+                    <form action="process/registerprocess.php" method="POST">
                         <h3>Investor</h3>
                       <div class="form-group has-feedback">
                         <input type="text" class="form-control" required="required" name="fname" placeholder="First name">
@@ -146,7 +146,7 @@
               </div>
               <div class="modal-body">
                  <div class="register-box-body">
-                    <form action="process/registerprocess.php" method="post">
+                    <form action="process/registerprocess.php" method="POST">
                         <h3>Company</h3>
                       <div class="form-group has-feedback">
                         <input type="text" class="form-control" placeholder="Company Name" name="companyname" required="required">

@@ -35,12 +35,6 @@
     <link href="font/css/font-awesome.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="../css/section.css" />
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
   </head>
   <body class="hold-transition skin-blue sidebar-mini">
     <header class="header">
@@ -62,24 +56,9 @@
                     <ul class="nav navbar-nav" id="mainNav">
                         <li class="active"><a href="#home" class="scroll-link">Home</a></li>
                         <li><a href="#aboutUs" class="scroll-link">About Us</a></li>
-                        <li><a href="#skills" class="scroll-link">Login</a></li>
-                        <li><a href="#experience" class="scroll-link">Register</a></li>
                         <li><a href="#portfolio" class="scroll-link">Top 5 ideas</a></li>
                         <li><a href="#contactUs" class="scroll-link">Contact Us</a></li>
-                    <!--   <li>
-                        <form class="navbar-form navbar-right" role="search">
-                            <div class="form-group">
-                              <input type="text" class="form-control" placeholder="Search">
-                            </div>
-                        </form>
-                        </li>
-                        <li>
-                        <form class="navbar-form navbar-right" role="search">
-                            <div class="form-group">
-                                <button type="submit" class="btn btn-primary form-control glyphicon glyphicon-search"></button>  &nbsp;&nbsp;                         
-                            </div>
-                        </form>
-                        </li>-->
+                    
                     </ul>
                 </div>
                 <!--/.navbar-collapse-->
@@ -93,59 +72,7 @@
         <div class="banner-container">
             <img src="../images/bg3.png" alt="banner" />
             <div class="container banner-content">
-            <!--
-            <div class="slider"><br/><div class="slide1"></div></div>
-                <div class="container col-md-12">
-                    <div id="da-slider" class="da-slider" style="float:left;">
-                        <div class="da-slide">
-                            <h2><img src="../images/check.png" style="width:15%;"/> GOOD IDEA</h2>
-                            <p style="color:#e4e4e4;">Post startup ideas and discuss</p>
-                            <div class="da-img"></div>
-                        </div>
-                        <div class="da-slide">
-                            <h2><img src="../images/check.png" style="width:15%;"/> MARKET OPPORTUNITY</h2>
-                            <p style="color:#e4e4e4;">Share to social medias</p>
-                            <div class="da-img"></div>
-                        </div>
-                        <div class="da-slide">
-                            <h2><img src="../images/check.png" style="width:15%;"/> GREAT EXECUTION</h2>
-                            <p style="color:#e4e4e4;">Quality assurance from experts</p>
-                            <div class="da-img"></div>
-                        </div>
-                        <div class="da-slide">
-                            <h2 style="color:#65b5ff;">= <span style="color:#fff;">SUCCESSFUL STARTUP</span></h2>
-                            <p style="color:#e4e4e4;">Start&Boost: "Start with an idea <br/>and Boost it here."</p>
-                            <div class="da-img"></div>
-                        </div>-->
-                    <!--  <nav class="da-arrows">
-                            <span class="da-arrows-prev"></span>
-                            <span class="da-arrows-next"></span>
-                        </nav> 
-                    </div>
-                </div>-->
-
-                    <!--<div class="container col-md-3" style=";center;border-radius:10px;border: 1px solid #000000;box-shadow: 0 0 8px #000000;">-->
-                    <!--<div class="col-md-3" style=";center;border-radius:10px;;box-shadow: 0 0 8px #000000;">
-                        
-
-                        <div class="box-body">
-                            <br/><center><img src="../images/userlogin.png" style="width:40%;" /></center><br/>
-                            <label for="name">Username</label>
-                          
-                            <input type="text" class="form-control" name="emailAdd" id="emailAdd" placeholder="username" title="Please enter your Username">
-                             
-                            <br/>
-                            <input type="password" class="form-control" name="pssWord" id="pssWord" placeholder="password" title="Please enter your password">  
-                             
-                            <br/>
-                            <button name="login" type="submit" class="btn btn-primary form-control" id="submit">Log-in</button>
-                            <br/><br/>
-                            <button name="create" type="button" class="btn btn-primary form-control" id="create" data-toggle="modal" data-target="#CreateAccount">Create Account</button>
-                            <br/><br/>
-                        </div>-->
-                    <!--<div class="form-group" style="float:right;">
-                        <label for="email">Password</label>
-                    </div>-->
+            
                 </div>
             </div>
         </div>
@@ -356,50 +283,6 @@
             <!--/.container-->
         </div>
     </section>
-    <!--Skills
-    <section id="skills" class="secPad white">
-        <div class="container">
-        <div class="heading text-center">
-                 Heading 
-                <h2>Login</h2>
-                  <div class="col-sm-4">
-                      
-                  </div>
-                  <div class="col-sm-4">
-                        <div class="form-group">
-                            <label for="name">Username</label>
-                            <input type="text" class="form-control" name="name" id="name" placeholder="Enter name" title="Please enter your Username">
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Password</label>
-                            <input type="password" class="form-control" name="email" id="email" placeholder="Enter password" title="Please enter your password">
-                        </div>
-                    </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-12">
-                     
-                </div>
-                <div class="col-sm-6">
-               
-                </div>
-            </div>
-        </div>        
-    </section>-->
-    
-    <!--Experience-->
-    <!--<section id="experience" class="secPad">
-        <div class="container">     
-           <div class="heading text-center">
-                 Heading 
-                <h2>Register</h2>
-              
-            </div>
-        </div>
-    </section>-->
-   <!--Portfolio-->
-    
-    <!--Contact -->
     <section id="contactUs" class="page-section secPad">
         <div class="container">
 
