@@ -25,63 +25,50 @@
                 </div>
                 <div class="widget-user-image">
                   <img class="img-circle" src="../../images/team/index0.png" alt="User Avatar">
-                  <p class="text-muted text-center">Reputation:</p>
                 </div>
 
-                <div class="box-footer"><br/>
-                <p>Reputation:</p>
+                <div class="box-footer">
+                <p>Reputation:<span class="pull-right"><i class="fa fa-star" style="color:#ffd700;"></i><b> &nbsp;&nbsp;1024</b></span></p>
                   <div class="row">
                     <div class="col-sm-3 border-right">
                       <div class="description-block">
-                        <h5 class="description-header">3,200</h6>
+                        <h5 class="description-header">24</h6>
                         <span class="description-text">GOLD</span>
                       </div><!-- /.description-block -->
                     </div><!-- /.col -->
                     <div class="col-sm-3 border-right">
                       <div class="description-block">
-                        <h5 class="description-header">13,000</h5>
+                        <h5 class="description-header">11</h5>
                         <span class="description-text">SILVER</span>
                       </div><!-- /.description-block -->
                     </div><!-- /.col -->
-                    <div class="col-sm-3">
+                    <div class="col-sm-3 border-right">
                       <div class="description-block">
-                        <h5 class="description-header">35</h5>
+                        <h5 class="description-header">2</h5>
                         <span class="description-text">BRONZE</span>
                       </div><!-- /.description-block -->
                     </div><!-- /.col -->
                     <div class="col-sm-3">
                       <div class="description-block">
-                        <h5 class="description-header">35</h5>
+                        <h5 class="description-header">0</h5>
                         <span class="description-text">BLACK</span>
                       </div><!-- /.description-block -->
                     </div><!-- /.col -->
                   </div><!-- /.row -->
                 </div>
               </div><!-- /.widget-user -->
-              <!-- Profile Image -->
-              <div class="box box-primary">
-                <div class="box-body box-profile">
-                  <img class="profile-user-img img-responsive img-circle" src="../../images/team/index0.png" alt="User profile picture">
-                  <h3 class="profile-username text-center">Lyneth C. Cutamora</h3>
-                  <p class="text-muted text-center">Reputation:</p><h4 class="text-center" style="color:red;"><i class="fa fa-star" style="color:#ffd700;"></i><b> &nbsp;&nbsp;1024</b></h4><br/>
-                  <ul class="list-group list-group-unbordered">
-                    <li class="list-group-item">
-                      <i class="fa fa-star" style="color:#ffd700;"></i><b> &nbsp;&nbsp;Gold</b> <a class="pull-right">1,322</a>
-                    </li>
-                    <li class="list-group-item">
-                      <i class="fa fa-star" style="color:#d4d4d4;"></i><b> &nbsp;&nbsp;Silver</b> <a class="pull-right">543</a>
-                    </li>
-                    <li class="list-group-item">
-                      <i class="fa fa-star" style="color:brown;"></i><b> &nbsp;&nbsp;Bronze</b> <a class="pull-right">203</a>
-                    </li>
-                    <li class="list-group-item">
-                      <i class="fa fa-star" style="color:black;"></i><b> &nbsp;&nbsp;Black</b> <a class="pull-right">0</a>
-                    </li>
-                  </ul>
-
-                  <a href="#" class="btn btn-primary btn-block"><i class="fa fa-star"></i><b> &nbsp;Badge</b></a>
-                </div><!-- /.box-body -->
-              </div><!-- /.box -->
+              <!-- App Buttons -->
+              <div>
+                <a class="btn btn-app" data-toogle="tooltip" title="Send Message" style="background-color:#3C8DBC;color:white;">
+                  <i class="fa fa-envelope"></i>Message
+                </a>
+                <a class="btn btn-app" data-toogle="tooltip" title="Rate this User"style="background-color:#3C8DBC;color:white;">
+                  <i class="fa fa-star"></i>Badge
+                </a>
+                <a class="btn btn-app" data-toogle="tooltip" title="Send a Group Request"style="background-color:#3C8DBC;color:white;">
+                  <i class="fa fa-group"></i>Group
+                </a>
+              </div>
 
               <!-- About Me Box -->
               <div class="box box-primary">
@@ -117,7 +104,7 @@
                 </div><!-- /.box-body -->
               </div><!-- /.box -->
             </div><!-- /.col -->
-            <div class="col-md-9">
+            <div class="col-md-7">
               <!-- Horizontal Form -->
                 <div class="box">
                   <div class="box-header with-border">
@@ -129,13 +116,19 @@
                       <div class="form-group">
                         <label for="inputEmail3" class="col-sm-2 control-label">Title</label>
                         <div class="col-sm-10">
-                          <input type="email" class="form-control" id="ideatitle" placeholder="Title">
+                          <input type="text" class="form-control" id="ideatitle" placeholder="Title"/>
                         </div>
                       </div>
                       <div class="form-group">
                         <label for="inputPassword3" class="col-sm-2 control-label">Description</label>
                         <div class="col-sm-10">
                           <textarea class="form-control" id="description" placeholder="Description"></textarea>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="inputLinks" class="col-sm-2 control-label">Links</label>
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" id="relatedlinks" placeholder="Related Links"/>
                         </div>
                       </div>
                     </div><!-- /.box-body -->
@@ -267,21 +260,9 @@
                         </div>
                       </div>
                       <div class="form-group">
-                        <label for="inputName" class="col-sm-2 control-label">Name</label>
+                        <label for="inputDescription" class="col-sm-2 control-label">About Me</label>
                         <div class="col-sm-10">
-                          <input type="text" class="form-control" id="inputName" placeholder="Name">
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <label for="inputExperience" class="col-sm-2 control-label">Experience</label>
-                        <div class="col-sm-10">
-                          <textarea class="form-control" id="inputExperience" placeholder="Experience"></textarea>
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <label for="inputSkills" class="col-sm-2 control-label">Skills</label>
-                        <div class="col-sm-10">
-                          <input type="text" class="form-control" id="inputSkills" placeholder="Skills">
+                          <textarea class="form-control" id="inputDescription" placeholder="Short Self-Description"></textarea>
                         </div>
                       </div>
                       <div class="form-group">
@@ -302,6 +283,43 @@
                   </div><!-- /.tab-pane -->
                 </div><!-- /.tab-content -->
               </div><!-- /.nav-tabs-custom -->
+            </div><!-- /.col -->
+
+            <!-- ============================================= -->
+            <!--GROUP NAV-->
+            <div class="col-md-2">
+              <div class="info-box">
+                <span class="info-box-icon bg-yellow"><i class="fa fa-files-o"></i></span>
+                <div class="info-box-content">
+                  <span>IDEAS SHARED</span>
+                  <span class="info-box-number">57</span>
+                </div><!-- /.info-box-content -->
+              </div><!-- /.info-box -->
+
+              <div class="info-box">
+                <span class="info-box-icon bg-aqua"><i class="fa fa-tasks"></i></span>
+                <div class="info-box-content">
+                  <span>CURRENT PROJECTS</span>
+                  <span class="info-box-number">5</span>
+                </div><!-- /.info-box-content -->
+              </div><!-- /.info-box -->
+
+              <div class="info-box">
+                <span class="info-box-icon bg-green"><i class="fa fa-flag-o"></i></span>
+                <div class="info-box-content">
+                  <span>COMPLETED PROJECTS</span>
+                  <span class="info-box-number">7</span>
+                </div><!-- /.info-box-content -->
+              </div><!-- /.info-box -->
+
+              <div class="info-box">
+                <span class="info-box-icon bg-red"><i class="fa fa-group"></i></span>
+                <div class="info-box-content">
+                  <span>GROUPS</span>
+                  <span class="info-box-number">3</span>
+                </div><!-- /.info-box-content -->
+              </div><!-- /.info-box -->
+
             </div><!-- /.col -->
           </div><!-- /.row -->
 
