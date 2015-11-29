@@ -22,21 +22,23 @@
                 <div class="box-body box-profile">
                   <img class="profile-user-img img-responsive img-circle" src="../../images/team/index0.png" alt="User profile picture">
                   <h3 class="profile-username text-center">Lyneth C. Cutamora</h3>
-                  <p class="text-muted text-center">Web Developer</p>
-
+                  <p class="text-muted text-center">Reputation:</p><h4 class="text-center" style="color:red;"><i class="fa fa-star" style="color:#ffd700;"></i><b> &nbsp;&nbsp;1024</b></h4><br/>
                   <ul class="list-group list-group-unbordered">
                     <li class="list-group-item">
-                      <b>Followers</b> <a class="pull-right">1,322</a>
+                      <i class="fa fa-star" style="color:#ffd700;"></i><b> &nbsp;&nbsp;Gold</b> <a class="pull-right">1,322</a>
                     </li>
                     <li class="list-group-item">
-                      <b>Following</b> <a class="pull-right">543</a>
+                      <i class="fa fa-star" style="color:#d4d4d4;"></i><b> &nbsp;&nbsp;Silver</b> <a class="pull-right">543</a>
                     </li>
                     <li class="list-group-item">
-                      <b>Friends</b> <a class="pull-right">13,287</a>
+                      <i class="fa fa-star" style="color:brown;"></i><b> &nbsp;&nbsp;Bronze</b> <a class="pull-right">203</a>
+                    </li>
+                    <li class="list-group-item">
+                      <i class="fa fa-star" style="color:black;"></i><b> &nbsp;&nbsp;Black</b> <a class="pull-right">0</a>
                     </li>
                   </ul>
 
-                  <a href="#" class="btn btn-primary btn-block"><b>Follow</b></a>
+                  <a href="#" class="btn btn-primary btn-block"><i class="fa fa-star"></i><b> &nbsp;Badge</b></a>
                 </div><!-- /.box-body -->
               </div><!-- /.box -->
 
@@ -48,13 +50,13 @@
                 <div class="box-body">
                   <strong><i class="fa fa-book margin-r-5"></i>  Education</strong>
                   <p class="text-muted">
-                    B.S. in Computer Science from the University of Tennessee at Knoxville
+                    B.S. in Information Technology in University of Cebu
                   </p>
 
                   <hr>
 
                   <strong><i class="fa fa-map-marker margin-r-5"></i> Location</strong>
-                  <p class="text-muted">Malibu, California</p>
+                  <p class="text-muted">Mandaue City, Cebu, Philippines</p>
 
                   <hr>
 
@@ -75,6 +77,32 @@
               </div><!-- /.box -->
             </div><!-- /.col -->
             <div class="col-md-9">
+              <!-- Horizontal Form -->
+                <div class="box">
+                  <div class="box-header with-border">
+                    <p>Post New Idea</p>
+                  </div><!-- /.box-header -->
+                  <!-- form start -->
+                  <form class="form-horizontal">
+                    <div class="box-body">
+                      <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label">Title</label>
+                        <div class="col-sm-10">
+                          <input type="email" class="form-control" id="ideatitle" placeholder="Title">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="inputPassword3" class="col-sm-2 control-label">Description</label>
+                        <div class="col-sm-10">
+                          <textarea class="form-control" id="description" placeholder="Description"></textarea>
+                        </div>
+                      </div>
+                    </div><!-- /.box-body -->
+                    <div class="box-footer">
+                      <button type="submit" class="btn btn-info pull-right">Post</button>
+                    </div><!-- /.box-footer -->
+                </form>
+              </div><!-- /.box -->
               <div class="nav-tabs-custom">
                 <ul class="nav nav-tabs">
                   <li class="active"><a href="#activity" data-toggle="tab">Activity</a></li>
