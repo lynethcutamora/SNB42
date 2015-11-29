@@ -163,7 +163,7 @@
                     </div>
                     <div class="col-sm-1"></div>
                     <div class="col-sm-4">
-                      <form action="loginprocess.php" method="POST">
+                      <form action="process/loginprocess.php" method="POST">
                             <h2>Login</h2>
                             <div class="form-group">
                                 <input type="text" class="form-control" name="email" id="email" placeholder="Email Address" title="Please enter your Email address">
