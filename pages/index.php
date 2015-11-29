@@ -1,24 +1,48 @@
+<?php include("header.php");?>
 <html>
-<head>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Start&Boost</title>
-</head>
-<!-- Font Awesome -->
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.5 -->
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <!-- Ionicons -->
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" type="../text/css" href="css/isotope.css" media="screen" />
-    <link rel="stylesheet" href="../js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="../css/da-slider.css" />
-    <link rel="stylesheet" type="text/css" href="../css/slider.css" />
-    <!-- Owl Carousel Assets -->
-    <link href="../js/owl-carousel/owl.carousel.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/styles.css" />
+    <!-- Theme style -->
+    <link rel="stylesheet" href="../dist/css/AdminLTE.min.css">
+    <!-- AdminLTE Skins. Choose a skin from the css/skins
+         folder instead of downloading all of them to reduce the load. -->
+    <link rel="stylesheet" href="../dist/css/skins/_all-skins.min.css">
+    <!-- iCheck -->
+    <link rel="stylesheet" href="../plugins/iCheck/flat/blue.css">
+    <!-- Morris chart -->
+    <link rel="stylesheet" href="../plugins/morris/morris.css">
+    <!-- jvectormap -->
+    <link rel="stylesheet" href="../plugins/jvectormap/jquery-jvectormap-1.2.2.css">
+    <!-- Date Picker -->
+    <link rel="stylesheet" href="../plugins/datepicker/datepicker3.css">
+    <!-- Daterange picker -->
+    <link rel="stylesheet" href="../plugins/daterangepicker/daterangepicker-bs3.css">
+    <!-- bootstrap wysihtml5 - text editor -->
+    <link rel="stylesheet" href="../plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+
      <link rel="stylesheet" href="../css/AdminLTE.min.css" />
     <!-- Font Awesome -->
     <link href="font/css/font-awesome.min.css" rel="stylesheet">
-     <link rel="stylesheet" href="../dist/css/skins/skin-blue.min.css">    
-<body>
+
+    <link rel="stylesheet" href="../css/section.css" />
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body class="hold-transition skin-blue sidebar-mini">
     <header class="header">
         <div class="container">
             <nav class="navbar-inverse" role="navigation">
@@ -29,7 +53,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <li class="navbar-brand" style="float:left;"><img src="../images/SNBlogo.png" style="width:35%;" /></li>
+                    <li class="navbar-brand" style="float:left; background-image:url('../images/SNBlogo.png'); background-size:contain;background-repeat:no-repeat;background-position:center;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
                         
                     
                 </div>
@@ -38,9 +62,9 @@
                     <ul class="nav navbar-nav" id="mainNav">
                         <li class="active"><a href="#home" class="scroll-link">Home</a></li>
                         <li><a href="#aboutUs" class="scroll-link">About Us</a></li>
-                        <!--<li><a href="#skills" class="scroll-link">Login</a></li>
+                        <li><a href="#skills" class="scroll-link">Login</a></li>
                         <li><a href="#experience" class="scroll-link">Register</a></li>
-                        <li><a href="#portfolio" class="scroll-link">Top 5 ideas</a></li>-->
+                        <li><a href="#portfolio" class="scroll-link">Top 5 ideas</a></li>
                         <li><a href="#contactUs" class="scroll-link">Contact Us</a></li>
                     <!--   <li>
                         <form class="navbar-form navbar-right" role="search">
@@ -63,7 +87,6 @@
             <!--/.navbar-->
         </div>
         <!--/.container-->
-    </header>
     <!--/.header-->
     <div id="#top"></div>
     <section id="home">
@@ -141,18 +164,16 @@
                     <div class="col-sm-1"></div>
                     <div class="col-sm-4">
                             <h2>Login</h2>
-                            <form method="POST" action="loginprocess.php">
                             <div class="form-group">
-                                <input type="text" class="form-control" name="username" id="username" placeholder="User Name" title="Please enter your Username">
+                                <input type="text" class="form-control" name="name" id="name" placeholder="User Name" title="Please enter your Username">
                             </div>
                             <div class="form-group">
-                                <input type="password" class="form-control" name="password" id="password" placeholder="Password" title="Please enter your password">
+                                <input type="password" class="form-control" name="email" id="email" placeholder="Password" title="Please enter your password">
                             </div>
                             <button name="login" type="submit" class="btn btn-primary form-control" id="submit">Log-in</button>
                             <br/><br/>
                             <button name="create" type="button" class="btn btn-primary form-control" id="create" data-toggle="modal" data-target="#CreateAccount">Create Account</button>
                             <br/><br/>
-                            </form>
                     </div>
             </div>
         </div>
@@ -257,6 +278,9 @@
     </section>
     <section id="abou" class="page-section section appear clearfix secPad">
             <!--<img src="../images/banner-bg.png" style="width:100%;" />-->
+            <div class="col-md-1"></div>
+            <div class="col-md-8"><img src="../images/ind.png" style="width:50%;" /></div>
+            <div class="col-md-3"></div>
     </section>
     <!--About-->
     <section id="aboutUs" class="secPad">
@@ -327,7 +351,7 @@
     </section>
     <!--Skills
     <section id="skills" class="secPad white">
-    	<div class="container">
+        <div class="container">
         <div class="heading text-center">
                  Heading 
                 <h2>Login</h2>
@@ -345,7 +369,7 @@
                         </div>
                     </div>
             </div>
-        	<div class="row">
+            <div class="row">
                 <div class="col-sm-12">
                      
                 </div>
@@ -358,7 +382,7 @@
     
     <!--Experience-->
     <!--<section id="experience" class="secPad">
-    	<div class="container">     
+        <div class="container">     
            <div class="heading text-center">
                  Heading 
                 <h2>Register</h2>
@@ -368,7 +392,7 @@
     </section>-->
    <!--Portfolio-->
     
-	<!--Contact -->
+    <!--Contact -->
     <section id="contactUs" class="page-section secPad">
         <div class="container">
 
@@ -425,6 +449,6 @@
     
 <?php
 
-  include("footer.php");
+    include("footer.php");
     include("modals.php");
  ?>

@@ -413,10 +413,10 @@ background: none;
 }
 #abou {
 padding:50px 0;
-background:#eeeeee;
+background:#fff;
     background-image: url('../images/bg6.png');
     background-position: top-left;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
 }
 /*Intro Content*/
