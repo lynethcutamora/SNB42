@@ -9,7 +9,13 @@ if(isset($_SESSION['Start&Boost'])){
         $_SESSION['lname'] = $row['lName'];
         $_SESSION['fname'] = $row['fName'];
         $_SESSION['midInit'] = $row['midInit'];
-        $pictureId = $row['profilePic'];
+     }
+    $query = "SELECT * FROM user_md WHERE userId='$userId'";
+    $query = mysql_query($query);
+    while($row = mysql_fetch_array($query))
+     {
+        $pictureId = $row['profilePicId'];
+        $userType = $row['userType'];
      }
     $query = "SELECT * FROM picture_dtl WHERE pictureId='$pictureId'";
     $query = mysql_query($query);
@@ -21,7 +27,6 @@ if(isset($_SESSION['Start&Boost'])){
 
 }
 ?>
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -51,7 +56,14 @@ if(isset($_SESSION['Start&Boost'])){
   </head>
   <!-- ADD THE CLASS fixed TO GET A FIXED HEADER AND SIDEBAR LAYOUT -->
   <!-- the fixed layout is not compatible with sidebar-mini -->
-  <body class="hold-transition skin-blue fixed sidebar-mini">
+  <?php 
+  if($_SESSION['pages']=='profile'){
+    echo '  <body class="hold-transition skin-blue sidebar-collapse sidebar-mini">';
+
+  }else{
+  ?>
+    <body class="hold-transition skin-blue fixed sidebar-mini">
+  <?php }?>
     <!-- Site wrapper -->
     <div class="wrapper">
 
@@ -158,16 +170,16 @@ if(isset($_SESSION['Start&Boost'])){
               <!-- User Account: style can be found in dropdown.less -->
               <li class="dropdown user user-menu">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                  <img src="../../images/team/index0.png" class="user-image" alt="User Image">
-                  <span class="hidden-xs">Lyneth C. Cutamora</span>
-                </a>
+                   <img src="../<?php echo "user/".$_SESSION['profilePic'];?>" class="user-image" alt="User Image">
+                  <span class="hidden-xs"><?php echo $_SESSION['fname']." ".$_SESSION['midInit'].". ".$_SESSION['lname']?></span>
+               </a>
                 <ul class="dropdown-menu">
                   <!-- User image -->
                   <li class="user-header">
-                    <img src="../../images/team/index0.png" class="img-circle" alt="User Image">
+                    <img src="../<?php echo "user/".$_SESSION['profilePic'];?>" class="img-circle" alt="User Image" class="img-circle" alt="User Image">
                     <p>
-                      Lyneth C. Cutamora - Web Developer
-                      <small>Member since Nov. 2015</small>
+                      <?php echo $_SESSION['fname']." ".$_SESSION['midInit'].". ".$_SESSION['lname'];?>
+                      <small>  <?php echo $userType;?></small>
                     </p>
                   </li>
                   <!-- Menu Body -->
@@ -188,7 +200,7 @@ if(isset($_SESSION['Start&Boost'])){
                       <a href="../profile/index.php" class="btn btn-default btn-flat">Profile</a>
                     </div>
                     <div class="pull-right">
-                      <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                      <a href="../process/logout.php" class="btn btn-default btn-flat">Sign out</a>
                     </div>
                   </li>
                 </ul>
@@ -209,12 +221,12 @@ if(isset($_SESSION['Start&Boost'])){
         <!-- sidebar: style can be found in sidebar.less -->
         <section class="sidebar">
           <!-- Sidebar user panel -->
-          <div class="user-panel">
+            <div class="user-panel">
             <div class="pull-left image">
-              <img src="../../images/team/index0.png" class="img-circle" alt="User Image">
+              <img src="../<?php echo "user/".$_SESSION['profilePic'];?>" class="img-circle" alt="User Image">
             </div>
             <div class="pull-left info">
-              <p>Lyneth C. Cutamora</p>
+              <p><?php echo $_SESSION['fname']." ".$_SESSION['midInit'].". ".$_SESSION['lname']?></p>
               <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
             </div>
           </div>

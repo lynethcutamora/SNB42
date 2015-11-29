@@ -11,16 +11,16 @@
 				$userId = $row['userId']; 
 			}
 			$_SESSION['Start&Boost'] = $userId;
-			header("location:index.php");
+			header("location:../index.php");
 		}
-	else{
+	else{	
 			$_SESSION['error']="Incorrect Username and Password";
-			header("location:index.php");
+			header("location:../index.php");
 		}
 	
 		
 	}else{
-			header("location:index.php");
+			header("location:../index.php");
 	}
 
 ?>

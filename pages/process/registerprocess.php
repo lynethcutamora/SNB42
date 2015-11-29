@@ -19,7 +19,7 @@ include("dbcon.php");
 		    	if(mysql_num_rows($result))
 				{	
 					$_SESSION['error']="Email address already registered!";
-					header("location:index.php");
+					header("location:../index.php");
 				}
 				else{
 			      	 mysql_query("INSERT INTO User_MD(userId,userType,dateRegistered,address,emailAdd,password,profilePicId)
@@ -29,13 +29,13 @@ include("dbcon.php");
 			      	 mysql_query("INSERT INTO picture_dtl(userId,picturename,pictureId)
 			      	 VALUES('$userId','1.png','$picid')");
 			          $_SESSION['error'] ="Successfully Register";
-			         header("location:index.php");
+			         header("location:../index.php");
 	       		 }
 	    }
 	    else
 	    {
 	    	$_SESSION['error']="Password and Confirm Password didn't match";
-	    	header("location:index.php");
+	    	header("location:../index.php");
 	    }
     }
    else if(isset($_POST['btnInvestor'])&&isset($_POST['email'])&&isset($_POST['password'])&&isset($_POST['repassword']) )
@@ -55,7 +55,7 @@ include("dbcon.php");
 		    	if(mysql_num_rows($result))
 				{	
 					$_SESSION['error']="Email address already registered!";
-					header("location:index.php");
+					header("location:../index.php");
 				}else
 				{
 			      	 mysql_query("INSERT INTO User_MD(userId,userType,dateRegistered,address,emailAdd,password)
@@ -65,13 +65,13 @@ include("dbcon.php");
 			      	 mysql_query("INSERT INTO picture_dtl(userId,picturename,pictureId)
 			      	 VALUES('$userId','1.png','$picid')");
 			         $_SESSION['error'] ="Successfully Register";
-			         header("location:index.php");
+			         header("location:../index.php");
 	      	    }
 	    }
 	    else
 	    {
 	    	$_SESSION['error']="Password and Confirm Password didn't match";
-	    	header("location:index.php");
+	    	header("location:../index.php");
 	    }
     } 
     else if(isset($_POST['btnCompany'])&&isset($_POST['email'])&&isset($_POST['password'])&&isset($_POST['repassword']) )
@@ -90,7 +90,7 @@ include("dbcon.php");
 		    	if(mysql_num_rows($result))
 				{	
 					$_SESSION['error']="Email address already registered!";
-					header("location:index.php");
+					header("location:../index.php");
 				}else
 				{
 			      	 mysql_query("INSERT INTO User_MD(userId,userType,dateRegistered,address,emailAdd,password)
@@ -101,7 +101,7 @@ include("dbcon.php");
 			      	 VALUES('$userId','1.png','$picid')");
 			         $_SESSION['error']="Successfully Register";
 
-			         header("location:index.php");
+			         header("location:../index.php");
 
 
 	    		}

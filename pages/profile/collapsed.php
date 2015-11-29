@@ -9,7 +9,13 @@ if(isset($_SESSION['Start&Boost'])){
         $_SESSION['lname'] = $row['lName'];
         $_SESSION['fname'] = $row['fName'];
         $_SESSION['midInit'] = $row['midInit'];
-        $pictureId = $row['profilePic'];
+     }
+    $query = "SELECT * FROM user_md WHERE userId='$userId'";
+    $query = mysql_query($query);
+    while($row = mysql_fetch_array($query))
+     {
+        $pictureId = $row['profilePicId'];
+        $userType = $row['userType'];
      }
     $query = "SELECT * FROM picture_dtl WHERE pictureId='$pictureId'";
     $query = mysql_query($query);
@@ -157,8 +163,8 @@ if(isset($_SESSION['Start&Boost'])){
               <!-- User Account: style can be found in dropdown.less -->
               <li class="dropdown user user-menu">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                  <img src="../../images/team/index0.png" class="user-image" alt="User Image">
-                  <span class="hidden-xs">Lyneth C. Cutamora</span>
+                    <img src="../<?php echo "user/".$_SESSION['profilePic'];?>" class="user-image" alt="User Image">
+                  <span class="hidden-xs"><?php echo $_SESSION['fname']." ".$_SESSION['midInit'].". ".$_SESSION['lname']?></span>
                 </a>
                 <ul class="dropdown-menu">
                   <!-- User image -->
