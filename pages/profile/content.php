@@ -17,6 +17,47 @@
           <div class="row">
             <div class="col-md-3">
 
+              <div class="box box-widget widget-user">
+                <!-- Add the bg color to the header using any of the bg-* classes -->
+                <div class="widget-user-header bg-black" style="background: url('../../dist/img/photo1.png') center center;">
+                  <h3 class="widget-user-username">Lyneth C. Cutamora</h3>
+                  <h5 class="widget-user-desc">Web Designer</h5>
+                </div>
+                <div class="widget-user-image">
+                  <img class="img-circle" src="../../images/team/index0.png" alt="User Avatar">
+                  <p class="text-muted text-center">Reputation:</p>
+                </div>
+
+                <div class="box-footer"><br/>
+                <p>Reputation:</p>
+                  <div class="row">
+                    <div class="col-sm-3 border-right">
+                      <div class="description-block">
+                        <h5 class="description-header">3,200</h6>
+                        <span class="description-text">GOLD</span>
+                      </div><!-- /.description-block -->
+                    </div><!-- /.col -->
+                    <div class="col-sm-3 border-right">
+                      <div class="description-block">
+                        <h5 class="description-header">13,000</h5>
+                        <span class="description-text">SILVER</span>
+                      </div><!-- /.description-block -->
+                    </div><!-- /.col -->
+                    <div class="col-sm-3">
+                      <div class="description-block">
+                        <h5 class="description-header">35</h5>
+                        <span class="description-text">BRONZE</span>
+                      </div><!-- /.description-block -->
+                    </div><!-- /.col -->
+                    <div class="col-sm-3">
+                      <div class="description-block">
+                        <h5 class="description-header">35</h5>
+                        <span class="description-text">BLACK</span>
+                      </div><!-- /.description-block -->
+                    </div><!-- /.col -->
+                  </div><!-- /.row -->
+                </div>
+              </div><!-- /.widget-user -->
               <!-- Profile Image -->
               <div class="box box-primary">
                 <div class="box-body box-profile">
