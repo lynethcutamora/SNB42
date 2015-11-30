@@ -19,7 +19,7 @@
                   <div class='user-block'>
                     <img class='img-circle' src='../../images/team/index2.jpg' alt='user image'>
                     <span class='username'><a href="#">Alfie C. Dimpas</a></span>
-                    &nbsp;&nbsp;&nbsp;<button class='btn btn-default btn-xs'><i class='fa fa-star' style="color:#ffd700;"></i> </button><button class='btn btn-default btn-xs'><i class='fa fa-star' style="color:Silver"></i> </button><button class='btn btn-default btn-xs'><i class='fa fa-star' style="color:SandyBrown "></i></button>
+                    &nbsp;&nbsp;&nbsp;<button class='btn btn-default btn-xs'><i class='fa fa-star' style="color:#ffd700;"></i> </button>&nbsp;<button class='btn btn-default btn-xs'><i class='fa fa-star' style="color:Silver"></i> </button>&nbsp;<button class='btn btn-default btn-xs'><i class='fa fa-star' style="color:SandyBrown "></i></button>
                     <span class='description'>Posted - 7:30 PM Today</span>
                   </div><!-- /.user-block -->
                 </div><!-- /.box-header -->

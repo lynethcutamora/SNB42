@@ -55,8 +55,8 @@
                 <div id="main-nav" class="collapse navbar-collapse">
                     <ul class="nav navbar-nav" id="mainNav">
                         <li class="active"><a href="#home" class="scroll-link">Home</a></li>
-                        <li><a href="#aboutUs" class="scroll-link">About Us</a></li>
                         <li><a href="#portfolio" class="scroll-link">Top 5 ideas</a></li>
+                        <li><a href="#aboutUs" class="scroll-link">About Us</a></li>
                         <li><a href="#contactUs" class="scroll-link">Contact Us</a></li>
                     
                     </ul>
@@ -70,7 +70,7 @@
     <div id="#top"></div>
     <section id="home">
         <div class="banner-container">
-            <img src="../images/bg3.png" alt="banner" />
+            <img src="../images/bg3.png" alt="banner"/>
             <div class="container banner-content">
             
                 </div>
@@ -91,6 +91,7 @@
                     <div class="col-sm-1"></div>
                     <div class="col-sm-4">
                       <form action="process/loginprocess.php" method="POST">
+
                             <h2>Login</h2>
                             <div class="form-group">
                                 <input type="text" class="form-control" name="email" id="email" placeholder="Email Address" title="Please enter your Email address">
@@ -100,7 +101,7 @@
                             </div>
                             <button name="login" type="submit" class="btn btn-primary form-control" id="submit">Log-in</button>
                             <br/><br/>
-                            <button name="create" type="button" class="btn btn-primary form-control" id="create" data-toggle="modal" data-target="#CreateAccount">Create Account</button>
+                            <button name="create" type="button" class="btn btn-primary form-control" id="create">Create Account</button>
                             <br/><br/>
                              <?php if(isset($_SESSION['error']))
                                  echo $_SESSION['error'];

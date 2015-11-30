@@ -85,22 +85,6 @@
 
                   <strong><i class="fa fa-map-marker margin-r-5"></i> Location</strong>
                   <p class="text-muted">Mandaue City, Cebu, Philippines</p>
-
-                  <hr>
-
-                  <strong><i class="fa fa-pencil margin-r-5"></i> Skills</strong>
-                  <p>
-                    <span class="label label-danger">UI Design</span>
-                    <span class="label label-success">Coding</span>
-                    <span class="label label-info">Javascript</span>
-                    <span class="label label-warning">PHP</span>
-                    <span class="label label-primary">Node.js</span>
-                  </p>
-
-                  <hr>
-
-                  <strong><i class="fa fa-file-text-o margin-r-5"></i> Notes</strong>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fermentum enim neque.</p>
                 </div><!-- /.box-body -->
               </div><!-- /.box -->
             </div><!-- /.col -->
@@ -120,9 +104,9 @@
                         </div>
                       </div>
                       <div class="form-group">
-                        <label for="inputPassword3" class="col-sm-2 control-label">Description</label>
+                        <label for="inputDescription" class="col-sm-2 control-label">Description</label>
                         <div class="col-sm-10">
-                          <textarea class="form-control" id="description" placeholder="Description"></textarea>
+                          <textarea class="form-control" id="inputDescription" placeholder="Description"></textarea>
                         </div>
                       </div>
                       <div class="form-group">
@@ -133,7 +117,10 @@
                       </div>
                     </div><!-- /.box-body -->
                     <div class="box-footer">
-                      <button type="submit" class="btn btn-info pull-right">Post</button>
+                      <form action="" method="post" enctype="multipart/form-data">
+                          <input class="pull-left" type="file" name="fileToUpload" id="fileToUpload">
+                          <input class="btn btn-info pull-right" type="submit" value="Post Idea" name="submit">
+                      </form>
                     </div><!-- /.box-footer -->
                 </form>
               </div><!-- /.box -->
@@ -248,38 +235,14 @@
                   <div class="tab-pane" id="settings">
                     <form class="form-horizontal">
                       <div class="form-group">
-                        <label for="inputName" class="col-sm-2 control-label">Name</label>
-                        <div class="col-sm-10">
-                          <input type="email" class="form-control" id="inputName" placeholder="Name">
+                        <div class="col-sm-1"></div>
+                        <div class="col-sm-3"><img src="../user/1.png" style="size:contain;" /></div>
+                        <div class="col-sm-7">
+                          <br/><br/>Change your avatar: <br/><br/>
+                          <input type="file" name="fileToUpload" id="fileToUpload">
                         </div>
-                      </div>
-                      <div class="form-group">
-                        <label for="inputEmail" class="col-sm-2 control-label">Email</label>
-                        <div class="col-sm-10">
-                          <input type="email" class="form-control" id="inputEmail" placeholder="Email">
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <label for="inputDescription" class="col-sm-2 control-label">About Me</label>
-                        <div class="col-sm-10">
-                          <textarea class="form-control" id="inputDescription" placeholder="Short Self-Description"></textarea>
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <div class="col-sm-offset-2 col-sm-10">
-                          <div class="checkbox">
-                            <label>
-                              <input type="checkbox"> I agree to the <a href="#">terms and conditions</a>
-                            </label>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <div class="col-sm-offset-2 col-sm-10">
-                          <button type="submit" class="btn btn-danger">Submit</button>
-                        </div>
-                      </div>
-                    </form>
+                      </div><hr>
+                      <?php include ('../register/ideator.php');?>
                   </div><!-- /.tab-pane -->
                 </div><!-- /.tab-content -->
               </div><!-- /.nav-tabs-custom -->
