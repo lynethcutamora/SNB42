@@ -272,8 +272,8 @@ if(isset($_SESSION['Start&Boost'])){
               </ul>
             </li>
             <li class="treeview">
-              <a href="#">
-                <i class="fa fa-paper-plane"></i> <span>Startup Products</span><small class="label pull-right bg-green">new</small>
+              <a href="../Products/index.php">
+                <i class="fa fa-paper-plane"></i> <span>Startup Products</span>
               </a>
               <ul class="treeview-menu">
                 <!--<li><a href="#"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>-->
