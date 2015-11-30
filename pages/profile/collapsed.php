@@ -259,7 +259,7 @@ if(isset($_SESSION['Start&Boost'])){
               </a>
             </li>
             <li class="treeview">
-              <a href="#">
+              <a href="../Products/index.php">
                 <i class="fa fa-paper-plane"></i> <span>Startup Products</span><small class="label pull-right bg-green">new</small>
               </a>
             </li>
