@@ -81,9 +81,14 @@
         <?php if(isset($_POST['go'])){
                 #if($_POST['userType']='ideator'){
                     echo '<ul class="nav nav-tabs">
-                        <li class="active"><a href="#ideator" data-toggle="tab">Ideator</a></li>
-                      </ul>';
-                    include("company.php");
+                            <li class="active"><a href="#ideator" data-toggle="tab">Ideator</a></li>
+                          </ul>
+                          <div class="tab-content">
+                            <div class="active tab-pane" id="ideator">';
+                    include("ideator.php");
+                    echo '
+                        </div><!-- /.tab-pane -->
+                        </div><!-- /.tab-content -->';
                 /*}
                 if($_POST['userType']='investor')){
                     #include("investor.php");

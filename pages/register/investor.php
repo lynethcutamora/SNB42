@@ -1,5 +1,5 @@
-                <div class="tab-content">
-                  <div class="active tab-pane" id="ideator">
+                
+                  
                     <form class="form-horizontal">
                       <div class="form-group">
                         <label for="inputLName" class="col-sm-2 control-label">Last Name</label>
@@ -137,6 +137,3 @@
                         </div>
                       </div>
                     </form>
-                  </div><!-- /.tab-pane -->
-                 
-                </div><!-- /.tab-content -->

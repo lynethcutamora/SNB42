@@ -1,5 +1,5 @@
-                <div class="tab-content">
-                  <div class="active tab-pane" id="ideator">
+                
+                  
                     <form class="form-horizontal">
                       <div class="form-group">
                         <label for="inputCName" class="col-sm-2 control-label">Company Name</label>
@@ -99,6 +99,3 @@
                         </div>
                       </div>
                     </form>
-                  </div><!-- /.tab-pane -->
-                 
-                </div><!-- /.tab-content -->
