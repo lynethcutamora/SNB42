@@ -4,13 +4,8 @@
             header("location:../index.php");
         }else{
             $_SESSION['pages']='timeline';
-            ?>
-    <?php include("content.php");?>
-    <?php include("../dashboard/footer.php");?>
-    <?php include("../dashboard/controlsidebar.php");?>
-    <?php include("../dashboard/end.php");}?>
-
-    <!DOCTYPE html>
+    ?>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -43,5 +38,64 @@
   </head>
   <!-- ADD THE CLASS fixed TO GET A FIXED HEADER AND SIDEBAR LAYOUT -->
   <!-- the fixed layout is not compatible with sidebar-mini -->
-    <body>
-        
+  <body style="background-color:#eee;" class="hold-transition skin-blue fixed sidebar-mini">
+    <div class="">
+        <nav class="navbar-inverse" role="navigation">
+            <div class="navbar-header">
+                <button type="button" id="nav-toggle" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <i class="navbar-brand"><img src="../../images/SNBlogo.png" style="width:13%;"></i>
+            </div><!--/.navbar-header-->
+            <div id="main-nav" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav" id="mainNav">
+                    <li class="active"><a href="../index.php" class="scroll-link">Back</a></li>                  
+                </ul>
+            </div><!--/.navbar-collapse-->
+        </nav>
+    </div>
+<!-- CONTENT --><br/><br/>
+    <div class="container">
+    <div class="row">
+        <div class="form-group col-md-6">  
+            <form action="index.php" method="post">
+                <div class="col-md-7">                          
+                    <select id="userType" name="userType" class="form-control select2" style="width: 100%;">
+                        <option name="userType" selected="selected">-- Type of User --</option>
+                        <option name="userType" value="ideator">Ideator</option>
+                        <option name="userType" value="investor">Investor</option>
+                        <option name="userType" value="company">Company</option>
+                    </select>
+                </div>
+                <div class="col-md-1">
+                    <input class="btn btn-primary pull-right " type="submit" value="GO" name="go">                    
+                </div>
+            </form>
+        </div>
+    </div>
+        <br/>
+        <div class="nav-tabs-custom">
+        <?php if(isset($_POST['go'])){
+                #if($_POST['userType']='ideator'){
+                    echo '<ul class="nav nav-tabs">
+                        <li class="active"><a href="#ideator" data-toggle="tab">Ideator</a></li>
+                      </ul>';
+                    include("company.php");
+                /*}
+                if($_POST['userType']='investor')){
+                    #include("investor.php");
+                }
+                if($_POST['userType']='company')){
+                    #include("company.php");
+                }*/
+            }
+            
+        ?>
+
+        </div><!-- /.nav-tabs-custom -->
+    </div>
+<!-- FOOTER -->
+    <?php include("../dashboard/end.php");}?>

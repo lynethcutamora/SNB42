@@ -89,7 +89,7 @@
                         </div>
                       </div>
                       <div class="form-group">
-                        <label for="inputRegion" class="col-sm-2 control-label">State/Region</label>
+                        <label for="inputRegion" class="col-sm-2 control-label">Region</label>
                         <div class="col-sm-4">
                           <input type="text" class="form-control" id="inputRegion" placeholder="Region">
                         </div>
@@ -102,6 +102,18 @@
                         <label for="inputCounty" class="col-sm-2 control-label">Country</label>
                         <div class="col-sm-9">
                           <input type="text" class="form-control" id="inputCounty" placeholder="Country">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="inputBusiness" class="col-sm-2 control-label">Name of Business</label>
+                        <div class="col-sm-9">
+                          <input type="text" class="form-control" id="inputBusiness" placeholder="Name of your Business"></input>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="inputBType" class="col-sm-2 control-label">Business Type</label>
+                        <div class="col-sm-9">
+                          <input type="text" class="form-control" id="inputBusinessType" placeholder="Type of your Business"></input>
                         </div>
                       </div>
                       <div class="form-group">

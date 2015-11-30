@@ -2,20 +2,40 @@
                   <div class="active tab-pane" id="ideator">
                     <form class="form-horizontal">
                       <div class="form-group">
+                        <label for="inputCName" class="col-sm-2 control-label">Company Name</label>
+                        <div class="col-sm-9"> 
+                          <input type="text" class="form-control" id="inputCName" placeholder="Company Name">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="inputBType" class="col-sm-2 control-label">Business Type</label>
+                        <div class="col-sm-9">
+                          <input type="text" class="form-control" id="inputBusinessType" placeholder="Type of your Business"></input>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="inputYear" class="col-sm-2 control-label">Year Founded</label>
+                        <div class="col-sm-2">
+                          <input type="text" class="form-control" id="inputYear" placeholder="Year Founded"></input>
+                        </div>
+                      </div>
+                      <hr><p><center>Business Owner</center></p>
+                      <div class="form-group">
                         <label for="inputLName" class="col-sm-2 control-label">Last Name</label>
                         <div class="col-sm-9"> 
-                          <input type="text" class="form-control" id="inputLName" placeholder="Last Name">
+                          <input type="text" class="form-control" id="inputLName" placeholder="Business Owner's Last Name">
                         </div>
                       </div>
                       <div class="form-group">
                         <label for="inputFName" class="col-sm-2 control-label">First Name</label>
                         <div class="col-sm-9">
-                          <input type="text" class="form-control" id="inputFName" placeholder="First Name">
+                          <input type="text" class="form-control" id="inputFName" placeholder="Business Owner's First Name">
                         </div>
                       </div>
                       <div class="form-group">
                         <label for="inputMI" class="col-sm-2 control-label">Middle Initial</label>
-                        <div class="col-md-2">                          <select id="inputMI" class="form-control select2" style="width: 100%;">
+                        <div class="col-md-2">                          
+                        <select id="inputMI" class="form-control select2" style="width: 100%;">
                             <option selected="selected"> </option>
                             <option>A</option>
                             <option>B</option>
@@ -57,57 +77,11 @@
                             <input type="radio" name="r3" class="flat-red" disabled>
                             Flat green skin radio
                           </label>-->
-                      </div>
+                      </div><hr>
                       <div class="form-group">
-                        <label for="inputAge" class="col-sm-2 control-label">Age</label>
-                        <div class="col-sm-2">
-                          <input type="text" class="form-control" id="inputAge" placeholder="Age">
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <label for="inputEmail" class="col-sm-2 control-label">Email</label>
+                        <label for="inputDescription" class="col-sm-2 control-label">About</label>
                         <div class="col-sm-9">
-                          <input type="email" class="form-control" id="inputEmail" placeholder="Email">
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <label for="inputAddress1" class="col-sm-2 control-label">Address Line 1</label>
-                        <div class="col-sm-9">
-                          <input type="text" class="form-control" id="inputAdress1" placeholder="Street address, Barangay, District / Company Name">
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <label for="inputAddress2" class="col-sm-2 control-label">Adress Line 2</label>
-                        <div class="col-sm-9">
-                          <input type="text" class="form-control" id="inputAdress2" placeholder="House No., Unit, Building, Floor, etc">
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <label for="inputCity" class="col-sm-2 control-label">City</label>
-                        <div class="col-sm-9">
-                          <input type="text" class="form-control" id="inputCity" placeholder="City">
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <label for="inputRegion" class="col-sm-2 control-label">State/Region</label>
-                        <div class="col-sm-4">
-                          <input type="text" class="form-control" id="inputRegion" placeholder="Region">
-                        </div>
-                        <label for="inputZIP" class="col-sm-3 control-label">ZIP/Postal Code</label>
-                        <div class="col-sm-2">
-                          <input type="text" class="form-control" id="inputZIP" placeholder="ZIP code">
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <label for="inputCounty" class="col-sm-2 control-label">Country</label>
-                        <div class="col-sm-9">
-                          <input type="text" class="form-control" id="inputCounty" placeholder="Country">
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <label for="inputDescription" class="col-sm-2 control-label">About Me</label>
-                        <div class="col-sm-9">
-                          <textarea class="form-control" id="inputDescription" placeholder="Short Self-Description"></textarea>
+                          <textarea class="form-control" id="inputDescription" placeholder="Short Business Description"></textarea>
                         </div>
                       </div>
                       <div class="form-group">
