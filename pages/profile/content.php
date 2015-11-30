@@ -133,7 +133,10 @@
                       </div>
                     </div><!-- /.box-body -->
                     <div class="box-footer">
-                      <button type="submit" class="btn btn-info pull-right">Post</button>
+                      <form action="" method="post" enctype="multipart/form-data">
+                          <input class="pull-left" type="file" name="fileToUpload" id="fileToUpload">
+                          <input class="btn btn-info pull-right" type="submit" value="Post Idea" name="submit">
+                      </form>
                     </div><!-- /.box-footer -->
                 </form>
               </div><!-- /.box -->
@@ -247,6 +250,11 @@
                  
                   <div class="tab-pane" id="settings">
                     <form class="form-horizontal">
+                      <div class="form-group">
+                        <div class="col-sm-5">
+                        <input type="file" name="fileToUpload" id="fileToUpload">
+                        </div>
+                      </div>
                       <div class="form-group">
                         <label for="inputName" class="col-sm-2 control-label">Name</label>
                         <div class="col-sm-10">
