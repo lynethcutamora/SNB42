@@ -37,7 +37,7 @@
                   <div class="row">
                     <div class="col-sm-3 border-right">
                       <div class="description-block">
-                        <h5 class="description-header">5</h6>
+                        <h5 class="description-header">5</h5>
                         <span class="description-text">MEMBERS</span>
                       </div><!-- /.description-block -->
                     </div><!-- /.col -->
@@ -60,275 +60,128 @@
                       </div><!-- /.description-block -->
                     </div><!-- /.col -->
                   </div><!-- /.row -->
-                </div>
+                </div><!-- /.footer-->
               </div><!-- /.widget-user -->
-        <section id="services" class="services-section" style="height:auto;">
+            </div><!-- /.col -->
+          </div><!-- /.row -->
+        </section>
+        <section id="groupbody" class="services-section" style="height:auto;">
           <div class="container">
-                      
-                        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="7000">
-                              <ol class="carousel-indicators">
-                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                                <li data-target="#myCarousel" data-slide-to="1"></li>
-                                <li data-target="#myCarousel" data-slide-to="2"></li>
-                              </ol>
-                              <div class="carousel-inner" role="listbox">
-                                <div class="active item">
-                               
-            <div class="col-md-6">
-
-              <div class="box box-widget widget-user">
-                <!-- Add the bg color to the header using any of the bg-* classes -->
-                <div class="widget-user-header bg-black" style="background: url('../../dist/img/photo1.png') center center;">
-                </br></br>
-                  <h4>Lyneth C. Cutamora</h3>
-                  <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Web Designer</h5>
-                </div>
-                <div class="widget-user-image">
-                  <img class="img-circle" src="../../images/team/index0.png" alt="First slide">
-                </div>
-                
-                   <div class="container">
-                    <div class="carousel-caption">
-                    <div class="widget-user-image">
-                  <p>Reputation:<span><i class="fa fa-star" style="color:#ffd700;"></i><b> &nbsp;&nbsp;1</b></span></p>
-                </div>
-                  <div class="row">
-
-                    <div class="col-sm-3 border-right">
-                      <div class="description-block">
-                        <h5 class="description-header">24</h6>
-                        <span class="description-text">GOLD</span>
-                      </div><!-- /.description-block -->
-                    </div><!-- /.col -->
-                    <div class="col-sm-3 border-right">
-                      <div class="description-block">
-                        <h5 class="description-header">11</h5>
-                        <span class="description-text">SILVER</span>
-                      </div><!-- /.description-block -->
-                    </div><!-- /.col -->
-                    <div class="col-sm-3 border-right">
-                      <div class="description-block">
-                        <h5 class="description-header">2</h5>
-                        <span class="description-text">BRONZE</span>
-                      </div><!-- /.description-block -->
-                    </div><!-- /.col -->
-                    <div class="col-sm-3">
-                      <div class="description-block">
-                        <h5 class="description-header">0</h5>
-                        <span class="description-text">BLACK</span>
-                      </div><!-- /.description-block -->
-                    </div><!-- /.col -->
-                  </div><!-- /.row -->
-                </div>
-              </div><!-- /.widget-user -->
-
-                                    
-                                  
-                                </div>
-                              </div>
-                            </div>
-
-
-
-                  <div class="item">
-                        <div class="col-md-6">
-
-              <div class="box box-widget widget-user">
-                <!-- Add the bg color to the header using any of the bg-* classes -->
-                <div class="widget-user-header bg-black" style="background: url('../../dist/img/photo2.png') center center;">
-                </br></br>
-                  <h4>Jason D. Pitogo</h3>
-                  <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Programmer</h5>
-                </div>
-                <div class="widget-user-image">
-                  <img class="img-circle" src="../../images/team/index1.jpg" alt="Second slide">
-                </div>
-                                  <div class="container">
-                                    <div class="carousel-caption">
-                                        <div class="widget-user-image">
-                  <p>Reputation:<span><i class="fa fa-star" style="color:#ffd700;"></i><b> &nbsp;&nbsp;100</b></span></p>
-                </div>
-                  <div class="row">
-
-                    <div class="col-sm-3 border-right">
-                      <div class="description-block">
-                        <h5 class="description-header">24</h6>
-                        <span class="description-text">GOLD</span>
-                      </div><!-- /.description-block -->
-                    </div><!-- /.col -->
-                    <div class="col-sm-3 border-right">
-                      <div class="description-block">
-                        <h5 class="description-header">11</h5>
-                        <span class="description-text">SILVER</span>
-                      </div><!-- /.description-block -->
-                    </div><!-- /.col -->
-                    <div class="col-sm-3 border-right">
-                      <div class="description-block">
-                        <h5 class="description-header">2</h5>
-                        <span class="description-text">BRONZE</span>
-                      </div><!-- /.description-block -->
-                    </div><!-- /.col -->
-                    <div class="col-sm-3">
-                      <div class="description-block">
-                        <h5 class="description-header">0</h5>
-                        <span class="description-text">BLACK</span>
-                      </div><!-- /.description-block -->
-                    </div><!-- /.col -->
-                  </div><!-- /.row -->
-                </div>
-              </div><!-- /.widget-user -->
-
-                                    
-                                  
-                                </div>
-                              </div>
-                            </div>
-
-
-
-
-
-                            <div class="item">
-                        <div class="col-md-6">
-
-              <div class="box box-widget widget-user">
-                <!-- Add the bg color to the header using any of the bg-* classes -->
-                <div class="widget-user-header bg-black" style="background: url('../../dist/img/edelito.jpg') center center;">
-                </br></br>
-                  <h4>Edelito D. Albaracin Jr.</h3>
-                  <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Systems Analyst</h5>
-                </div>
-                <div class="widget-user-image">
-                  <img class="img-circle" src="../../images/team/index3.jpg" alt="Third slide">
-                </div>
-                                  <div class="container">
-                                    <div class="carousel-caption">
-                                        <div class="widget-user-image">
-                  <p>Reputation:<span><i class="fa fa-star" style="color:#ffd700;"></i><b> &nbsp;&nbsp;10000000</b></span></p>
-                </div>
-                  <div class="row">
-
-                    <div class="col-sm-3 border-right">
-                      <div class="description-block">
-                        <h5 class="description-header">24</h6>
-                        <span class="description-text">GOLD</span>
-                      </div><!-- /.description-block -->
-                    </div><!-- /.col -->
-                    <div class="col-sm-3 border-right">
-                      <div class="description-block">
-                        <h5 class="description-header">11</h5>
-                        <span class="description-text">SILVER</span>
-                      </div><!-- /.description-block -->
-                    </div><!-- /.col -->
-                    <div class="col-sm-3 border-right">
-                      <div class="description-block">
-                        <h5 class="description-header">2</h5>
-                        <span class="description-text">BRONZE</span>
-                      </div><!-- /.description-block -->
-                    </div><!-- /.col -->
-                    <div class="col-sm-3">
-                      <div class="description-block">
-                        <h5 class="description-header">0</h5>
-                        <span class="description-text">BLACK</span>
-                      </div><!-- /.description-block -->
-                    </div><!-- /.col -->
-                  </div><!-- /.row -->
-                </div>
-              </div><!-- /.widget-user -->
-
-                                    
-                                  
-                                </div>
-                              </div>
-                            </div>
-
-                                
-                                  </div>
-                                </div>
-
-
-
-
-
-
-
-            
-                          </div>
-                        </div>
-              </div>
-                </div>
-
-
-
-                <!-- About Me Box -->
-              <div class="box box-primary">
-                <div class="box-header with-border">
-                  <h3 class="box-title">Group Description</h3>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="box box-solid">
+                  <div class="box-header with-border">
+                    <h3 class="box-title">Team Members</h3>
+                  </div><!-- /.box-header -->
+                    <div class='box-header with-border'>
+                      <div class='user-block'>
+                        <img class='img-circle' src='../../images/team/index0.png' alt='user image'>
+                          <span class='username'><a href="#">Lyneth C. Cutamora</a></span>
+                          <span class='description'>Reputation:<span class="pull-right"><i class='fa fa-star' style="color:#ffd700;"></i><b>&nbsp;&nbsp;1024</b></span></span>
+                      </div><!-- /.user-block -->
+                    </div><!-- /.box-header -->
+                    <div class='box-header with-border'>
+                      <div class='user-block'>
+                        <img class='img-circle' src='../../images/team/index1.jpg' alt='user image'>
+                          <span class='username'><a href="#">Jason D. Pitogo</a></span>
+                          <span class='description'>Reputation:<span class="pull-right"><i class='fa fa-star' style="color:#ffd700;"></i><b>&nbsp;&nbsp;1024</b></span></span>
+                      </div><!-- /.user-block -->
+                    </div><!-- /.box-header -->
+                    <div class='box-header with-border'>
+                      <div class='user-block'>
+                        <img class='img-circle' src='../../images/team/index2.jpg' alt='user image'>
+                          <span class='username'><a href="#">Alfie Dimpas</a></span>
+                          <span class='description'>Reputation:<span class="pull-right"><i class='fa fa-star' style="color:#ffd700;"></i><b>&nbsp;&nbsp;1024</b></span></span>
+                      </div><!-- /.user-block -->
+                    </div><!-- /.box-header -->
+                    <div class='box-header with-border'>
+                      <div class='user-block'>
+                        <img class='img-circle' src='../../images/team/index3.jpg' alt='user image'>
+                          <span class='username'><a href="#">Edelito D. Albaracin Jr.</a></span>
+                          <span class='description'>Reputation:<span class="pull-right"><i class='fa fa-star' style="color:#ffd700;"></i><b>&nbsp;&nbsp;1024</b></span></span>
+                      </div><!-- /.user-block -->
+                    </div><!-- /.box-header -->
+                    <div class='box-header with-border'>
+                      <div class='user-block'>
+                        <img class='img-circle' src='../../images/team/index4.jpg' alt='user image'>
+                          <span class='username'><a href="#">Isidro Estoce Jr.</a></span>
+                          <span class='description'>Reputation:<span class="pull-right"><i class='fa fa-star' style="color:#ffd700;"></i><b>&nbsp;&nbsp;1024</b></span></span>
+                      </div><!-- /.user-block -->
+                    </div><!-- /.box-header -->
+                </div><!-- /.box -->
+              </div><!-- /.col -->
+              <div class="col-md-7">
+              <!-- DIRECT CHAT PRIMARY -->
+              <div class="box box-primary direct-chat direct-chat-primary">
+                <div class="box-header with-border">Group Chat
+                  <div class="box-tools pull-right">
+                    <span data-toggle="tooltip" title="3 New Messages" class="badge bg-light-blue">3</span>
+                    <button class="btn btn-box-tool" data-toggle="tooltip" title="Contacts" data-widget="chat-pane-toggle"><i class="fa fa-comments"></i></button>
+                  </div>
                 </div><!-- /.box-header -->
                 <div class="box-body">
-                  <strong><i class="fa fa-book margin-r-5"></i>  Title</strong>
-                  <p class="text-muted">
-                    Start & Boost
-                  </p>
+                  <!-- Conversations are loaded here -->
+                  <div class="direct-chat-messages">
+                    <!-- Message. Default to the left -->
+                    <div class="direct-chat-msg">
+                      <div class="direct-chat-info clearfix">
+                        <span class="direct-chat-name pull-left">Jason Pitogo</span>
+                        <span class="direct-chat-timestamp pull-right">23 Jan 2:00 pm</span>
+                      </div><!-- /.direct-chat-info -->
+                      <img class="direct-chat-img" src="../../images/team/index1.jpg" alt="message user image"><!-- /.direct-chat-img -->
+                      <div class="direct-chat-text">
+                        Is this template really for free? That's unbelievable!
+                      </div><!-- /.direct-chat-text -->
+                    </div><!-- /.direct-chat-msg -->
 
-                  <hr>
+                    <!-- Message to the right -->
+                    <div class="direct-chat-msg right">
+                      <div class="direct-chat-info clearfix">
+                        <span class="direct-chat-name pull-right">Lyneth Cutamora</span>
+                        <span class="direct-chat-timestamp pull-left">23 Jan 2:05 pm</span>
+                      </div><!-- /.direct-chat-info -->
+                      <img class="direct-chat-img" src="../../images/team/index0.png" alt="message user image"><!-- /.direct-chat-img -->
+                      <div class="direct-chat-text">
+                        You better believe it!
+                      </div><!-- /.direct-chat-text -->
+                    </div><!-- /.direct-chat-msg -->
+                  </div><!--/.direct-chat-messages-->
 
-                  <strong><i class="fa fa-map-marker margin-r-5"></i> Description</strong>
-                  <p class="text-muted">A web and mobile based application.........</p>
-
-                  <hr>
-
-                  
+                  <!-- Contacts are loaded here -->
+                  <div class="direct-chat-contacts">
+                    <ul class="contacts-list">
+                      <li>
+                        <a href="#">
+                          <img class="contacts-list-img" src="../../images/team/index3.jpg">
+                          <div class="contacts-list-info">
+                            <span class="contacts-list-name">
+                              James Reid
+                              <small class="contacts-list-date pull-right">2/28/2015</small>
+                            </span>
+                            <span class="contacts-list-msg">How have you been? I was...</span>
+                          </div><!-- /.contacts-list-info -->
+                        </a>
+                      </li><!-- End Contact Item -->
+                    </ul><!-- /.contatcts-list -->
+                  </div><!-- /.direct-chat-pane -->
                 </div><!-- /.box-body -->
-              </div><!-- /.box -->
+                <div class="box-footer">
+                  <form action="#" method="post">
+                    <div class="input-group">
+                      <input type="text" name="message" placeholder="Type Message ..." class="form-control">
+                      <span class="input-group-btn">
+                        <button type="button" class="btn btn-primary btn-flat">Send</button>
+                      </span>
+                    </div>
+                  </form>
+                </div><!-- /.box-footer-->
+              </div><!--/.direct-chat -->
             </div><!-- /.col -->
+            </div><!--/.row-->
+          </div><!--/.container-->
+        </section><!--/.section-->
 
-
-
-
-               
-              <!-- Horizontal Form -->
  <div class="content-wrapper">
-        <!-- Content Header (Page header) -->
-        <section class="content-header">
-                <div class="box">
-                  <div class="box-header with-border">
-                    <p>Post New Idea</p>
-                  </div><!-- /.box-header -->
-                  <!-- form start -->
-                  <form class="form-horizontal">
-                    <div class="box-body">
-                      <div class="form-group">
-                        <label for="inputEmail3" class="col-sm-2 control-label">Title</label>
-                        <div class="col-sm-10">
-                          <input type="text" class="form-control" id="ideatitle" placeholder="Title"/>
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <label for="inputPassword3" class="col-sm-2 control-label">Description</label>
-                        <div class="col-sm-10">
-                          <textarea class="form-control" id="description" placeholder="Description"></textarea>
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <label for="inputLinks" class="col-sm-2 control-label">Links</label>
-                        <div class="col-sm-10">
-                          <input type="text" class="form-control" id="relatedlinks" placeholder="Related Links (Separated by comma)"/>
-                        </div>
-                      </div>
-                    </div><!-- /.box-body -->
-                    <div class="box-footer">
-                      <button type="submit" class="btn btn-info pull-right">Post</button>
-                    </div><!-- /.box-footer -->
-                </form>
-              </div><!-- /.box -->
-       </section>
-              
-
-
-
-
-
 
 
             <div class="box box-primary">
@@ -482,116 +335,6 @@
               </div><!-- /.nav-tabs-custom -->
             </div><!-- /.col -->
 
-            <!-- Direct Chat -->
-            
-          <div class="row">
-            <div class="col-md-9">
-              <!-- DIRECT CHAT PRIMARY -->
-              <div class="box box-primary direct-chat direct-chat-primary">
-                <div class="box-header with-border">
-                  <div class="box-tools pull-right">
-                    <span data-toggle="tooltip" title="3 New Messages" class="badge bg-light-blue">3</span>
-                    <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
-                    <button class="btn btn-box-tool" data-toggle="tooltip" title="Contacts" data-widget="chat-pane-toggle"><i class="fa fa-comments"></i></button>
-                    <button class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-                  </div>
-                </div><!-- /.box-header -->
-                <div class="box-body">
-                  <!-- Conversations are loaded here -->
-                  <div class="direct-chat-messages">
-                    <!-- Message. Default to the left -->
-                    <div class="direct-chat-msg">
-                      <div class="direct-chat-info clearfix">
-                        <span class="direct-chat-name pull-left">Jason Pitogo</span>
-                        <span class="direct-chat-timestamp pull-right">23 Jan 2:00 pm</span>
-                      </div><!-- /.direct-chat-info -->
-                      <img class="direct-chat-img" src="../../images/team/index1.jpg" alt="message user image"><!-- /.direct-chat-img -->
-                      <div class="direct-chat-text">
-                        Is this template really for free? That's unbelievable!
-                      </div><!-- /.direct-chat-text -->
-                    </div><!-- /.direct-chat-msg -->
-
-                    <!-- Message to the right -->
-                    <div class="direct-chat-msg right">
-                      <div class="direct-chat-info clearfix">
-                        <span class="direct-chat-name pull-right">Lyneth Cutamora</span>
-                        <span class="direct-chat-timestamp pull-left">23 Jan 2:05 pm</span>
-                      </div><!-- /.direct-chat-info -->
-                      <img class="direct-chat-img" src="../../images/team/index0.png" alt="message user image"><!-- /.direct-chat-img -->
-                      <div class="direct-chat-text">
-                        You better believe it!
-                      </div><!-- /.direct-chat-text -->
-                    </div><!-- /.direct-chat-msg -->
-                  </div><!--/.direct-chat-messages-->
-
-                  <!-- Contacts are loaded here -->
-                  <div class="direct-chat-contacts">
-                    <ul class="contacts-list">
-                      <li>
-                        <a href="#">
-                          <img class="contacts-list-img" src="../../images/team/index3.jpg">
-                          <div class="contacts-list-info">
-                            <span class="contacts-list-name">
-                              James Reid
-                              <small class="contacts-list-date pull-right">2/28/2015</small>
-                            </span>
-                            <span class="contacts-list-msg">How have you been? I was...</span>
-                          </div><!-- /.contacts-list-info -->
-                        </a>
-                      </li><!-- End Contact Item -->
-                    </ul><!-- /.contatcts-list -->
-                  </div><!-- /.direct-chat-pane -->
-                </div><!-- /.box-body -->
-                <div class="box-footer">
-                  <form action="#" method="post">
-                    <div class="input-group">
-                      <input type="text" name="message" placeholder="Type Message ..." class="form-control">
-                      <span class="input-group-btn">
-                        <button type="button" class="btn btn-primary btn-flat">Send</button>
-                      </span>
-                    </div>
-                  </form>
-                </div><!-- /.box-footer-->
-              </div><!--/.direct-chat -->
-            </div><!-- /.col -->
-
-
-            <!-- ============================================= -->
-            <!--GROUP NAV-->
-            <div class="col-md-2">
-              <div class="info-box">
-                <span class="info-box-icon bg-yellow"><i class="fa fa-files-o"></i></span>
-                <div class="info-box-content">
-                  <span>IDEAS SHARED</span>
-                  <span class="info-box-number">57</span>
-                </div><!-- /.info-box-content -->
-              </div><!-- /.info-box -->
-
-              <div class="info-box">
-                <span class="info-box-icon bg-aqua"><i class="fa fa-tasks"></i></span>
-                <div class="info-box-content">
-                  <span>CURRENT PROJECTS</span>
-                  <span class="info-box-number">5</span>
-                </div><!-- /.info-box-content -->
-              </div><!-- /.info-box -->
-
-              <div class="info-box">
-                <span class="info-box-icon bg-green"><i class="fa fa-flag-o"></i></span>
-                <div class="info-box-content">
-                  <span>COMPLETED PROJECTS</span>
-                  <span class="info-box-number">7</span>
-                </div><!-- /.info-box-content -->
-              </div><!-- /.info-box -->
-
-              <div class="info-box">
-                <span class="info-box-icon bg-red"><i class="fa fa-group"></i></span>
-                <div class="info-box-content">
-                  <span>GROUPS</span>
-                  <span class="info-box-number">3</span>
-                </div><!-- /.info-box-content -->
-              </div><!-- /.info-box -->
-
-            </div><!-- /.col -->
           </div><!-- /.row -->
 
         </section><!-- /.content -->
