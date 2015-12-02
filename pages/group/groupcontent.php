@@ -3,18 +3,19 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
           <h1>
-            Group Page <div class="btn-group">
-                      <button type="button" class="btn btn-default">Action</button>
-                      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                        <span class="caret"></span>
-                        <span class="sr-only">Toggle Dropdown</span>
-                      </button>
-                      <ul class="dropdown-menu" role="menu">
-                        <li><a href="#">Change Cover Photo</a></li>
-                        <li><a href="#">Add Group Member</a></li>
-                        <li><a href="#">Edit Group Description</a></li>
-                      </ul>
-                    </div>
+            Group Page 
+            <div class="btn-group">
+              <button type="button" class="btn btn-default">Action</button>
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                <span class="caret"></span>
+                <span class="sr-only">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Change Cover Photo</a></li>
+                <li><a href="#">Add Group Member</a></li>
+                <li><a href="#">Edit Group Description</a></li>
+              </ul>
+            </div>
           </h1>
           <ol class="breadcrumb">
             <li><a href="../dashboard/index.php"><i class="fa fa-dashboard"></i> Home</a></li>
@@ -24,17 +25,43 @@
 
         <!-- Main content -->
         <section class="content">
-
           <div class="row">
-            <div class="col-md-14">
-
+            <div class="col-md-12">
               <div class="box box-widget widget-user">
                 <!-- Add the bg color to the header using any of the bg-* classes -->
                 <div class="widget-user-header bg-black" style="background: url('../../images/bg.png') center center;">
-                  <h3 class="widget-group-groupname">Index[5]</h3>
-                  <h5 class="widget-group-project name">Start & Boost</h5>
-            </div>
-
+                  <h3 class="widget-user-username">$index[5]</h3>
+                  <h5 class="widget-user-desc">Start&Boost</h5>
+                </div>
+                <div class="box-footer">
+                  <div class="row">
+                    <div class="col-sm-3 border-right">
+                      <div class="description-block">
+                        <h5 class="description-header">5</h6>
+                        <span class="description-text">MEMBERS</span>
+                      </div><!-- /.description-block -->
+                    </div><!-- /.col -->
+                    <div class="col-sm-3 border-right">
+                      <div class="description-block">
+                        <h5 class="description-header">2</h5>
+                        <span class="description-text">PROJECTS</span>
+                      </div><!-- /.description-block -->
+                    </div><!-- /.col -->
+                    <div class="col-sm-3 border-right">
+                      <div class="description-block">
+                        <h5 class="description-header">1</h5>
+                        <span class="description-text">COMPLETED PROJECTS</span>
+                      </div><!-- /.description-block -->
+                    </div><!-- /.col -->
+                    <div class="col-sm-3">
+                      <div class="description-block">
+                        <h5 class="description-header">11</h5>
+                        <span class="description-text">FILES</span>
+                      </div><!-- /.description-block -->
+                    </div><!-- /.col -->
+                  </div><!-- /.row -->
+                </div>
+              </div><!-- /.widget-user -->
         <section id="services" class="services-section" style="height:auto;">
           <div class="container">
                       
