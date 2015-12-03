@@ -32,9 +32,11 @@
   </head>
   <!-- ADD THE CLASS fixed TO GET A FIXED HEADER AND SIDEBAR LAYOUT -->
   <!-- the fixed layout is not compatible with sidebar-mini -->
-
-    <body class="hold-transition skin-blue fixed sidebar-mini">
-
+  <?php if($pages=='profile'){
+    echo '  <body class="hold-transition skin-blue sidebar-collapse sidebar-mini">';
+  }else{
+   echo '<body class="hold-transition skin-blue fixed sidebar-mini">'; 
+}?>
     <!-- Site wrapper -->
     <div class="wrapper">
 
@@ -206,7 +208,7 @@
                   <!-- Menu Footer-->
                   <li class="user-footer">
                     <div class="pull-left">
-                      <a href="../profile/index.php" class="btn btn-default btn-flat">Profile</a>
+                      <a href="<?php echo base_url();?>pages/profile" class="btn btn-default btn-flat">Profile</a>
                     </div>
                     <div class="pull-right">
                       <a href="<?php echo base_url();?>pages/logout" class="btn btn-default btn-flat">Sign out</a>
@@ -273,42 +275,36 @@
           <!-- sidebar menu: : style can be found in sidebar.less -->
           <ul class="sidebar-menu">
             <li class="header">MAIN NAVIGATION</li>
-            <li class="treeview active">
-              <a href="#">
+            <li class="treeview <?php if($pages=='dashboard') {echo "active";}else echo "";?>">
+              <a href="<?php echo base_url();?>pages/index">
                 <i class="fa fa-dashboard"></i> <span>Dashboard</span> <!--<i class="fa fa-angle-left pull-right">--></i>
               </a>
-              <ul class="treeview-menu">
-                <!--<li><a href="#"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>-->
-              </ul>
+             
             </li>
-            <li class="treeview">
+            <li class="treeview <?php if($pages=='newsfeed') {echo "active";}else echo "";?>">
               <a href="#">
                 <i class="fa fa-feed"></i>
                 <span>News Feed</span>
                 <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="#"><i class="fa fa-circle-o"></i>Latest</a></li>
-                <li><a href="#"><i class="fa fa-fire"></i>On Fire</a></li>
-                <li><a href="#"><i class="fa fa-star"></i>Top Rated</a></li>
+                <li><a href="<?php echo base_url();?>pages/latest"><i class="fa fa-circle-o"></i>Latest</a></li>
+                <li><a href="<?php echo base_url();?>pages/onfire"><i class="fa fa-fire"></i>On Fire</a></li>
+                <li><a href="<?php echo base_url();?>pages/toprated"><i class="fa fa-star"></i>Top Rated</a></li>
               </ul>
             </li>
-             <li class="treeview">
-              <a href="#">
-                <i class="fa fa-calendar"></i> <span>Timeline</span>
-              </a>
-              <ul class="treeview-menu">
-                <!--<li><a href="#"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>-->
-              </ul>
+             <li class="treeview <?php if($pages=='timeline') {echo "active";}else echo "";?>">
+              <a href="<?php echo base_url();?>pages/timeline">
+                    <i class="fa fa-calendar"></i> <span>Timeline</span>
+                 </a>
+             
             </li>
-            <li class="treeview">
-              <a href="../Products/index.php">
+            <li class="treeview <?php if($pages=='startup') {echo "active";}else echo "";?>">
+              <a href="<?php echo base_url();?>pages/startupproduct">
                 <i class="fa fa-paper-plane"></i> <span>Startup Products</span>
               </a>
 
-              <ul class="treeview-menu">
-                <!--<li><a href="#"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>-->
-              </ul>
+              
             </li>
           </ul>
         </section>

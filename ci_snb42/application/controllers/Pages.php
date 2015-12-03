@@ -36,9 +36,8 @@ class Pages extends CI_Controller {
 
 	}
 	#MAO NI ANG DASHBOARD DISPLAY 
-	public function _dashboard()
+	public function _userData()
 	{
-
 		$this->db->select('*');
 		$this->db->from('user_md a');
 		$this->db->join('user_dtl b', 'b.userId=a.userId','left');
@@ -46,8 +45,15 @@ class Pages extends CI_Controller {
 		$this->db->where('a.userId', $this->session->userdata('userId'));
 
 		$query = $this->db->get();
-		$data['data']=$query->result_array();
 
+		return $query;
+	}
+	public function _dashboard()
+	{
+
+		$query=$this->_userData();
+		$data['data']=$query->result_array();
+		$data['pages']='dashboard';
 		$this->load->view('pages/dashboard/fixed',$data);
 		$this->load->view('pages/dashboard/content',$data);
 		$this->load->view('pages/dashboard/footer');
@@ -56,13 +62,100 @@ class Pages extends CI_Controller {
 
 	}
 	#MAO NI ANG PROFILE DISPLAY 
-		public function _profile()
+		public function latest()
 	{
-		$this->load->view('pages/dashboard/fixed');
+		if(($this->session->userdata('userId')!=""))
+		{
+		$query=$this->_userData();
+		$data['data']=$query->result_array();
+		$data['pages']='newsfeed';
+		$this->load->view('pages/dashboard/fixed',$data);
+		$this->load->view('pages/newsfeedlatest/latestcontent'); 
+		$this->load->view('pages/dashboard/controlsidebar');
+		$this->load->view('pages/dashboard/end');
+		}else{
+			$this->_landing();
+		}
+	}
+		public function onfire()
+	{
+		if(($this->session->userdata('userId')!=""))
+		{
+		$query=$this->_userData();
+		$data['data']=$query->result_array();
+		$data['pages']='newsfeed';
+		$this->load->view('pages/dashboard/fixed',$data);
+		$this->load->view('pages/newsfeedonfire/onfirecontent'); 
+		$this->load->view('pages/dashboard/controlsidebar');
+		$this->load->view('pages/dashboard/end');
+		}
+		else
+		{
+			$this->_landing();
+		}
+	}
+		public function toprated()
+	{
+		if(($this->session->userdata('userId')!=""))
+		{
+		$query=$this->_userData();
+		$data['data']=$query->result_array();
+		$data['pages']='newsfeed';
+		$this->load->view('pages/dashboard/fixed',$data);
+		$this->load->view('pages/newsfeedtoprated/topratedcontent'); 
+		$this->load->view('pages/dashboard/controlsidebar');
+		$this->load->view('pages/dashboard/end');
+		}else{
+			$this->_landing();
+		}
+	}
+			public function timeline()
+	{
+		if(($this->session->userdata('userId')!=""))
+		{
+		$query=$this->_userData();
+		$data['data']=$query->result_array();
+		$data['pages']='timeline';
+		$this->load->view('pages/dashboard/fixed',$data);
+		$this->load->view('pages/timeline/content'); 
+		$this->load->view('pages/dashboard/controlsidebar');
+		$this->load->view('pages/dashboard/end');
+		}else
+		{
+			$this->_landing();
+		}
+	}
+			public function startupproduct()
+	{
+		if(($this->session->userdata('userId')!=""))
+		{
+		$query=$this->_userData();
+		$data['data']=$query->result_array();
+		$data['pages']='startup';
+		$this->load->view('pages/dashboard/fixed',$data);
+		$this->load->view('pages/Products/content'); 
+		$this->load->view('pages/dashboard/controlsidebar');
+		$this->load->view('pages/dashboard/end');
+		}else{
+			$this->_landing();
+		}
+	}
+
+
+
+		public function profile()
+	{	if(($this->session->userdata('userId')!=""))
+		{
+		$query=$this->_userData();
+		$data['data']=$query->result_array();
+		$data['pages']='profile';
+		$this->load->view('pages/dashboard/fixed',$data);
 		$this->load->view('pages/profile/content'); 
 		$this->load->view('pages/dashboard/controlsidebar');
 		$this->load->view('pages/dashboard/end');
-		
+		}else{
+			$this->_landing();
+		}
 	}
 
 	#MAO NI ANG SIGN UP NGA FUNCTION PARA MAKA PILI SIYA SA TYPE
