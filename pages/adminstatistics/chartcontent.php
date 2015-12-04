@@ -24,7 +24,7 @@
         var areaChart = new Chart(areaChartCanvas);
 
         var areaChartData = {
-          labels: ["January", "February", "March", "April", "May", "June", "July"],
+          labels: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
           datasets: [
             {
               label: "Electronics",
@@ -34,8 +34,9 @@
               pointStrokeColor: "#c1c7d1",
               pointHighlightFill: "#fff",
               pointHighlightStroke: "rgba(220,220,220,1)",
-              data: [5, 10, 20, 60, 70, 80, 100]
+              data: [5, 80, 20, 60, 70, 80, 100, 10, 50, 100, 200, 250]
             },
+
           
           ]
         };
@@ -44,9 +45,9 @@
           //Boolean - If we should show the scale at all
           showScale: true,
           //Boolean - Whether grid lines are shown across the chart
-          scaleShowGridLines: false,
+          scaleShowGridLines: true,
           //String - Colour of the grid lines
-          scaleGridLineColor: "rgba(0,0,0,.05)",
+          scaleGridLineColor: "rgba(0,0,0,300)",
           //Number - Width of the grid lines
           scaleGridLineWidth: 1,
           //Boolean - Whether to show horizontal lines (except X axis)
@@ -58,7 +59,7 @@
           //Number - Tension of the bezier curve between points
           bezierCurveTension: 0.3,
           //Boolean - Whether to show a dot for each point
-          pointDot: false,
+          pointDot: true,
           //Number - Radius of each point dot in pixels
           pointDotRadius: 4,
           //Number - Pixel width of point dot stroke
@@ -83,6 +84,7 @@
         areaChart.Line(areaChartData, areaChartOptions);
 
 
+
 //--------------
         //- AREA CHART -
         //--------------
@@ -93,18 +95,18 @@
         var areaChart = new Chart(areaChartCanvas);
 
         var areaChartData = {
-          labels: ["January", "February", "March", "April", "May", "June", "July"],
+           labels: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
           datasets: [
             {
-              label: "Digital Goods",
-              fillColor: "rgba(60,141,188,0.9)",
-              strokeColor: "rgba(60,141,188,0.8)",
-              pointColor: "#3b8bba",
-              pointStrokeColor: "rgba(60,141,188,1)",
+              label: "Electronics",
+              fillColor: "rgba(1, 300, 1, 1)",
+              strokeColor: "rgba(210, 214, 222, 1)",
+              pointColor: "rgba(210, 214, 222, 1)",
+              pointStrokeColor: "#c1c7d1",
               pointHighlightFill: "#fff",
-              pointHighlightStroke: "rgba(60,141,188,1)",
-              data: [10, 20, 80, 90, 100, 150, 200]
-            }
+              pointHighlightStroke: "rgba(220,220,220,1)",
+              data: [2, 5, 20, 60, 70, 80, 100, 110, 130, 150, 200, 300]
+            },
           ]
         };
 
@@ -112,9 +114,9 @@
           //Boolean - If we should show the scale at all
           showScale: true,
           //Boolean - Whether grid lines are shown across the chart
-          scaleShowGridLines: false,
+          scaleShowGridLines: true,
           //String - Colour of the grid lines
-          scaleGridLineColor: "rgba(0,0,0,.05)",
+          scaleGridLineColor: "rgba(0,0,0,300)",
           //Number - Width of the grid lines
           scaleGridLineWidth: 1,
           //Boolean - Whether to show horizontal lines (except X axis)
@@ -126,7 +128,7 @@
           //Number - Tension of the bezier curve between points
           bezierCurveTension: 0.3,
           //Boolean - Whether to show a dot for each point
-          pointDot: false,
+          pointDot: true,
           //Number - Radius of each point dot in pixels
           pointDotRadius: 4,
           //Number - Pixel width of point dot stroke
@@ -161,17 +163,17 @@
         var areaChart = new Chart(areaChartCanvas);
 
         var areaChartData = {
-          labels: ["January", "February", "March", "April", "May", "June", "July"],
+           labels: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
           datasets: [
             {
               label: "Electronics",
-              fillColor: "rgba(210, 214, 222, 1)",
+              fillColor: "rgba(1, 1, 300, 1)",
               strokeColor: "rgba(210, 214, 222, 1)",
               pointColor: "rgba(210, 214, 222, 1)",
               pointStrokeColor: "#c1c7d1",
               pointHighlightFill: "#fff",
               pointHighlightStroke: "rgba(220,220,220,1)",
-              data: [10, 50, 100, 150, 200, 250, 300]
+              data: [50, 12, 20, 60, 70, 80, 100, 120, 200, 150, 400, 300]
             },
             
           ]
@@ -181,9 +183,9 @@
           //Boolean - If we should show the scale at all
           showScale: true,
           //Boolean - Whether grid lines are shown across the chart
-          scaleShowGridLines: false,
+          scaleShowGridLines: true,
           //String - Colour of the grid lines
-          scaleGridLineColor: "rgba(0,0,0,.05)",
+          scaleGridLineColor: "rgba(0,0,0,300)",
           //Number - Width of the grid lines
           scaleGridLineWidth: 1,
           //Boolean - Whether to show horizontal lines (except X axis)
@@ -195,7 +197,7 @@
           //Number - Tension of the bezier curve between points
           bezierCurveTension: 0.3,
           //Boolean - Whether to show a dot for each point
-          pointDot: false,
+          pointDot: true,
           //Number - Radius of each point dot in pixels
           pointDotRadius: 4,
           //Number - Pixel width of point dot stroke

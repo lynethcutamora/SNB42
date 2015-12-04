@@ -61,7 +61,7 @@ if(isset($_SESSION['Start&Boost'])){
   <!-- ADD THE CLASS fixed TO GET A FIXED HEADER AND SIDEBAR LAYOUT -->
   <!-- the fixed layout is not compatible with sidebar-mini -->
   <?php 
-  if($_SESSION['pages']=='profile'){
+  if($_SESSION['pages']=='admindashboard'){
     echo '  <body class="hold-transition skin-blue sidebar-collapse sidebar-mini">';
 
   }else{
@@ -308,6 +308,16 @@ if(isset($_SESSION['Start&Boost'])){
                <li class="treeview">
               <a href="#">
                 <i class="fa fa-pie-chart"></i> <span>View Statistics</span>
+              </a>
+            </li>
+            <li class="treeview">
+              <a href="#">
+                <i class="fa fa-laptop"></i> <span>View Online</span>
+              </a>
+            </li>
+            <li class="treeview">
+              <a href="#">
+                <i class="fa fa-book"></i> <span>Reports</span>
               </a>
             </li>
           </ul>
