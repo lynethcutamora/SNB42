@@ -157,7 +157,21 @@ class Pages extends CI_Controller {
 		}
 	}
 
-
+	public function group()
+	{
+		if(($this->session->userdata('userId')!=""))
+		{
+		$query=$this->_userData();
+		$data['data']=$query->result_array();
+		$data['pages']='group';
+		$this->load->view('pages/dashboard/fixed',$data);
+		$this->load->view('pages/group/groupcontent'); 
+		$this->load->view('pages/dashboard/controlsidebar');
+		$this->load->view('pages/dashboard/end');
+		}else{
+			$this->_landing();
+		}
+	}
 
 	public function profile()
 	{	if(($this->session->userdata('userId')!=""))
@@ -193,20 +207,7 @@ class Pages extends CI_Controller {
 			$this->_landing();
 		}
 	}
-			public function group()
-	{	if(($this->session->userdata('userId')!=""))
-		{
-		$query=$this->_userData();
-		$data['data']=$query->result_array();
-		$data['pages']='group';
-		$this->load->view('pages/dashboard/fixed',$data);
-		$this->load->view('pages/group/groupcontent'); 
-		$this->load->view('pages/dashboard/controlsidebar');
-		$this->load->view('pages/dashboard/end');
-		}else{
-			$this->_landing();
-		}
-	}
+	
 
 	#MAO NI ANG SIGN UP NGA FUNCTION PARA MAKA PILI SIYA SA TYPE
 	public function signUp()

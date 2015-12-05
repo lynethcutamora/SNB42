@@ -307,6 +307,13 @@
 
               
             </li>
+            <li class="treeview <?php if($pages=='group') {echo "active";}else echo "";?>">
+              <a href="<?php echo base_url();?>pages/group">
+                <i class="fa fa-group"></i> <span>MyGroup</span>
+              </a>
+
+              
+            </li>
           </ul>
         </section>
         <!-- /.sidebar -->
