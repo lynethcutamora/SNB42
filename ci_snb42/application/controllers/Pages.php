@@ -42,12 +42,28 @@ class Pages extends CI_Controller {
 		$this->db->from('user_md a');
 		$this->db->join('user_dtl b', 'b.userId=a.userId','left');
 		$this->db->join('company_dtl c', 'c.userId=a.userId','left');
+		$this->db->join('avatar_dtl d', 'd.userId=a.userId','left');
 		$this->db->where('a.userId', $this->session->userdata('userId'));
+
 
 		$query = $this->db->get();
 
 		return $query;
 	}
+	public function _alluserData()
+	{
+		$this->db->select('*');
+		$this->db->from('user_md a');
+		$this->db->join('user_dtl b', 'a.userId=b.userId','left');
+		$this->db->join('company_dtl c', 'c.userId=b.userId','left');
+		$this->db->join('userpost d', 'd.userId=b.userId');
+		$this->db->join('avatar_dtl e', 'e.userId=d.userId');
+		$this->db->order_by('postDate', 'DESC');
+		$query = $this->db->get();
+
+		return $query;
+	}
+
 	public function _dashboard()
 	{
 
@@ -143,7 +159,7 @@ class Pages extends CI_Controller {
 
 
 
-		public function profile()
+	public function profile()
 	{	if(($this->session->userdata('userId')!=""))
 		{
 		$query=$this->_userData();
@@ -151,6 +167,40 @@ class Pages extends CI_Controller {
 		$data['pages']='profile';
 		$this->load->view('pages/dashboard/fixed',$data);
 		$this->load->view('pages/profile/content'); 
+		$this->load->view('pages/dashboard/controlsidebar');
+		$this->load->view('pages/dashboard/end');
+		}else{
+			$this->_landing();
+		}
+	}
+
+		public function post()
+	{	if(($this->session->userdata('userId')!=""))
+		{
+		$query=$this->_userData();
+		$data['data']=$query->result_array();
+		$data['pages']='post';
+
+		$query=$this->_alluserData();
+		$data['alldata']=$query->result_array();
+
+		$this->load->view('pages/dashboard/fixed',$data);
+		$this->load->view('pages/post/content',$data); 
+		$this->load->view('pages/dashboard/controlsidebar');
+		$this->load->view('pages/dashboard/end');
+
+		}else{
+			$this->_landing();
+		}
+	}
+			public function group()
+	{	if(($this->session->userdata('userId')!=""))
+		{
+		$query=$this->_userData();
+		$data['data']=$query->result_array();
+		$data['pages']='group';
+		$this->load->view('pages/dashboard/fixed',$data);
+		$this->load->view('pages/group/groupcontent'); 
 		$this->load->view('pages/dashboard/controlsidebar');
 		$this->load->view('pages/dashboard/end');
 		}else{
@@ -491,6 +541,79 @@ class Pages extends CI_Controller {
         }
 	}
 
+	public function postIdea()
+	{
 
+		 $this->form_validation->set_rules('ideatitle', 'Title', 'required|trim');
+         $this->form_validation->set_rules('inputDescription', 'Description', 'required|trim');
+         $this->form_validation->set_rules('relatedlinks', 'Links', 'trim');
+         if ($this->form_validation->run() == FALSE)
+        {
+         	$this->post();
+        }
+        else
+		{
+     	 	$datetime = date('Y-m-d H:i:s'); 
+     	 	$postId = uniqid();
+     	 	$data = array(
+			'postId' => $postId,
+			'postTitle' =>	$this->input->post('ideatitle'),
+			'postContent' =>$this->input->post('inputDescription'),
+			'postType' => '1',
+			'userId' => $this->session->userdata('userId'),
+			'postDate' =>$datetime
+			);
+
+			$this->db->insert('userpost', $data);
+			$this->post();
+		}
+			
+	}
+
+	public function showPost()
+	{
+		$query=$this->_userData();
+		$data['data']=$query->result_array();
+		$data['pages']='post';
+
+		$query=$this->_alluserData();
+		$data['alldata']=$query->result_array();
+		$this->load->view('pages/post/post',$data);
+	}
+	public function showComment()
+	{
+		$query=$this->_userData();
+		$data['data']=$query->result_array();
+		$data['pages']='post';
+
+		$query=$this->_alluserData();
+		$data['alldata']=$query->result_array();
+		$this->load->view('pages/post/comment',$data);
+	}
+	public function comment()
+	{
+		 $this->form_validation->set_rules('comment', 'Comment', 'required|trim');
+ 
+         if ($this->form_validation->run() == FALSE)
+        {
+         	$this->post();
+        }
+        else
+		{
+     	 	$datetime = date('Y-m-d H:i:s'); 
+     	 	$commentId = uniqid();
+     	 	$data = array(
+			'commentId' => $this->input->post('commentid'),
+			'commentContent' =>$this->input->post('comment'),
+			'commentType' =>$this->input->post('btnComment'),
+			'postId' =>$this->input->post('postId'),
+			'userId' => $this->session->userdata('userId'),
+			'commentDate' =>$datetime
+			);
+
+			$this->db->insert('comment_dtl', $data);
+			$this->post();
+		}
+	}
 
 }

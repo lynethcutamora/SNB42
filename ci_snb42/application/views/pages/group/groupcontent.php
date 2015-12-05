@@ -3,316 +3,184 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
           <h1>
-            Group Page <div class="btn-group">
-                      <button type="button" class="btn btn-default">Action</button>
-                      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                        <span class="caret"></span>
-                        <span class="sr-only">Toggle Dropdown</span>
-                      </button>
-                      <ul class="dropdown-menu" role="menu">
-                        <li><a href="#">Change Cover Photo</a></li>
-                        <li><a href="#">Add Group Member</a></li>
-                        <li><a href="#">Edit Group Description</a></li>
-                      </ul>
-                    </div>
+            Group Page 
+            <div class="btn-group">
+              <button type="button" class="btn btn-default">Action</button>
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                <span class="caret"></span>
+                <span class="sr-only">Toggle Dropdown</span>
+              </button>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Change Cover Photo</a></li>
+                <li><a href="#">Add Group Member</a></li>
+                <li><a href="#">Add Project</a></li>
+                <li><a href="#">Edit Group Description</a></li>
+              </ul>
+            </div>
           </h1>
           <ol class="breadcrumb">
             <li><a href="../dashboard/index.php"><i class="fa fa-dashboard"></i> Home</a></li>
-            <li class="active">Group Cover</li>
+            <li class="active">Group Page</li>
           </ol>
         </section>
-
-        <!-- Main content -->
-        <section class="content">
-
-          <div class="row">
-            <div class="col-md-14">
-
+        <hr/>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="col-md-9">
               <div class="box box-widget widget-user">
                 <!-- Add the bg color to the header using any of the bg-* classes -->
                 <div class="widget-user-header bg-black" style="background: url('../../images/bg.png') center center;">
-                  <h3 class="widget-group-groupname">Index[5]</h3>
-                  <h5 class="widget-group-project name">Start & Boost</h5>
-            </div>
-
-        <section id="services" class="services-section" style="height:auto;">
-          <div class="container">
-                      
-                        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="7000">
-                              <ol class="carousel-indicators">
-                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                                <li data-target="#myCarousel" data-slide-to="1"></li>
-                                <li data-target="#myCarousel" data-slide-to="2"></li>
-                              </ol>
-                              <div class="carousel-inner" role="listbox">
-                                <div class="active item">
-                               
-            <div class="col-md-6">
-
-              <div class="box box-widget widget-user">
-                <!-- Add the bg color to the header using any of the bg-* classes -->
-                <div class="widget-user-header bg-black" style="background: url('../../dist/img/photo1.png') center center;">
-                </br></br>
-                  <h4>Lyneth C. Cutamora</h3>
-                  <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Web Designer</h5>
+                  <h3 class="widget-user-username">$index[5]</h3>
+                  <h5 class="widget-user-desc">"We can make imaginations to reality"</h5>
                 </div>
-                <div class="widget-user-image">
-                  <img class="img-circle" src="../../images/team/index0.png" alt="First slide">
-                </div>
-                
-                   <div class="container">
-                    <div class="carousel-caption">
-                    <div class="widget-user-image">
-                  <p>Reputation:<span><i class="fa fa-star" style="color:#ffd700;"></i><b> &nbsp;&nbsp;1</b></span></p>
-                </div>
+                <div class="box-footer">
                   <div class="row">
-
                     <div class="col-sm-3 border-right">
                       <div class="description-block">
-                        <h5 class="description-header">24</h6>
-                        <span class="description-text">GOLD</span>
-                      </div><!-- /.description-block -->
-                    </div><!-- /.col -->
-                    <div class="col-sm-3 border-right">
-                      <div class="description-block">
-                        <h5 class="description-header">11</h5>
-                        <span class="description-text">SILVER</span>
+                        <h5 class="description-header">5</h5>
+                        <span class="description-text">MEMBERS</span>
                       </div><!-- /.description-block -->
                     </div><!-- /.col -->
                     <div class="col-sm-3 border-right">
                       <div class="description-block">
                         <h5 class="description-header">2</h5>
-                        <span class="description-text">BRONZE</span>
+                        <span class="description-text">PROJECTS</span>
+                      </div><!-- /.description-block -->
+                    </div><!-- /.col -->
+                    <div class="col-sm-3 border-right">
+                      <div class="description-block">
+                        <h5 class="description-header">1</h5>
+                        <span class="description-text">COMPLETED PROJECTS</span>
                       </div><!-- /.description-block -->
                     </div><!-- /.col -->
                     <div class="col-sm-3">
-                      <div class="description-block">
-                        <h5 class="description-header">0</h5>
-                        <span class="description-text">BLACK</span>
-                      </div><!-- /.description-block -->
-                    </div><!-- /.col -->
-                  </div><!-- /.row -->
-                </div>
-              </div><!-- /.widget-user -->
-
-                                    
-                                  
-                                </div>
-                              </div>
-                            </div>
-
-
-
-                  <div class="item">
-                        <div class="col-md-6">
-
-              <div class="box box-widget widget-user">
-                <!-- Add the bg color to the header using any of the bg-* classes -->
-                <div class="widget-user-header bg-black" style="background: url('../../dist/img/photo2.png') center center;">
-                </br></br>
-                  <h4>Jason D. Pitogo</h3>
-                  <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Programmer</h5>
-                </div>
-                <div class="widget-user-image">
-                  <img class="img-circle" src="../../images/team/index1.jpg" alt="Second slide">
-                </div>
-                                  <div class="container">
-                                    <div class="carousel-caption">
-                                        <div class="widget-user-image">
-                  <p>Reputation:<span><i class="fa fa-star" style="color:#ffd700;"></i><b> &nbsp;&nbsp;100</b></span></p>
-                </div>
-                  <div class="row">
-
-                    <div class="col-sm-3 border-right">
-                      <div class="description-block">
-                        <h5 class="description-header">24</h6>
-                        <span class="description-text">GOLD</span>
-                      </div><!-- /.description-block -->
-                    </div><!-- /.col -->
-                    <div class="col-sm-3 border-right">
                       <div class="description-block">
                         <h5 class="description-header">11</h5>
-                        <span class="description-text">SILVER</span>
-                      </div><!-- /.description-block -->
-                    </div><!-- /.col -->
-                    <div class="col-sm-3 border-right">
-                      <div class="description-block">
-                        <h5 class="description-header">2</h5>
-                        <span class="description-text">BRONZE</span>
-                      </div><!-- /.description-block -->
-                    </div><!-- /.col -->
-                    <div class="col-sm-3">
-                      <div class="description-block">
-                        <h5 class="description-header">0</h5>
-                        <span class="description-text">BLACK</span>
+                        <span class="description-text">FILES</span>
                       </div><!-- /.description-block -->
                     </div><!-- /.col -->
                   </div><!-- /.row -->
-                </div>
+                </div><!-- /.footer-->
               </div><!-- /.widget-user -->
 
-                                    
-                                  
-                                </div>
-                              </div>
-                            </div>
-
-
-
-
-
-                            <div class="item">
-                        <div class="col-md-6">
-
-              <div class="box box-widget widget-user">
-                <!-- Add the bg color to the header using any of the bg-* classes -->
-                <div class="widget-user-header bg-black" style="background: url('../../dist/img/edelito.jpg') center center;">
-                </br></br>
-                  <h4>Edelito D. Albaracin Jr.</h3>
-                  <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Systems Analyst</h5>
-                </div>
-                <div class="widget-user-image">
-                  <img class="img-circle" src="../../images/team/index3.jpg" alt="Third slide">
-                </div>
-                                  <div class="container">
-                                    <div class="carousel-caption">
-                                        <div class="widget-user-image">
-                  <p>Reputation:<span><i class="fa fa-star" style="color:#ffd700;"></i><b> &nbsp;&nbsp;10000000</b></span></p>
-                </div>
-                  <div class="row">
-
-                    <div class="col-sm-3 border-right">
-                      <div class="description-block">
-                        <h5 class="description-header">24</h6>
-                        <span class="description-text">GOLD</span>
-                      </div><!-- /.description-block -->
-                    </div><!-- /.col -->
-                    <div class="col-sm-3 border-right">
-                      <div class="description-block">
-                        <h5 class="description-header">11</h5>
-                        <span class="description-text">SILVER</span>
-                      </div><!-- /.description-block -->
-                    </div><!-- /.col -->
-                    <div class="col-sm-3 border-right">
-                      <div class="description-block">
-                        <h5 class="description-header">2</h5>
-                        <span class="description-text">BRONZE</span>
-                      </div><!-- /.description-block -->
-                    </div><!-- /.col -->
-                    <div class="col-sm-3">
-                      <div class="description-block">
-                        <h5 class="description-header">0</h5>
-                        <span class="description-text">BLACK</span>
-                      </div><!-- /.description-block -->
-                    </div><!-- /.col -->
-                  </div><!-- /.row -->
-                </div>
-              </div><!-- /.widget-user -->
-
-                                    
-                                  
-                                </div>
-                              </div>
-                            </div>
-
-                                
-                                  </div>
-                                </div>
-
-
-
-
-
-
-
-            
-                          </div>
-                        </div>
-              </div>
-                </div>
-
-
-
-                <!-- About Me Box -->
-              <div class="box box-primary">
-                <div class="box-header with-border">
-                  <h3 class="box-title">Group Description</h3>
-                </div><!-- /.box-header -->
-                <div class="box-body">
-                  <strong><i class="fa fa-book margin-r-5"></i>  Title</strong>
-                  <p class="text-muted">
-                    Start & Boost
-                  </p>
-
-                  <hr>
-
-                  <strong><i class="fa fa-map-marker margin-r-5"></i> Description</strong>
-                  <p class="text-muted">A web and mobile based application.........</p>
-
-                  <hr>
-
-                  
-                </div><!-- /.box-body -->
-              </div><!-- /.box -->
-            </div><!-- /.col -->
-
-
-
-
-               
-              <!-- Horizontal Form -->
- <div class="content-wrapper">
-        <!-- Content Header (Page header) -->
-        <section class="content-header">
-                <div class="box">
-                  <div class="box-header with-border">
-                    <p>Post New Idea</p>
-                  </div><!-- /.box-header -->
-                  <!-- form start -->
-                  <form class="form-horizontal">
-                    <div class="box-body">
-                      <div class="form-group">
-                        <label for="inputEmail3" class="col-sm-2 control-label">Title</label>
-                        <div class="col-sm-10">
-                          <input type="text" class="form-control" id="ideatitle" placeholder="Title"/>
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <label for="inputPassword3" class="col-sm-2 control-label">Description</label>
-                        <div class="col-sm-10">
-                          <textarea class="form-control" id="description" placeholder="Description"></textarea>
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <label for="inputLinks" class="col-sm-2 control-label">Links</label>
-                        <div class="col-sm-10">
-                          <input type="text" class="form-control" id="relatedlinks" placeholder="Related Links (Separated by comma)"/>
-                        </div>
-                      </div>
-                    </div><!-- /.box-body -->
-                    <div class="box-footer">
-                      <button type="submit" class="btn btn-info pull-right">Post</button>
-                    </div><!-- /.box-footer -->
-                </form>
-              </div><!-- /.box -->
-       </section>
-              
-
-
-
-
-
-
-
-            <div class="box box-primary">
-              
+              <!-- Custom Tabs (Pulled to the right) -->
               <div class="nav-tabs-custom">
-                <ul class="nav nav-tabs">
-                  <li class="active"><a href="#activity" data-toggle="tab">Activity</a></li>
-                  <li><a href="#settings" data-toggle="tab">Settings</a></li>
+                <ul class="nav nav-tabs pull-right">
+                  <li class="active"><a href="#tab_1-1" data-toggle="tab">Group Chat</a></li>
+                  <li><a href="#tab_2-2" data-toggle="tab">Important Files</a></li>
+                  <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                      Project(s) <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Start&Boost</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Start&Boost</a></li>
+                    </ul>
+                  </li>
+                  <li class="pull-left header"><i class="fa fa-calendar-check-o"></i> Group Activity</li>
                 </ul>
                 <div class="tab-content">
-                  <div class="active tab-pane" id="activity">
+                  <div class="tab-pane active" id="tab_1-1">
+                    <div>
+                      <a class="btn btn-app" data-toogle="tooltip" title="Send Message">
+                        <i class="fa fa-video-camera"></i>Call a conference
+                      </a>
+                    </div>
+                    <!-- Chat box -->
+                        <div class="box box-success">
+                          <div class="box-header">
+                            <i class="fa fa-comments-o"></i>
+                            <h3 class="box-title">Start&Boost Project</h3>
+                            <div class="box-tools pull-right" data-toggle="tooltip" title="Status">
+                              <div class="btn-group" data-toggle="btn-toggle" >
+                                <button type="button" class="btn btn-default btn-sm active"><i class="fa fa-square text-green"></i></button>
+                                <button type="button" class="btn btn-default btn-sm"><i class="fa fa-square text-red"></i></button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="box-body chat" id="chat-box">
+                            <!-- chat item -->
+                            <div class="item">
+                              <img src="../../images/team/index3.jpg" alt="user image" class="online">
+                              <p class="message">
+                                <a href="#" class="name">
+                                  <small class="text-muted pull-right"><i class="fa fa-clock-o"></i> 2:15</small>
+                                  Bob Uy
+                                </a>
+                                I would like to meet you to discuss the latest news about
+                                the arrival of the new theme. They say it is going to be one the
+                                best themes on the market
+                              </p>
+                              <div class="attachment">
+                                <h4>Attachments:</h4>
+                                <p class="filename">
+                                  Theme-thumbnail-image.jpg
+                                </p>
+                                <div class="pull-right">
+                                  <button class="btn btn-primary btn-sm btn-flat">Open</button>
+                                </div>
+                              </div><!-- /.attachment -->
+                            </div><!-- /.item -->
+                            <!-- chat item -->
+                            <div class="item">
+                              <img src="../../images/team/index1.jpg" alt="user image" class="offline">
+                              <p class="message">
+                                <a href="#" class="name">
+                                  <small class="text-muted pull-right"><i class="fa fa-clock-o"></i> 5:15</small>
+                                  Wang Kig
+                                </a>
+                                I would like to meet you to discuss the latest news about
+                                the arrival of the new theme. They say it is going to be one the
+                                best themes on the market
+                              </p>
+                            </div><!-- /.item -->
+                            <!-- chat item -->
+                            <div class="item">
+                              <img src="../../images/team/index4.jpg" alt="user image" class="offline">
+                              <p class="message">
+                                <a href="#" class="name">
+                                  <small class="text-muted pull-right"><i class="fa fa-clock-o"></i> 5:30</small>
+                                  Teigo Wang
+                                </a>
+                                I would like to meet you to discuss the latest news about
+                                the arrival of the new theme. They say it is going to be one the
+                                best themes on the market
+                              </p>
+                            </div><!-- /.item -->
+                          </div><!-- /.chat -->
+                          <div class="box-footer">
+                            <div class="input-group">
+                              <input class="form-control" placeholder="Type message...">
+                              <div class="input-group-btn">
+                                <button class="btn btn-success"><i class="fa fa-plus"></i></button>
+                              </div>
+                            </div>
+                          </div>
+                        </div><!-- /.box (chat box) -->
+                  </div><!-- /.tab-pane -->
+                  <div class="tab-pane" id="tab_2-2">
+                    <div class="box">
+                      <div class="box-header with-border">
+                        <p>Update Status</p>
+                      </div><!-- /.box-header -->
+                      <!-- form start -->
+                      <form class="form-horizontal">
+                        <div class="box-body">
+                          <div class="form-group">
+                            <label for="inputDescription" class="col-sm-2 control-label">Information</label>
+                            <div class="col-sm-10">
+                              <textarea class="form-control" id="inputDescription" placeholder="Post Information"></textarea>
+                            </div>
+                          </div>
+                        </div><!-- /.box-body -->
+                        <div class="box-footer">
+                          <form action="" method="post" enctype="multipart/form-data">
+                            <input class="pull-left" type="file" name="fileToUpload" id="fileToUpload">
+                            <input class="btn btn-info pull-right" type="submit" value="Post" name="submit">
+                          </form>
+                        </div><!-- /.box-footer -->
+                      </form><!--/.form-->
+                    </div><!-- /.box -->
                     <!-- Post -->
                     <div class="post">
                       <div class="box-body">
@@ -343,9 +211,9 @@
                             <div class="attachment-block clearfix">
                               <img class="attachment-img" src="../../dist/img/photo1.png" alt="attachment image">
                               <div class="attachment-pushed">
-                                <h4 class="attachment-heading"><a href="#">Start&Boost</a></h4>
+                                <h4 class="attachment-heading"><a href="#">Chapter I & II</a></h4>
                                 <div class="attachment-text">
-                                  Related Links: <br/><a href="#">startandboost/video</a>, &nbsp;&nbsp;<a href="#">startandboost/article</a>
+                                  .docx file
                                 </div><!-- /.attachment-text -->
                               </div><!-- /.attachment-pushed -->
                             </div><!-- /.attachment-block -->
@@ -413,159 +281,67 @@
                       </div><!--/.body-->
                     </div><!-- /.post -->
                   </div><!-- /.tab-pane -->
-
-                 
-                  <div class="tab-pane" id="settings">
-                    <form class="form-horizontal">
-                      <div class="form-group">
-                        <label for="inputName" class="col-sm-2 control-label">Name</label>
-                        <div class="col-sm-10">
-                          <input type="email" class="form-control" id="inputName" placeholder="Name">
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <label for="inputEmail" class="col-sm-2 control-label">Email</label>
-                        <div class="col-sm-10">
-                          <input type="email" class="form-control" id="inputEmail" placeholder="Email">
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <label for="inputDescription" class="col-sm-2 control-label">About Me</label>
-                        <div class="col-sm-10">
-                          <textarea class="form-control" id="inputDescription" placeholder="Short Self-Description"></textarea>
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <div class="col-sm-offset-2 col-sm-10">
-                          <div class="checkbox">
-                            <label>
-                              <input type="checkbox"> I agree to the <a href="#">terms and conditions</a>
-                            </label>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <div class="col-sm-offset-2 col-sm-10">
-                          <button type="submit" class="btn btn-danger">Submit</button>
-                        </div>
-                      </div>
-                    </form>
-                  </div><!-- /.tab-pane -->
                 </div><!-- /.tab-content -->
-              </div><!-- /.nav-tabs-custom -->
+              </div><!-- nav-tabs-custom -->
             </div><!-- /.col -->
 
-            <!-- Direct Chat -->
-            
-          <div class="row">
-            <div class="col-md-9">
-              <!-- DIRECT CHAT PRIMARY -->
-              <div class="box box-primary direct-chat direct-chat-primary">
-                <div class="box-header with-border">
-                  <div class="box-tools pull-right">
-                    <span data-toggle="tooltip" title="3 New Messages" class="badge bg-light-blue">3</span>
-                    <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
-                    <button class="btn btn-box-tool" data-toggle="tooltip" title="Contacts" data-widget="chat-pane-toggle"><i class="fa fa-comments"></i></button>
-                    <button class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-                  </div>
-                </div><!-- /.box-header -->
+            <div class="col-md-3">
+                <div class="box box-solid">
+                  <div class="box-header with-border">
+                    <h3 class="box-title">Team Members</h3>
+                  </div><!-- /.box-header -->
+                    <div class='box-header with-border'>
+                      <div class='user-block'>
+                        <img class='img-circle' src='../../images/team/index0.png' alt='user image'>
+                          <span class='username'><a href="#">Lyneth C. Cutamora</a></span>
+                          <span class='description'>Reputation:<span class="pull-right"><i class='fa fa-star' style="color:#ffd700;"></i><b>&nbsp;&nbsp;1024</b></span></span>
+                      </div><!-- /.user-block -->
+                    </div><!-- /.box-header -->
+                    <div class='box-header with-border'>
+                      <div class='user-block'>
+                        <img class='img-circle' src='../../images/team/index1.jpg' alt='user image'>
+                          <span class='username'><a href="#">Jason D. Pitogo</a></span>
+                          <span class='description'>Reputation:<span class="pull-right"><i class='fa fa-star' style="color:#ffd700;"></i><b>&nbsp;&nbsp;1024</b></span></span>
+                      </div><!-- /.user-block -->
+                    </div><!-- /.box-header -->
+                    <div class='box-header with-border'>
+                      <div class='user-block'>
+                        <img class='img-circle' src='../../images/team/index2.jpg' alt='user image'>
+                          <span class='username'><a href="#">Alfie Dimpas</a></span>
+                          <span class='description'>Reputation:<span class="pull-right"><i class='fa fa-star' style="color:#ffd700;"></i><b>&nbsp;&nbsp;1024</b></span></span>
+                      </div><!-- /.user-block -->
+                    </div><!-- /.box-header -->
+                    <div class='box-header with-border'>
+                      <div class='user-block'>
+                        <img class='img-circle' src='../../images/team/index3.jpg' alt='user image'>
+                          <span class='username'><a href="#">Edelito D. Albaracin Jr.</a></span>
+                          <span class='description'>Reputation:<span class="pull-right"><i class='fa fa-star' style="color:#ffd700;"></i><b>&nbsp;&nbsp;1024</b></span></span>
+                      </div><!-- /.user-block -->
+                    </div><!-- /.box-header -->
+                    <div class='box-header with-border'>
+                      <div class='user-block'>
+                        <img class='img-circle' src='../../images/team/index4.jpg' alt='user image'>
+                          <span class='username'><a href="#">Isidro Estoce Jr.</a></span>
+                          <span class='description'>Reputation:<span class="pull-right"><i class='fa fa-star' style="color:#ffd700;"></i><b>&nbsp;&nbsp;1024</b></span></span>
+                      </div><!-- /.user-block -->
+                    </div><!-- /.box-header -->
+                </div><!-- /.box -->
+
                 <div class="box-body">
-                  <!-- Conversations are loaded here -->
-                  <div class="direct-chat-messages">
-                    <!-- Message. Default to the left -->
-                    <div class="direct-chat-msg">
-                      <div class="direct-chat-info clearfix">
-                        <span class="direct-chat-name pull-left">Jason Pitogo</span>
-                        <span class="direct-chat-timestamp pull-right">23 Jan 2:00 pm</span>
-                      </div><!-- /.direct-chat-info -->
-                      <img class="direct-chat-img" src="../../images/team/index1.jpg" alt="message user image"><!-- /.direct-chat-img -->
-                      <div class="direct-chat-text">
-                        Is this template really for free? That's unbelievable!
-                      </div><!-- /.direct-chat-text -->
-                    </div><!-- /.direct-chat-msg -->
-
-                    <!-- Message to the right -->
-                    <div class="direct-chat-msg right">
-                      <div class="direct-chat-info clearfix">
-                        <span class="direct-chat-name pull-right">Lyneth Cutamora</span>
-                        <span class="direct-chat-timestamp pull-left">23 Jan 2:05 pm</span>
-                      </div><!-- /.direct-chat-info -->
-                      <img class="direct-chat-img" src="../../images/team/index0.png" alt="message user image"><!-- /.direct-chat-img -->
-                      <div class="direct-chat-text">
-                        You better believe it!
-                      </div><!-- /.direct-chat-text -->
-                    </div><!-- /.direct-chat-msg -->
-                  </div><!--/.direct-chat-messages-->
-
-                  <!-- Contacts are loaded here -->
-                  <div class="direct-chat-contacts">
-                    <ul class="contacts-list">
-                      <li>
-                        <a href="#">
-                          <img class="contacts-list-img" src="../../images/team/index3.jpg">
-                          <div class="contacts-list-info">
-                            <span class="contacts-list-name">
-                              James Reid
-                              <small class="contacts-list-date pull-right">2/28/2015</small>
-                            </span>
-                            <span class="contacts-list-msg">How have you been? I was...</span>
-                          </div><!-- /.contacts-list-info -->
-                        </a>
-                      </li><!-- End Contact Item -->
-                    </ul><!-- /.contatcts-list -->
-                  </div><!-- /.direct-chat-pane -->
-                </div><!-- /.box-body -->
-                <div class="box-footer">
-                  <form action="#" method="post">
-                    <div class="input-group">
-                      <input type="text" name="message" placeholder="Type Message ..." class="form-control">
-                      <span class="input-group-btn">
-                        <button type="button" class="btn btn-primary btn-flat">Send</button>
-                      </span>
-                    </div>
-                  </form>
-                </div><!-- /.box-footer-->
-              </div><!--/.direct-chat -->
-            </div><!-- /.col -->
+                  <p><b>About Start&Boost Project:</b></p>
+                  <p>Start&Boost is a Web and mobile based startup ideas repository and exploration.</p>
+                  <p><b>Investor(s):</b></p>
+                  <div class='box-header'>
+                      <div class='user-block'>
+                        <img class='img-circle' src='../../images/team/index0.png' alt='user image'>
+                          <span class='username'><a href="#">Ms. Universe</a></span>
+                          <span class='description'>Reputation:<span class="pull-right"><i class='fa fa-star' style="color:#ffd700;"></i><b>&nbsp;&nbsp;1024</b></span></span>
+                      </div><!-- /.user-block -->
+                    </div><!-- /.box-header -->
+                </div>
+              </div><!-- /.col -->
 
 
-            <!-- ============================================= -->
-            <!--GROUP NAV-->
-            <div class="col-md-2">
-              <div class="info-box">
-                <span class="info-box-icon bg-yellow"><i class="fa fa-files-o"></i></span>
-                <div class="info-box-content">
-                  <span>IDEAS SHARED</span>
-                  <span class="info-box-number">57</span>
-                </div><!-- /.info-box-content -->
-              </div><!-- /.info-box -->
-
-              <div class="info-box">
-                <span class="info-box-icon bg-aqua"><i class="fa fa-tasks"></i></span>
-                <div class="info-box-content">
-                  <span>CURRENT PROJECTS</span>
-                  <span class="info-box-number">5</span>
-                </div><!-- /.info-box-content -->
-              </div><!-- /.info-box -->
-
-              <div class="info-box">
-                <span class="info-box-icon bg-green"><i class="fa fa-flag-o"></i></span>
-                <div class="info-box-content">
-                  <span>COMPLETED PROJECTS</span>
-                  <span class="info-box-number">7</span>
-                </div><!-- /.info-box-content -->
-              </div><!-- /.info-box -->
-
-              <div class="info-box">
-                <span class="info-box-icon bg-red"><i class="fa fa-group"></i></span>
-                <div class="info-box-content">
-                  <span>GROUPS</span>
-                  <span class="info-box-number">3</span>
-                </div><!-- /.info-box-content -->
-              </div><!-- /.info-box -->
-
-            </div><!-- /.col -->
-          </div><!-- /.row -->
-
-        </section><!-- /.content -->
-      </div><!-- /.content-wrapper -->
+          </div>
+        </div>
+      </div><!--/.content wrapper-->
